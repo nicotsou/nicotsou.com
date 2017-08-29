@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/https://github.com/nicotsou/nicotsou.com/app-056c8feebbb02601e37e.js","e9f68d147166831859e0cadf2ee26504"],["/https://github.com/nicotsou/nicotsou.com/app-850e947a03089979dd58.js","e6cd992da0807f53438898effb8b0174"],["/https://github.com/nicotsou/nicotsou.com/app-c4911c12e4a19237c460.js","88e6da695c3379116d432be4cf7d458c"],["/https://github.com/nicotsou/nicotsou.com/commons-187bd840e708b4a86a1e.js","5de1a758fed436e10bec85f8e87120fe"],["/https://github.com/nicotsou/nicotsou.com/index.html","5f5a0c73c67406861ed473a5c6ebf51e"],["/https://github.com/nicotsou/nicotsou.com/offline-plugin-app-shell-fallback/index.html","502a5ffebc74722d1507ce7733ded790"]];
+var precacheConfig = [["/https://nicotsou.com/app-056c8feebbb02601e37e.js","e9f68d147166831859e0cadf2ee26504"],["/https://nicotsou.com/app-850e947a03089979dd58.js","e6cd992da0807f53438898effb8b0174"],["/https://nicotsou.com/app-981f27ecee743596f342.js","18f002c85a0419b51b8bd3215034484e"],["/https://nicotsou.com/app-c4911c12e4a19237c460.js","88e6da695c3379116d432be4cf7d458c"],["/https://nicotsou.com/commons-187bd840e708b4a86a1e.js","50e0a9de3a9461173838e89ea7ef10d2"],["/https://nicotsou.com/index.html","7e9f458bb5134a9bb5219e7f982c5931"],["/https://nicotsou.com/offline-plugin-app-shell-fallback/index.html","5c793a0f69867a8f0de0ff1c1dfc53ed"]];
 var cacheName = 'sw-precache-v3-gatsby-plugin-offline-' + (self.registration ? self.registration.scope : '');
 
 
