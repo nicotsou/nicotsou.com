@@ -10,9 +10,8 @@ class Template extends React.Component {
     let header
     if (location.pathname === '/') {
       header = (
-        <h1
+        <h2
           style={{
-            ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
           }}
@@ -25,9 +24,9 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            This page is intentionally left blank.
           </Link>
-        </h1>
+        </h2>
       )
     } else {
       header = (
@@ -46,7 +45,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            Nick Tsourektsidis
           </Link>
         </h3>
       )
