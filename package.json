@@ -20,10 +20,28 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
-    "prettier": "^1.14.2"
+    "@babel/core": "7.0.0-beta.51",
+    "@babel/node": "7.0.0-beta.51",
+    "@babel/plugin-proposal-class-properties": "7.0.0-beta.51",
+    "@babel/plugin-proposal-optional-chaining": "7.0.0-beta.51",
+    "@babel/plugin-transform-runtime": "7.0.0-beta.51",
+    "@babel/preset-env": "7.0.0-beta.51",
+    "@babel/preset-flow": "7.0.0-beta.51",
+    "@babel/preset-react": "7.0.0-beta.51",
+    "@babel/runtime": "7.0.0-beta.51",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "jest": "^23.6.0",
+    "jest-environment-enzyme": "^7.0.0",
+    "jest-enzyme": "^7.0.0",
+    "prettier": "^1.14.2",
+    "regenerator-runtime": "^0.12.1"
   },
   "repository": {
     "type": "git",

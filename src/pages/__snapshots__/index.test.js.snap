@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should add two numbers 1`] = `
+<Layout>
+  <h1>
+    Hi people
+  </h1>
+  <p>
+    Welcome to your new Gatsby site.
+  </p>
+  <p>
+    Now go build something great.
+  </p>
+  <Component
+    to="/page-2/"
+  >
+    Go to page 2
+  </Component>
+</Layout>
+`;
