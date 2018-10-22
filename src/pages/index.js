@@ -2,11 +2,14 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import Logo from '../components/logo'
 
 const IndexPage = () => (
   <Layout>
     <div id="top" class="page" role="document">
       <header role="banner">
+        <Logo />
+        
         <h1>HTML5 Test Page</h1>
         <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
       </header>
