@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Nicos Tsourektsidis",
+    title: "nicotsou | Nicos Tsourektsidis",
     author: "Nicos Tsourektsidis",
   },
   plugins: [
