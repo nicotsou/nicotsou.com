@@ -9,7 +9,7 @@ const IndexPage = () => (
       <header role="banner">
         <Logo />
         
-        <h1>HTML5 Test Page</h1>
+        <h1>Typography Test Page</h1>
         <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
       </header>
       <nav role="navigation">
@@ -57,10 +57,10 @@ const IndexPage = () => (
       </nav>
       <main role="main">
         <section id="text">
-          <header><h1>Text</h1></header>
+          <header><h2>Text</h2></header>
           <article id="text__headings">
             <header>
-              <h1>Headings</h1>
+              <h2>Headings</h2>
             </header>
             <div>
               <h1>Heading 1</h1>
@@ -73,14 +73,14 @@ const IndexPage = () => (
             <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
           <article id="text__paragraphs">
-            <header><h1>Paragraphs</h1></header>
+            <header><h2>Paragraphs</h2></header>
             <div>
               <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
             </div>
             <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
           <article id="text__blockquotes">
-            <header><h1>Blockquotes</h1></header>
+            <header><h2>Blockquotes</h2></header>
             <div>
               <blockquote>
                 <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.</p>
@@ -91,7 +91,7 @@ const IndexPage = () => (
             <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
           <article id="text__lists">
-            <header><h1>Lists</h1></header>
+            <header><h2>Lists</h2></header>
             <div>
               <h3>Definition list</h3>
               <dl>
@@ -114,14 +114,14 @@ const IndexPage = () => (
             <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
           <article id="text__hr">
-            <header><h1>Horizontal rules</h1></header>
+            <header><h2>Horizontal rules</h2></header>
             <div>
               <hr />
             </div>
             <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
           <article id="text__tables">
-            <header><h1>Tabular data</h1></header>
+            <header><h2>Tabular data</h2></header>
             <table>
               <caption>Table Caption</caption>
               <thead>
@@ -176,7 +176,7 @@ const IndexPage = () => (
             <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
           <article id="text__code">
-            <header><h1>Code</h1></header>
+            <header><h2>Code</h2></header>
             <div>
               <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
               <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
@@ -187,7 +187,7 @@ const IndexPage = () => (
             <footer><p><a href="#top">[Top]</a></p></footer>
           </article>
           <article id="text__inline">
-            <header><h1>Inline elements</h1></header>
+            <header><h2>Inline elements</h2></header>
             <div>
               <p><a href="#!">This is a text link</a>.</p>
               <p><strong>Strong is used to indicate strong importance.</strong></p>
@@ -212,7 +212,7 @@ const IndexPage = () => (
           </article>
         </section>
         <section id="embedded">
-          <header><h1>Embedded content</h1></header>
+          <header><h2>Embedded content</h2></header>
           <article id="embedded__images">
             <header><h2>Images</h2></header>
             <div>
@@ -265,7 +265,7 @@ const IndexPage = () => (
           </article>
         </section>
         <section id="forms">
-          <header><h1>Form elements</h1></header>
+          <header><h2>Form elements</h2></header>
           <form>
             <fieldset id="forms__input">
               <legend>Input fields</legend>

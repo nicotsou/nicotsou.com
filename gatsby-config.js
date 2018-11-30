@@ -17,6 +17,12 @@ module.exports = {
         icon: 'src/images/nt-icon.png', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: 'src/config/typography'
+      }
+    },
     'gatsby-plugin-offline',
   ],
 }
