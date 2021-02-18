@@ -1,27 +1,39 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
+import Image from 'gatsby-image'
 import Header from '../components/Layout/Header'
-import { Body2, Label2 } from '../styles/Typography'
-import { Helmet } from 'react-helmet'
+import { Body2, Heading1, Label2 } from '../styles/Typography'
 import BlogStyles from '../styles/BlogStyles'
 import Footer from '../components/Layout/Footer'
 import AuthorAside from '../components/Layout/AuthorAside'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import CodeHighlighter from '../styles/CodeHighlighter'
+import SEO from '../components/seo'
 
-const ArticleList = styled.ul`
-  && {
-    margin: 2rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-  }
+const Article = styled.article`
+  margin-top: clamp(0.5rem, calc(100vh * 20 / 100), 9.5rem);
 `
-const BlogPage = styled.main`
+
+const StyledHeading1 = styled(Heading1)`
+  margin-right: 2rem;
+`
+
+const Cover = styled.section`
+  max-width: 1250px;
+  margin: 2rem auto 4rem auto;
+`
+
+const SuggestedArticles = styled.ul`
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+`
+
+const SectionStyles = css`
   margin: 0 auto;
-  margin-top: clamp(1rem, calc(100vh * 20 / 100), 9.5rem);
   max-width: 640px;
   padding: 0 1rem;
 
@@ -30,62 +42,76 @@ const BlogPage = styled.main`
   }
 `
 
-const Post = styled.article`
+const ArticleSection = styled.section`
   ${BlogStyles}
+  ${SectionStyles}
+`
+
+const Section = styled.section`
+  ${SectionStyles}
+`
+
+const StyledFooter = styled(Footer)`
+  ${SectionStyles}
 `
 
 const BlogPostTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
-  // const siteTitle = data.site.siteMetadata?.title || `Title`
+  const { html } = data?.markdownRemark
+  const { title, date, description, cover } = data?.markdownRemark?.frontmatter
   const { previous, next } = data
 
   return (
-    <>
-      <Helmet
-        htmlAttributes={{
-          lang: 'en',
-        }}
-      />
+    <main>
+      <SEO title={title} image={cover.publicURL} description={description} />
       <Header />
-      <BlogPage>
-        <CodeHighlighter />
-        <Post
-          className="blog-post"
-          itemScope
-          itemType="http://schema.org/Article"
-        >
+      <CodeHighlighter />
+      <Article
+        className="blog-post"
+        itemScope
+        itemType="http://schema.org/Article"
+      >
+        <Section>
           <header>
-            <Label2>{post.frontmatter.date}</Label2>
-            <h1 itemProp="headline">{post.frontmatter.title}</h1>
+            <Label2>{date}</Label2>
+            <StyledHeading1 itemProp="headline">{title}</StyledHeading1>
           </header>
-          <section
-            dangerouslySetInnerHTML={{ __html: post.html }}
-            itemProp="articleBody"
+        </Section>
+        <Cover>
+          <Image
+            style={{ width: '100%', minHeight: '67vh' }}
+            fluid={cover?.childImageSharp?.fluid}
           />
-          <hr />
-        </Post>
-        <AuthorAside />
-        <nav>
-          <ArticleList>
-            <li>
-              {previous && (
-                <Link to={previous.fields.slug} rel="prev">
-                  <Body2>← {previous.frontmatter.title}</Body2>
-                </Link>
-              )}
-            </li>
-            <li>
-              {next && (
-                <Link to={next.fields.slug} rel="next">
-                  <Body2>{next.frontmatter.title} →</Body2>
-                </Link>
-              )}
-            </li>
-          </ArticleList>
-        </nav>
-        <Footer />
-      </BlogPage>
-    </>
+        </Cover>
+
+        <ArticleSection
+          dangerouslySetInnerHTML={{ __html: html }}
+          itemProp="articleBody"
+        />
+
+        <Section>
+          <AuthorAside />
+          <nav>
+            <SuggestedArticles>
+              <li>
+                {previous && (
+                  <Link to={previous.fields.slug} rel="prev">
+                    <Body2>← {previous.frontmatter.title}</Body2>
+                  </Link>
+                )}
+              </li>
+              <li>
+                {next && (
+                  <Link to={next.fields.slug} rel="next">
+                    <Body2>{next.frontmatter.title} →</Body2>
+                  </Link>
+                )}
+              </li>
+            </SuggestedArticles>
+          </nav>
+        </Section>
+      </Article>
+      <StyledFooter />
+    </main>
   )
 }
 
@@ -97,11 +123,6 @@ export const pageQuery = graphql`
     $previousPostId: String
     $nextPostId: String
   ) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     markdownRemark(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
@@ -110,6 +131,14 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        cover {
+          publicURL
+          childImageSharp {
+            fluid(maxWidth: 1500) {
+              ...GatsbyImageSharpFluid_tracedSVG
+            }
+          }
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

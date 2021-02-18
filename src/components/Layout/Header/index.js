@@ -7,7 +7,7 @@ import Logo from '../Logo'
 const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
-  max-width: 1000px;
+  max-width: 1250px;
   margin: 3rem auto;
   line-height: 2rem;
   padding: 0 1rem;

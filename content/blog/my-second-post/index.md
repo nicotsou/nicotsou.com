@@ -1,6 +1,8 @@
 ---
 title: Declarative programming
 date: '2015-05-06T23:46:37.121Z'
+cover: './xui.jpg'
+description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
 ---
 
 > **Declarative programming** makes your code more concise, easier to read and reason about and reduces side effects.
@@ -67,6 +69,8 @@ We can put this algorithm to a `makeCoffee()` function or create a fancy `Coffee
 
 Now let's have a look on how this translates to coding.
 
+![Airbnb calendar](./cover.jpg)
+
 ## A declarative code example
 
 We have the following array of months:
@@ -77,7 +81,8 @@ const months = ['January', 'February', 'March', ...]
 
 Let's imagine that we have to create a calendar similar to the one we find in iOS:
 
-/iOS Calendar.jpeg
+![Airbnb calendar](./DevTools Profiling.png)
+_Fig. 1: AirBnb Calendar_
 
 Our first step is to modify our array to have only the first three letters of the month name.
 

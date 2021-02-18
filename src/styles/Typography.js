@@ -16,7 +16,7 @@ export const Body1Styles = css`
 
 export const Body2Styles = css`
   && {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     line-height: 1.5rem;
     margin: 0;
   }
@@ -24,7 +24,7 @@ export const Body2Styles = css`
 
 export const Body3Styles = css`
   && {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     line-height: 1.25rem;
     margin: 0;
   }
@@ -100,7 +100,7 @@ export const Label2Styles = css`
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   font-size: 0.85rem;
-  line-height: 1.05rem;
+  line-height: 1.35rem;
   word-spacing: 0.1rem;
   letter-spacing: 0.0675rem;
   text-transform: uppercase;
@@ -121,7 +121,7 @@ export const Label3Styles = css`
 export const CodeStyles = css`
   font-family: 'Inconsolata', monospace;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.4rem;
   word-spacing: 0.02rem;
   letter-spacing: 0;

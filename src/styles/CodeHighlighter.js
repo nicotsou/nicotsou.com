@@ -17,7 +17,7 @@ const CodeHighlighter = createGlobalStyle`
   :not(pre) > code[class*='language-'] {
     padding: 4px 6px;
     border-radius: 0.3em;
-    background: rgba(var(--text-color), 0.07);
+    background: rgba(var(--text-color), 0.05);
   }
 
   /*.namespace {} */
@@ -101,8 +101,10 @@ const CodeHighlighter = createGlobalStyle`
   }
 
   .gatsby-highlight-code-line {
+    background-color: rgba(var(--text-color), 0.05);
     display: block;
-    color: rgb(var(--light-sea-green-value));
+    margin: -0.125rem -3rem;
+    padding: 0.125rem 3rem;
   }
 `
 

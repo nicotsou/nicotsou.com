@@ -20,7 +20,7 @@ const PostLink = styled(Link)`
   text-decoration: none;
 `
 
-const PostList = () => {
+const PostList = ({ onLinkHover }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -38,6 +38,14 @@ const PostList = () => {
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            cover {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 600) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
@@ -45,10 +53,15 @@ const PostList = () => {
   `)
 
   return (
-    <List role="navigation">
+    <List role="navigation" onMouseLeave={() => onLinkHover(null)}>
       {data.allMarkdownRemark.nodes.map((node, index) => (
         <PostItem key={index}>
-          <PostLink to={node.fields.slug}>{node.frontmatter.title}</PostLink>
+          <PostLink
+            onMouseEnter={() => onLinkHover(node)}
+            to={node.fields.slug}
+          >
+            {node.frontmatter.title}
+          </PostLink>
         </PostItem>
       ))}
     </List>

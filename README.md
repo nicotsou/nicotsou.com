@@ -1,6 +1,6 @@
 # nicotsou.com
 
-This page is intentionally left blank.
+This repo hosts my personal blog.
 
 ## 🚀 Quick start
 

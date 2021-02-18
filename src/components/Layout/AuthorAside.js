@@ -3,15 +3,18 @@ import { graphql, useStaticQuery } from 'gatsby'
 import Image from 'gatsby-image'
 import styled from 'styled-components'
 import { Body3, Label3 } from '../../styles/Typography'
+import Divider from './Divider'
 
 const Aside = styled.aside`
-  margin-top: 4rem;
   padding: 2rem 4rem 1rem 1rem;
-  box-shadow: 0px -1px 0px 0px rgba(var(--caption-color), 0.5);
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     display: flex;
   }
+`
+
+const StyledDivider = styled(Divider)`
+  margin: 4rem 0 0 0;
 `
 
 const Avatar = styled(Image)`
@@ -24,7 +27,7 @@ const Avatar = styled(Image)`
 const StyledBody3 = styled(Body3)`
   margin-top: 1.35rem;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     margin-top: 0;
   }
 `
@@ -65,23 +68,26 @@ export default function AuthorAside() {
   const summary = data?.site?.siteMetadata?.author?.summary
 
   return (
-    <Aside>
-      <a href="https://twitter.com/nicotsou" target="_blank" rel="noreferrer">
-        <Avatar fixed={avatar} />
-      </a>
-      <div>
-        <StyledBody3>
-          {summary}{' '}
-          <a
-            href="https://twitter.com/nicotsou"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Follow my work on Twitter
-          </a>
-        </StyledBody3>
-        <StyledLabel3>{author}</StyledLabel3>
-      </div>
-    </Aside>
+    <>
+      <StyledDivider />
+      <Aside>
+        <a href="https://twitter.com/nicotsou" target="_blank" rel="noreferrer">
+          <Avatar fixed={avatar} />
+        </a>
+        <div>
+          <StyledBody3>
+            {summary}{' '}
+            <a
+              href="https://twitter.com/nicotsou"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Follow my work on Twitter
+            </a>
+          </StyledBody3>
+          <StyledLabel3>{author}</StyledLabel3>
+        </div>
+      </Aside>
+    </>
   )
 }

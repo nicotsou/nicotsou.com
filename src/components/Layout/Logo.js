@@ -23,8 +23,12 @@ const StyledLogo = (props) => css`
   }
 `
 
-const StyledNtLogo58px = styled(NtLogo58px)(StyledLogo)
-const StyledNtLogo40px = styled(NtLogo40px)(StyledLogo)
+const StyledNtLogo58px = styled(({ className }) => (
+  <NtLogo58px className={className} />
+))(StyledLogo)
+const StyledNtLogo40px = styled(({ className }) => (
+  <NtLogo40px className={className} />
+))(StyledLogo)
 
 const Logo = ({ size, className }) => {
   const Compoponent = size === sizes.small ? StyledNtLogo40px : StyledNtLogo58px

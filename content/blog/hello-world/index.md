@@ -1,7 +1,8 @@
 ---
 title: Hello World
 date: '2015-05-01T22:12:03.284Z'
-description: 'Hello World'
+description: 'Hello World description'
+cover: './cover.jpg'
 quote: 'It’s those pixels you can’t take your eyes off. All these little details that fit together perfectly.'
 ---
 

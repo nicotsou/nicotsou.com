@@ -10,18 +10,18 @@ import { graphql, useStaticQuery } from 'gatsby'
 const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 1rem;
-  margin-bottom: calc(100vh * 16 / 100);
+  min-height: calc(100vh * 20 / 100);
 `
 
 const SocialList = styled.ul`
   display: flex;
   list-style: none;
   padding: 0;
+  margin: 0;
 
   > li {
-    padding: 0;
     display: inline-block;
     margin-right: 8px;
 
@@ -37,7 +37,11 @@ const SocialList = styled.ul`
   }
 `
 
-const Footer = () => {
+const Copyright = styled(Label3)`
+  line-height: 2rem;
+`
+
+const Footer = ({ className }) => {
   const data = useStaticQuery(graphql`
     query FooterQuery {
       site {
@@ -55,7 +59,7 @@ const Footer = () => {
   const { twitter, medium, github } = social
 
   return (
-    <StyledFooter>
+    <StyledFooter className={className}>
       <SocialList>
         <li>
           <a
@@ -70,7 +74,7 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href={`https://twitter.com/@${medium}`}
+            href={`https://medium.com/@${medium}`}
             target="_blank"
             rel="noreferrer"
           >
@@ -81,7 +85,7 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href={`https://twitter.com/${github}`}
+            href={`https://github.com/${github}`}
             target="_blank"
             rel="noreferrer"
           >
@@ -91,7 +95,7 @@ const Footer = () => {
           </a>
         </li>
       </SocialList>
-      <Label3>&copy; 2020 NT</Label3>
+      <Copyright>&copy; 2020 NT</Copyright>
     </StyledFooter>
   )
 }
