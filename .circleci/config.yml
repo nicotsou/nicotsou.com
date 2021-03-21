@@ -42,6 +42,5 @@ jobs:
           name: Run deploy scripts
           command: ../gatsby-deploy.sh
 
-    filters:
-      branches:
-        only: master
+    ignore:
+      - gh-pages
