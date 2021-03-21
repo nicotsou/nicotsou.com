@@ -12,7 +12,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve -H 0.0.0.0",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public"
+    "deploy": "gatsby clean && gatsby build && gh-pages -d public"
   },
   "license": "0BSD",
   "dependencies": {
