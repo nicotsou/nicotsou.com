@@ -147,7 +147,8 @@ const BlogStyles = css`
   }
 
   :not(.gatsby-resp-image-wrapper) img,
-  .gatsby-resp-image-wrapper {
+  .gatsby-resp-image-wrapper,
+  p > .gatsby-resp-image-wrapper {
     & + em {
       ${Label2Styles}
       margin-top: 2rem;
