@@ -78,6 +78,8 @@ const BlogPostTemplate = ({ data, location }) => {
         </Section>
         <Cover>
           <Image
+            alt={title}
+            aria-hidden="true"
             style={{ width: '100%', minHeight: '67vh' }}
             fluid={cover?.childImageSharp?.fluid}
           />
