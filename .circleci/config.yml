@@ -22,16 +22,26 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "package.json" }}
+            - dependencies-
             # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
-
-      - run: yarn install
-
+            - dependencies-
+      - run:
+          name: Install
+          command: yarn install
       - save_cache:
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+          key: dependencies-
+      - run:
+          name: Gatsby build site
+          command: yarn build
+      - run:
+          name: Prepare shell commands
+          command: cp .scripts/gatsby-deploy.sh ../ && chmod +x ../gatsby-deploy.sh
+      - run:
+          name: Run deploy scripts
+          command: ../gatsby-deploy.sh
 
-    ignore:
-      - gh-pages
+    filters:
+      branches:
+        only: master
