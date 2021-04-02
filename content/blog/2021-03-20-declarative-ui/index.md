@@ -1,5 +1,5 @@
 ---
-title: Declarative UI
+title: TLTR; Declarative UI
 date: '2021-03-20T23:46:37.121Z'
 cover: './cover.jpg'
 description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
@@ -81,8 +81,7 @@ const months = ['January', 'February', 'March', ...]
 
 Let's imagine that we have to create a calendar similar to the one we find in iOS:
 
-![DevTools Profiler](/images/devtools-profiler.png)
-_Fig. 1: AirBnb Calendar_
+![DevTools Profiler](/images/iOS-Calendar-iPad-dark-mode.jpeg)
 
 Our first step is to modify our array to have only the first three letters of the month name.
 
@@ -138,7 +137,7 @@ CSS works similarly, the style of the class `.months` will be applied automatica
 The problem starts when you add interactivity.
 
 ![Airbnb calendar](/images/airbnb-calendar.gif)
-_Fig. 2: The minimum dominating set of a graph_
+_The Airbnb calendar allows you to select a date period_
 
 Consider this Airbnb calendar. Two things happen when you click on a day. At first we indicate the selected days with a black circle. Also the check in/out field gets updated with the new date range.
 
@@ -242,14 +241,14 @@ event => state update => render
 
 This unidirectional data flow help you build incredibly simple applications that are easy to test and maintain.
 
-## Conclusion
+## Last words
 
 Your aim as a React developer is to write declarative code as much as you can. It’s like learning how to drive a supercar.
 
-But how you can declaratively change the DOM on every single event and maintain good performance? What did you say? What is the DOM? Ok this will take another coffee.
+But how we can declaratively change the DOM and maintain good performance? What did you say? What is the DOM? Ok this will take another coffee.
 
 _In the next post we will continue our journey, by learning what is DOM and how it's being managed by React._
 
 _This article is part of the series "TLTR; React". I try to explain the core functionality of the React ecosystem in an easy-to-follow way._
 
-_Feel free to provide feedback in the comments below. See you in the next post._
+_You can [follow my publication on Medium](https://medium.com/tltr-react). See you in the next post._
