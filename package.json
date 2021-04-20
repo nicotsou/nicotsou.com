@@ -36,6 +36,7 @@
     "gatsby-plugin-sitemap": "^3.1.0",
     "gatsby-plugin-styled-components": "^4.1.0",
     "gatsby-remark-copy-linked-files": "^3.1.0",
+    "gatsby-remark-embed-spotify": "^2.1.1",
     "gatsby-remark-images": "^4.1.0",
     "gatsby-remark-prismjs": "^4.1.0",
     "gatsby-remark-smartypants": "^3.1.0",

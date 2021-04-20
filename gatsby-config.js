@@ -42,7 +42,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1900,
-              backgroundColor: 'transparent'
+              backgroundColor: 'transparent',
             },
           },
           {
@@ -112,6 +112,7 @@ module.exports = {
           },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+          `gatsby-remark-embed-spotify`,
         ],
       },
     },
@@ -123,7 +124,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1900,
-              backgroundColor: 'transparent'
+              backgroundColor: 'transparent',
             },
           },
         ],
