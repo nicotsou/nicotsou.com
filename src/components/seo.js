@@ -46,6 +46,10 @@ const SEO = ({ description, article, title, image }) => {
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
     >
       <lang>en</lang>
+      <meta
+        http-equiv="cache-control"
+        content="public, max-age=0, must-revalidate"
+      />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}

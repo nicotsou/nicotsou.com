@@ -28,8 +28,6 @@ _The birth of the Web. This was the first website ever created. (Source: [CERN](
 
 In other words when you visit a website, your browser constructs a large JavaScript structure, which represents the contents of a website.
 
-![](images/firefox-3d-dom-rendering.png)
-
 The DOM has a form of a family tree, with `parent`, `children` and `sibling` nodes.
 
 ```bash
@@ -43,7 +41,7 @@ article
 
 A node can be an HTML `element`, plain `text`, `attribute` and pretty much everything you will find in your markup.
 
-![](images/devtools-inspect-element.png)
+![](images/devtools-inspect-element.gif)
 _You can navigate to the available options using the browser console. Give it a try on this website! Right click on some text and select Inspect Element._
 
 DOM is available _only_ on web browsers. For example, in Node.js you will not even find the object `window`, the outer container of the DOM. That's why testing environments mobilize libraries that simulate DOM.
