@@ -246,9 +246,3 @@ This unidirectional data flow help you build incredibly simple applications that
 Your aim as a React developer is to write declarative code as much as you can. It’s like learning how to drive a supercar.
 
 But how we can declaratively change the DOM and maintain good performance? What did you say? What is the DOM? Ok this will take another coffee.
-
-_In the next post we will continue our journey, by learning what is DOM and how it's being managed by React._
-
-_This article is part of the series "TLTR; React". I try to explain the core functionality of the React ecosystem in an easy-to-follow way._
-
-_You can [follow my publication on Medium](https://medium.com/tltr-react). See you in the next post._
