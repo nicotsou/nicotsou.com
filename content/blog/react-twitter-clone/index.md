@@ -1,6 +1,6 @@
 ---
 title: Learn React By Building A Twitter Clone
-date: '2021-05-03T23:46:37.121Z'
+date: '2021-05-06T23:46:37.121Z'
 cover: './cover.jpeg'
 description: Every month I curate the music that help me concentrate, create and feel, in a music playlist series called "Cherry Pick".
 ---
@@ -97,9 +97,9 @@ To render a React element, create a new file `/src/index.js`:
 
 ```jsx
 // index.js
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'
 
-ReactDOM.render('no more hello worlds please', document.getElementById('root'));
+ReactDOM.render('no more hello worlds please', document.getElementById('root'))
 ```
 
 Go ahead and run the application. You should see our friendly message.
@@ -119,20 +119,20 @@ We haven't defined a React component yet. Let's do so:
 
 ```jsx
 // highlight-start
-import React from 'react';
+import React from 'react'
 // highlight-end
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'
 
 // This is our first React component
 // highlight-start
 function App() {
-  return <div className="App">no more hello worlds please</div>;
+  return <div className="App">no more hello worlds please</div>
 }
 // highlight-end
 
 // We use <App /> as the root React component to render
 // highlight-start
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'))
 // highlight-end
 ```
 
@@ -170,7 +170,7 @@ Ok now it’s more UIsh… We also removed the default margin in `body`.
 To see the changes we will have to import this css file in our main `index.js`:
 
 ```jsx
-import './index.css';
+import './index.css'
 ```
 
 Now you will be wondering, what the hell? We import a css file inside a JS file? How this is even legal?
@@ -192,20 +192,20 @@ Now we can move the implementation of the `<App />` component to a new file. In 
 As a first step, we will update the `index.js` as follows:
 
 ```jsx
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App.jsx';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './components/App.jsx'
 
-import './index.css';
+import './index.css'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'))
 ```
 
 Now, let's create another file `/src/components/App.jsx`. Type the following code in it:
 
 ```jsx
 // App.jsx
-import tweets from '../tweets.json';
+import tweets from '../tweets.json'
 
 function App() {
   return (
@@ -214,10 +214,10 @@ function App() {
         <span>tweet.content</span>
       ))}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
 ```
 
 Here we are leveraging the `map()` function to loop through all the tweets. That’s how you loop elements in JS. Which brings us to an important observation.
@@ -262,7 +262,7 @@ function App() {
         // highlight-end
       ))}
     </div>
-  );
+  )
 }
 ```
 
@@ -273,7 +273,7 @@ This key is a reserved prop for every React component. The key has to be unique,
 Now let's add some structure:
 
 ```jsx
-import tweets from '../tweets.json';
+import tweets from '../tweets.json'
 
 function App() {
   return (
@@ -290,10 +290,10 @@ function App() {
       ))}
       // highlight-end
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
 ```
 
 Here I used classes to differentiate the divs. We will add the corresponding styles later.
@@ -310,7 +310,7 @@ Let's create a new component `src/components/Tweet.jsx` with the following code:
 
 ```jsx
 function Tweet(props) {
-  const { user, createdOn, children } = props;
+  const { user, createdOn, children } = props
 
   return (
     <div className="tweet">
@@ -320,10 +320,10 @@ function Tweet(props) {
       </div>
       <div className="tweet-content">{children}</div>
     </div>
-  );
+  )
 }
 
-export default Tweet;
+export default Tweet
 ```
 
 Our newly created `<Tweet />` component is only responsible to render tweets. Now it is time for some theory lessons. It will help us understand what is actually happening here.
@@ -344,11 +344,11 @@ In React there is also an easy way to do type checking. You can use a package ca
 
 ```jsx
 // highlight-start
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 // highlight-end
 
 function Tweet(props) {
-  const { user, createdOn, children } = props;
+  const { user, createdOn, children } = props
 
   return (
     <div className="tweet">
@@ -358,17 +358,17 @@ function Tweet(props) {
       </div>
       <div className="tweet-content">{children}</div>
     </div>
-  );
+  )
 }
 
 // highlight-start
 Tweet.propTypes = {
   user: PropTypes.string,
   createdOn: PropTypes.string,
-};
+}
 // highlight-end
 
-export default Tweet;
+export default Tweet
 ```
 
 React will now check whether the types of the values match with the types you declared in your component implementation.
@@ -386,8 +386,8 @@ Ok that's it! We made our first reusable React component.
 To render our new component we have to modify `/src/components/App.jsx` as follows:
 
 ```jsx
-import tweets from '../tweets.json';
-import Tweet from './Tweet';
+import tweets from '../tweets.json'
+import Tweet from './Tweet'
 
 function App() {
   return (
@@ -400,10 +400,10 @@ function App() {
         // highlight-end
       ))}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
 ```
 
 Notice the difference in the api. The json property `created_on` has been renamed to camelCase. Well that's not a strict rule. You can name your attributes however you like. But, please don't! Be a good person. Nobody uses kebab_case in HTML. 🙈
@@ -520,9 +520,9 @@ We will begin with the `/src/components/Timeline.jsx`, which is very similar to 
 
 ```jsx
 // Timeline.jsx
-import PropTypes from 'prop-types';
-import Tweet from './Tweet.jsx';
-import './Timeline.css';
+import PropTypes from 'prop-types'
+import Tweet from './Tweet.jsx'
+import './Timeline.css'
 
 function Timeline({ tweets }) {
   return (
@@ -535,14 +535,14 @@ function Timeline({ tweets }) {
         </li>
       ))}
     </ul>
-  );
+  )
 }
 
 Timeline.propTypes = {
   tweets: PropTypes.array,
-};
+}
 
-export default Timeline;
+export default Timeline
 ```
 
 This component now receives as a prop the `tweets` collection. For the sake of semantics, I have converted the div to an unordered list. Again, notice how we now use a key for every `<li>`.
@@ -588,18 +588,18 @@ Now let's add the Avatar component in `/src/components/Avatar.jsx`:
 
 ```jsx
 // Avatar.jsx
-import PropTypes from 'prop-types';
-import './Avatar.css';
+import PropTypes from 'prop-types'
+import './Avatar.css'
 
 function Avatar({ name = '' }) {
-  return <div className="avatar">{name.charAt(0)}</div>;
+  return <div className="avatar">{name.charAt(0)}</div>
 }
 
 Avatar.propTypes = {
   name: PropTypes.string,
-};
+}
 
-export default Avatar;
+export default Avatar
 ```
 
 This basically doesn't display the image of the user, but it just renders the first letter of their username. Having access to profile images requires access to the [Twitter developer api](https://developer.twitter.com/en). I thought this project is already too much for people who start with React and I didn't want to introduce extra complexity. In a future post we will learn how to consume apis, by implementing more complex React applications.
@@ -627,12 +627,12 @@ We will now consume the Avatar component in `/src/components/Tweet.jsx`:
 
 ```jsx
 // Tweet.jsx
-import PropTypes from 'prop-types';
-import Avatar from './Avatar';
-import './Tweet.css';
+import PropTypes from 'prop-types'
+import Avatar from './Avatar'
+import './Tweet.css'
 
 function Tweet(props) {
-  const { user, createdOn, children } = props;
+  const { user, createdOn, children } = props
 
   return (
     <div className="tweet">
@@ -645,15 +645,15 @@ function Tweet(props) {
         <div className="tweet-content">{children}</div>
       </div>
     </div>
-  );
+  )
 }
 
 Tweet.propTypes = {
   user: PropTypes.string,
   createdOn: PropTypes.string,
-};
+}
 
-export default Tweet;
+export default Tweet
 ```
 
 And its associated stylesheet `/src/components/Tweet.css`:
@@ -674,8 +674,8 @@ Now let's create the compose form component in `/src/components/ComposeForm.jsx`
 
 ```jsx
 // ComposeForm.jsx
-import Avatar from './Avatar';
-import './ComposeForm.css';
+import Avatar from './Avatar'
+import './ComposeForm.css'
 
 function ComposeForm() {
   return (
@@ -689,10 +689,10 @@ function ComposeForm() {
       </div>
       <button className="compose-form-submit">Tweet</button>
     </form>
-  );
+  )
 }
 
-export default ComposeForm;
+export default ComposeForm
 ```
 
 We haven't implemented yet the functionality to tweet, but we are going to add some extra code in the following section. For now it helps to put all the layout together.
@@ -743,12 +743,12 @@ Let's put everything together into `/src/components/App.jsx`:
 
 ```jsx
 // App.jsx
-import ComposeForm from './ComposeForm';
-import Timeline from './Timeline';
-import { FaTwitter } from 'react-icons/fa';
-import './App.css';
+import ComposeForm from './ComposeForm'
+import Timeline from './Timeline'
+import { FaTwitter } from 'react-icons/fa'
+import './App.css'
 
-import tweets from '../tweets.json';
+import tweets from '../tweets.json'
 
 function App() {
   return (
@@ -758,10 +758,10 @@ function App() {
       <div className="separator"></div>
       <Timeline tweets={tweets} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
 ```
 
 And its associated stylesheet `/src/components/App.css`:
@@ -811,7 +811,7 @@ We can add state to any React component with a function that React provides for 
 
 ```jsx
 // useState is a part of the React library - mind the {}
-import { useState } from 'react';
+import { useState } from 'react'
 
 function SomeComponent() {
   // We define a state variable called day.
@@ -819,7 +819,7 @@ function SomeComponent() {
   // We use destructuring to assing them in variables of our choice.
   // useState() accepts the initial value as a parameter.
   // highlight-start
-  const [day, setDay] = useState('Monday');
+  const [day, setDay] = useState('Monday')
   // highlight-end
   //       ^  ^                   ^
   // [getter, setter]             initial value (optional)
@@ -833,29 +833,29 @@ Ok, it's time for a small experiment. Take a look at the following example:
 ```jsx
 // ComposeForm.jsx
 // highlight-start
-import { useState } from 'react';
+import { useState } from 'react'
 // highlight-end
-import Avatar from './Avatar';
-import './ComposeForm.css';
+import Avatar from './Avatar'
+import './ComposeForm.css'
 
 function ComposeForm() {
   // As we've seen before, useState() returns an array
   // of [getter, setter] that we can name as we want.
   // We set the initial value of editorValue to an empty string.
   // highlight-start
-  const [editorValue, setEditorValue] = useState('');
+  const [editorValue, setEditorValue] = useState('')
   // highlight-end
 
   // Before we return anything, we log the current value
   // highlight-start
-  console.log(editorValue);
+  console.log(editorValue)
   // highlight-end
 
   // We define a handler for the onChange event of our textarea
   // highlight-start
   const handleEditorValueChange = (e) => {
-    setEditorValue(e.target.value);
-  };
+    setEditorValue(e.target.value)
+  }
   // highlight-end
 
   return (
@@ -873,10 +873,10 @@ function ComposeForm() {
       </div>
       <button className="compose-form-submit">Tweet</button>
     </form>
-  );
+  )
 }
 
-export default ComposeForm;
+export default ComposeForm
 ```
 
 Here notice that the `onChange` attribute of our `<textarea>` is assigned to the `handleEditorValueChange` function _without_ calling it. In case you are not familiar with this syntax, this is a feature of JS that allows you to pass functions as plain variables.
@@ -919,27 +919,27 @@ Ok, now back to `/src/components/App.jsx`:
 ```jsx
 // App.jsx
 // highlight-start
-import { useState } from 'react';
-import { nanoid } from 'nanoid';
+import { useState } from 'react'
+import { nanoid } from 'nanoid'
 // highlight-end
-import ComposeForm from './ComposeForm';
-import Timeline from './Timeline';
-import { FaTwitter } from 'react-icons/fa';
-import './App.css';
+import ComposeForm from './ComposeForm'
+import Timeline from './Timeline'
+import { FaTwitter } from 'react-icons/fa'
+import './App.css'
 
 // highlight-start
-import initialTweets from '../tweets.json';
+import initialTweets from '../tweets.json'
 // highlight-end
 
 // this is a way to store the current user name
 // highlight-start
-const CURRENT_USER = 'nicotsou';
+const CURRENT_USER = 'nicotsou'
 // highlight-end
 
 function App() {
   // We now store the tweets in the state of our component
   // highlight-start
-  const [tweets, setTweets] = useState(initialTweets);
+  const [tweets, setTweets] = useState(initialTweets)
   // highlight-end
 
   // This handler will be called when we want to post a new tweet**
@@ -953,12 +953,12 @@ function App() {
       comments_count: 0,
       retweets_count: 0,
       favorites_count: 0,
-    };
+    }
 
     // The new tweets array is being created from the values of the
     // existing one + the newly created tweet
-    setTweets([...tweets, newTweet]);
-  };
+    setTweets([...tweets, newTweet])
+  }
   // highlight-end
 
   return (
@@ -970,10 +970,10 @@ function App() {
       <div className="separator"></div>
       <Timeline tweets={tweets} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
 ```
 
 Here we declared a state variable `tweets` and we stored the contents of the `tweets.json` as the initial value for our array. Previously, our tweets collection was a constant value. Now it is possible to alter modify its contents.
@@ -998,35 +998,35 @@ Let's add this implementation to `ComposeForm.jsx`:
 
 ```jsx
 // highlight-start
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 // highlight-end
-import { useState } from 'react';
-import Avatar from './Avatar';
-import './ComposeForm.css';
+import { useState } from 'react'
+import Avatar from './Avatar'
+import './ComposeForm.css'
 
 function ComposeForm({ onSubmit }) {
-  const [editorValue, setEditorValue] = useState('');
+  const [editorValue, setEditorValue] = useState('')
 
   const handleEditorValueChange = (e) => {
-    setEditorValue(e.target.value);
-  };
+    setEditorValue(e.target.value)
+  }
 
   const handleSubmit = (e) => {
     // Prevent the default behavior of the form submition
     // which usually triggers a page reload
     // highlight-start
-    e.preventDefault();
+    e.preventDefault()
     // highlight-end
     // Call the onSubmit function with the latest textarea value
     // highlight-start
-    onSubmit(editorValue);
+    onSubmit(editorValue)
     // highlight-end
     // Reset the textarea content
     // the user may wants to write another tweet
     // highlight-start
-    setEditorValue('');
+    setEditorValue('')
     // highlight-end
-  };
+  }
 
   return (
     // highlight-start
@@ -1043,7 +1043,7 @@ function ComposeForm({ onSubmit }) {
       </div>
       <button className="compose-form-submit">Tweet</button>
     </form>
-  );
+  )
 }
 
 // highlight-start
@@ -1054,9 +1054,9 @@ ComposeForm.propTypes = {
   // highlight-start
   onSubmit: PropTypes.func.isRequired,
   // highlight-end
-};
+}
 
-export default ComposeForm;
+export default ComposeForm
 ```
 
 We made it! Here's how this works:
@@ -1104,14 +1104,14 @@ I think JS folks know this one pretty well. There's no better library to deal wi
 ```jsx
 // Tweet.jsx
 // highlight-start
-import moment from 'moment';
+import moment from 'moment'
 // highlight-end
-import PropTypes from 'prop-types';
-import Avatar from './Avatar';
-import './Tweet.css';
+import PropTypes from 'prop-types'
+import Avatar from './Avatar'
+import './Tweet.css'
 
 function Tweet(props) {
-  const { user, createdOn, children } = props;
+  const { user, createdOn, children } = props
 
   return (
     <div className="tweet">
@@ -1128,15 +1128,15 @@ function Tweet(props) {
         <div className="tweet-content">{children}</div>
       </div>
     </div>
-  );
+  )
 }
 
 Tweet.propTypes = {
   user: PropTypes.string,
   createdOn: PropTypes.string,
-};
+}
 
-export default Tweet;
+export default Tweet
 ```
 
 Moment reads the dates and converts them to a very readable text. Now our newly created tweet goes on top of the list:
