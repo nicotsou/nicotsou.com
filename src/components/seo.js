@@ -45,7 +45,7 @@ const SEO = ({ description, article, title, image }) => {
       title={seo.title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
     >
-      <lang>en</lang>
+      <html lang="en" amp />
       <meta
         http-equiv="cache-control"
         content="public, max-age=0, must-revalidate"
