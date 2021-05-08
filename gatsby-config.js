@@ -16,6 +16,11 @@ module.exports = {
       github: `nicotsou`,
     },
   },
+  flags: {
+    PRESERVE_WEBPACK_CACHE: true,
+    PARALLEL_SOURCING: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+  },
   plugins: [
     'gatsby-plugin-styled-components',
     {
@@ -27,13 +32,13 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-react-svg',
-    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: 'src/images/nt-icon.svg',
       },
     },
+    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
