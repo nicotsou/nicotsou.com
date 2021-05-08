@@ -5,15 +5,19 @@ cover: './cover.jpeg'
 description: Every month I curate the music that help me concentrate, create and feel, in a music playlist series called "Cherry Pick".
 ---
 
-My goal with this article is to help you learn React. We will create a small application that displays tweets.
+My goal with this article is to help you learn React. We will create a small twitter clone. I will guide you how to build your own app step-by-step and I will try to teach you all the little details you need to get started.
 
-If you never tried React, this will be a good article for you. If you know already the basics of React, you may find this article boring at least.
+If you never tried React before in your life, this will be a good starting point for you. If you know already the basics of React, you may find this article boring at least.
 
-Feel free to submit fixes via pull requests or to create issues in the GitHub repo.
+You can fork my GitHub repo: [@nicotsou/react-twitter](https://github.com/nicotsou/react-twitter).
 
-You can find GitHub repo: [https://github.com/nicotsou/react-twitter](https://github.com/nicotsou/react-twitter).
+Found something strange? You can suggest changes by creating [issues](https://github.com/nicotsou/react-twitter/issues). Pull requests are also welcomed. This tutorial is also available in my [blog repo](https://github.com/nicotsou/nicotsou.com/blob/master/content/blog/react-twitter-clone/index.md).
 
-To follow this guide you must have [Node.js](https://nodejs.org/en/) installed.
+To follow this guide you must have [Node.js](https://nodejs.org/en/) installed. Any version above `v10` will work just fine.
+
+One last thing. For making my tutorials easier to read, I always remove the `;` semicolons in my code snippets. In spite of the fact that they are not really needed, you will find them in the actual project.
+
+Ready to write some code? OK, let's go! 🐤 🤩
 
 ## Create a React application
 
@@ -91,8 +95,6 @@ The part of the React library that is handling DOM is called `react-dom`. Let’
 
 By the way. If you are thinking now to change the _favicon_ with the one from twitter, I would not judge.
 
-![images/no-hello-world.png](images/no-hello-world.png)
-
 To render a React element, create a new file `/src/index.js`:
 
 ```jsx
@@ -104,11 +106,13 @@ ReactDOM.render('no more hello worlds please', document.getElementById('root'))
 
 Go ahead and run the application. You should see our friendly message.
 
+![images/no-hello-world.png](images/no-hello-world.png)
+
 Note that changes specifically to this `index.js` are not being automatically transferred to your browser window. You will have to manually refresh the page every time to see the changes.
 
 The method `ReactDOM.render()` takes the following parameters:
 
-- The React component we wand to render.
+- The React component we want to render.
 - a DOM element in which we are planning to render the markup (render output).
 
 ReactDOM is the one who will take care of updating the DOM as we dynamically make changes. At the moment it will display the following message:
