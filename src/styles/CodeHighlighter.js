@@ -3,11 +3,14 @@ import { createGlobalStyle } from 'styled-components'
 const CodeHighlighter = createGlobalStyle`
   pre[class*='language-'],
   code[class*='language-'] {
-    white-space: pre;
     word-spacing: normal;
     word-break: normal;
     tab-size: 4;
     hyphens: none;
+
+    @media screen and (min-width: 780px) {
+      white-space: pre;
+    }
   }
 
   pre[class*='language-'] {
