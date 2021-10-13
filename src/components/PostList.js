@@ -53,7 +53,7 @@ const PostList = ({ onLinkHover }) => {
   `)
 
   return (
-    <List role="navigation" onMouseLeave={() => onLinkHover(null)}>
+    <List onMouseLeave={() => onLinkHover(null)}>
       {data.allMarkdownRemark.nodes.map((node, index) => (
         <PostItem key={index}>
           <PostLink
