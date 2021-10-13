@@ -4,7 +4,6 @@ import Nav from './Nav'
 
 describe('Nav', () => {
   it('renders without issues', () => {
-    const { container } = render(<Nav />)
-    expect(container).toMatchSnapshot()
+    render(<Nav />)
   })
 })
