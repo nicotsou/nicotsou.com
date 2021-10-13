@@ -23,6 +23,14 @@ const Cover = styled.section`
   margin: 2rem auto 4rem auto;
 `
 
+const StyledCoverImage = styled(Image)`
+  transition: border-radius 0.3s linear;
+
+  @media screen and (min-width: 1300px) {
+    border-radius: calc(2.3 * 1rem);
+  }
+`
+
 const SuggestedArticles = styled.ul`
   margin: 2rem 0;
   display: flex;
@@ -77,7 +85,7 @@ const BlogPostTemplate = ({ data, location }) => {
           </header>
         </Section>
         <Cover>
-          <Image
+          <StyledCoverImage
             alt={title}
             aria-hidden="true"
             style={{ width: '100%', minHeight: '67vh' }}
