@@ -125,6 +125,7 @@ const BlogStyles = css`
     @media screen and (min-width: 1200px) {
       max-width: calc(750px + 40%) !important;
       margin: 5rem auto 5rem -20% !important;
+      border-radius: calc(1.5 * 1rem);
     }
   }
 
@@ -142,6 +143,7 @@ const BlogStyles = css`
       @media screen and (min-width: 1200px) {
         max-width: calc(750px + 40%);
         margin: 5rem auto 5rem -20%;
+        border-radius: calc(1.5 * 1rem);
       }
     }
   }
