@@ -72,6 +72,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: { modules: [path.resolve(__dirname, 'src'), 'node_modules'] },
+  })
+}
+
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
 
