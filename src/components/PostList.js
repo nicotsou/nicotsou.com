@@ -28,7 +28,7 @@ const PostList = ({ onLinkHover }) => {
           title
         }
       }
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
         nodes {
           excerpt
           fields {
@@ -54,7 +54,7 @@ const PostList = ({ onLinkHover }) => {
 
   return (
     <List onMouseLeave={() => onLinkHover(null)}>
-      {data.allMarkdownRemark.nodes.map((node, index) => (
+      {data.allMdx.nodes.map((node, index) => (
         <PostItem key={index}>
           <PostLink
             onMouseEnter={() => onLinkHover(node)}

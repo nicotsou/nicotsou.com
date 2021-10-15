@@ -9,6 +9,7 @@ import AuthorAside from '../components/Layout/AuthorAside'
 import styled, { css } from 'styled-components'
 import CodeHighlighter from '../styles/CodeHighlighter'
 import Seo from '../components/seo'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 const Article = styled.article`
   margin-top: clamp(0.5rem, calc(100vh * 20 / 100), 9.5rem);
@@ -64,8 +65,8 @@ const StyledFooter = styled(Footer)`
 `
 
 const BlogPostTemplate = ({ data, location }) => {
-  const { html } = data?.markdownRemark
-  const { title, date, description, cover } = data?.markdownRemark?.frontmatter
+  const { body } = data?.mdx
+  const { title, date, description, cover } = data?.mdx?.frontmatter
   const { previous, next } = data
 
   return (
@@ -92,11 +93,9 @@ const BlogPostTemplate = ({ data, location }) => {
             fluid={cover?.childImageSharp?.fluid}
           />
         </Cover>
-
-        <ArticleSection
-          dangerouslySetInnerHTML={{ __html: html }}
-          itemProp="articleBody"
-        />
+        <ArticleSection itemProp="articleBody">
+          <MDXRenderer>{body}</MDXRenderer>
+        </ArticleSection>
 
         <Section>
           <AuthorAside />
@@ -133,10 +132,10 @@ export const pageQuery = graphql`
     $previousPostId: String
     $nextPostId: String
   ) {
-    markdownRemark(id: { eq: $id }) {
+    mdx(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
-      html
+      body
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
@@ -151,7 +150,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    previous: markdownRemark(id: { eq: $previousPostId }) {
+    previous: mdx(id: { eq: $previousPostId }) {
       fields {
         slug
       }
@@ -159,7 +158,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    next: markdownRemark(id: { eq: $nextPostId }) {
+    next: mdx(id: { eq: $nextPostId }) {
       fields {
         slug
       }
