@@ -5,7 +5,7 @@ import Footer from '../components/Layout/Footer'
 import { Aside1, Label1 } from '../styles/Typography'
 import Logo from '../components/Layout/Logo'
 import PostList from '../components/PostList'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import DynamicCover from '../components/DynamicCover'
 
 const Main = styled.main`
@@ -42,7 +42,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Main>
-      <SEO title="Nicos Tsourektsidis" />
+      <Seo title="Nicos Tsourektsidis" />
       <DynamicCover
         visible={isCoverVisible}
         image={highlightedPost?.frontmatter?.cover?.childImageSharp?.fluid}

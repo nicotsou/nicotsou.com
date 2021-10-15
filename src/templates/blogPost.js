@@ -8,7 +8,7 @@ import Footer from '../components/Layout/Footer'
 import AuthorAside from '../components/Layout/AuthorAside'
 import styled, { css } from 'styled-components'
 import CodeHighlighter from '../styles/CodeHighlighter'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const Article = styled.article`
   margin-top: clamp(0.5rem, calc(100vh * 20 / 100), 9.5rem);
@@ -70,7 +70,7 @@ const BlogPostTemplate = ({ data, location }) => {
 
   return (
     <main>
-      <SEO title={title} image={cover.publicURL} description={description} />
+      <Seo title={title} image={cover.publicURL} description={description} />
       <Header />
       <CodeHighlighter />
       <Article
