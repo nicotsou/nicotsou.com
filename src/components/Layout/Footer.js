@@ -95,7 +95,7 @@ const Footer = ({ className }) => {
           </a>
         </li>
       </SocialList>
-      <Copyright>&copy; 2020 NT</Copyright>
+      <Copyright>&copy; 2020 - present NT</Copyright>
     </StyledFooter>
   )
 }
