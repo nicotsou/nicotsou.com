@@ -36,9 +36,8 @@ const IndexPage = ({ data }) => {
     setIsCoverVisible(!!post)
   }
 
-  const quote = data?.allMarkdownRemark?.nodes.find(
-    (node) => node?.frontmatter?.quote
-  )?.frontmatter?.quote
+  const quote = data?.allMdx?.nodes.find((node) => node?.frontmatter?.quote)
+    ?.frontmatter?.quote
 
   return (
     <Main>
@@ -67,7 +66,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
         frontmatter {
           quote
