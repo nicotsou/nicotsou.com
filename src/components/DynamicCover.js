@@ -40,7 +40,13 @@ const DynamicCover = ({ cover, visible }) => {
     <Transition in={visible} timeout={1000}>
       {(state) => (
         <BackgroundImage style={transitionStyles[state]}>
-          {coverImage && <GatsbyImage image={coverImage} />}
+          {coverImage && (
+            <GatsbyImage
+              alt="background image"
+              role="presentation"
+              image={coverImage}
+            />
+          )}
         </BackgroundImage>
       )}
     </Transition>
