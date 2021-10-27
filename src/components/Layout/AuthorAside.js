@@ -20,8 +20,11 @@ const StyledDivider = styled(Divider)`
 const Avatar = styled(GatsbyImage)`
   flex-shrink: 0;
   display: block;
-  border-radius: 100%;
   margin-right: 1rem;
+
+  img {
+    border-radius: 100%;
+  }
 `
 
 const StyledBody3 = styled(Body3)`
