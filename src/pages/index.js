@@ -45,7 +45,7 @@ const IndexPage = ({ data }) => {
       <Seo title="Nicos Tsourektsidis" />
       <DynamicCover
         visible={isCoverVisible}
-        image={highlightedPost?.frontmatter?.cover?.childImageSharp?.fluid}
+        cover={highlightedPost?.frontmatter?.cover}
       />
       <StyledLogo />
       <StyledAside1>{quote}</StyledAside1>
@@ -71,14 +71,6 @@ export const pageQuery = graphql`
       nodes {
         frontmatter {
           quote
-          cover {
-            publicURL
-            childImageSharp {
-              fluid(maxWidth: 1200) {
-                ...GatsbyImageSharpFluid_tracedSVG
-              }
-            }
-          }
         }
       }
     }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import Image from 'gatsby-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Header from '../components/Layout/Header'
 import { Body2, Heading1, Label2 } from '../styles/Typography'
 import BlogStyles from '../styles/BlogStyles'
@@ -23,11 +23,13 @@ const Cover = styled.section`
   margin: 2rem auto 4rem auto;
 `
 
-const StyledCoverImage = styled(Image)`
+const StyledCoverImage = styled(GatsbyImage)`
   transition: border-radius 0.3s linear;
 
   @media screen and (min-width: 1300px) {
-    border-radius: calc(2.3 * 1rem);
+    img {
+      border-radius: calc(2.3 * 1rem);
+    }
   }
 `
 
@@ -67,6 +69,7 @@ const BlogPostTemplate = ({ data, location }) => {
   const { html } = data?.markdownRemark
   const { title, date, description, cover } = data?.markdownRemark?.frontmatter
   const { previous, next } = data
+  const coverImage = getImage(cover)
 
   return (
     <main>
@@ -89,7 +92,7 @@ const BlogPostTemplate = ({ data, location }) => {
             alt={title}
             aria-hidden="true"
             style={{ width: '100%', minHeight: '67vh' }}
-            fluid={cover?.childImageSharp?.fluid}
+            image={coverImage}
           />
         </Cover>
 
@@ -144,9 +147,7 @@ export const pageQuery = graphql`
         cover {
           publicURL
           childImageSharp {
-            fluid(maxWidth: 1900) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
+            gatsbyImageData(width: 2300, placeholder: BLURRED)
           }
         }
       }

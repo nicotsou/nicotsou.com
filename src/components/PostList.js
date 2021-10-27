@@ -41,9 +41,7 @@ const PostList = ({ onLinkHover }) => {
             cover {
               publicURL
               childImageSharp {
-                fluid(maxWidth: 600) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(width: 1200, placeholder: BLURRED)
               }
             }
           }
