@@ -27,7 +27,9 @@ const StyledCoverImage = styled(GatsbyImage)`
   transition: border-radius 0.3s linear;
 
   @media screen and (min-width: 1300px) {
-    border-radius: calc(2.3 * 1rem);
+    img {
+      border-radius: calc(2.3 * 1rem);
+    }
   }
 `
 
