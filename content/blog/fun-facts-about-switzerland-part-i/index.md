@@ -148,7 +148,9 @@ This is me hang gliding above Interlaken.
 
 Hang gliding is the closest thing you can get to flying like a bird, and Interlaken is one of the best places in the world to do it!
 
-This is one of the moments you question your friendship with [panos.tech](http://panos.tech). After some days he texted me [this video](https://www.youtube.com/watch?v=dLBJA8SlH2w). Thankfully, he lives far away.
+This is one of the moments you question your friendship with [panos.tech](http://panos.tech). After some days he texted me the following video. Thankfully, he lives far away.
+
+<iframe width="100%" height="360" src="https://www.youtube.com/embed/dLBJA8SlH2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Well, I don't want this to discourage you. It really worths a try.
 
