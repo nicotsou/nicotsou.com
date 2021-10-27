@@ -70,7 +70,7 @@ export default function AuthorAside() {
       <StyledDivider />
       <Aside>
         <a href="https://twitter.com/nicotsou" target="_blank" rel="noreferrer">
-          <Avatar image={avatarImage} />
+          <Avatar alt="avatar" image={avatarImage} />
         </a>
         <div>
           <StyledBody3>
