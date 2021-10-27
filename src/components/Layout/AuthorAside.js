@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import Image from 'gatsby-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 import { Body3, Label3 } from '../../styles/Typography'
 import Divider from './Divider'
@@ -17,7 +17,7 @@ const StyledDivider = styled(Divider)`
   margin: 4rem 0 0 0;
 `
 
-const Avatar = styled(Image)`
+const Avatar = styled(GatsbyImage)`
   flex-shrink: 0;
   display: block;
   border-radius: 100%;
@@ -41,9 +41,7 @@ export default function AuthorAside() {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/avatar.jpg/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50, quality: 95) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(width: 100, placeholder: BLURRED)
         }
       }
       site {
@@ -63,7 +61,7 @@ export default function AuthorAside() {
     }
   `)
 
-  const avatar = data?.avatar?.childImageSharp?.fixed
+  const avatarImage = getImage(data?.avatar)
   const author = data?.site?.siteMetadata?.author?.name
   const summary = data?.site?.siteMetadata?.author?.summary
 
@@ -72,7 +70,7 @@ export default function AuthorAside() {
       <StyledDivider />
       <Aside>
         <a href="https://twitter.com/nicotsou" target="_blank" rel="noreferrer">
-          <Avatar fixed={avatar} />
+          <Avatar image={avatarImage} />
         </a>
         <div>
           <StyledBody3>
