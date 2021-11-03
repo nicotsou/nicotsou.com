@@ -9,7 +9,7 @@ What do we really mean in Switzerland when we talk about hot dogs? Which are the
 
 Yes, you guessed it right! This will be a food special.
 
-In case you missed my previous post, this is the second part with fun facts about Switzerland. It's pretty biased, not sophisticated whatsoever, and I will do my best to not include any stereotypes.
+In case you missed [my previous post](/fun-facts-about-switzerland-part-i/), this is the second part with fun facts about Switzerland. It's pretty biased, not sophisticated whatsoever, and I will do my best to not include any stereotypes.
 
 Cookie? 🍪
 
@@ -86,7 +86,7 @@ That's all folks. I have to go. Suddenly I am craving Bratwurst. Don't worry, I 
 
 I have more things to share with you. I am already preparing the third part, with more fascinating facts about Switzerland. So stay tuned. You know where you will find me.
 
-If you are living in Switzerland, don't hesitate to suggest your favorite fun facts. You can reply to this tweet.
+If you are living in Switzerland, don't hesitate to suggest your favorite fun facts. You can [reply to this tweet](https://twitter.com/nicotsou/status/1455967631081619460?s=21).
 
 Adieu 👋
 
