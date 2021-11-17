@@ -77,11 +77,11 @@ Now, you may ask, how you can manage to leave everything behind for such a long 
 
 Now I would like to open another big topic, which is the language.
 
-> Switzerland has 4 official languages: German, French, Italian and Romansh. It is common to find people that speak or at least being able to understand most of the languages.
+> Switzerland has 4 official languages; German, French, Italian and Romansh. It is common to find people that speak or at least being able to understand most of the languages.
 
 In Zurich people speak German (Deutsch). To be able to communicate with them it requires a lot of effort. You start by taking German classes. After some months, you feel empowered with your achievements. You can perfectly communicate with your teacher. Now it is time to practice your skills with locals, you think. What can possibly go wrong, right? Well, my friend, I'm afraid it's not gonna work.
 
-![Luzern is one of the most beautiful Swiss cities.](images/FF984DF2-FFDE-4106-AC8F-C185FEDD0797_1_105_c.jpeg)
+![Luzern is one of the most beautiful Swiss cities.](images/luzern-by-night.jpeg)
 _Luzern is one of the most beautiful Swiss cities._
 
 In Switzerland we speak Swiss German (Schwiizertüütsch). Don't be surprised if you don't understand a thing from what you hear in the streets, even if you you speak German fluently. You may want to spend some time to learn the dialect. But that's also not enough.
