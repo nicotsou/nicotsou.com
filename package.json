@@ -13,7 +13,6 @@
     "build": "gatsby build",
     "serve": "gatsby serve -H 0.0.0.0",
     "clean": "gatsby clean",
-    "deploy": "gatsby clean && gatsby build && gh-pages -d public",
     "upgrade-interactive": "yarn-check --update",
     "test": "jest --watch",
     "test:ci": "jest",

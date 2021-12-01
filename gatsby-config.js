@@ -27,13 +27,13 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-react-svg',
-    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: 'src/images/nt-icon.svg',
       },
     },
+    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
