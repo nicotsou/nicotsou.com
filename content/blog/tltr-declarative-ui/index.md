@@ -241,7 +241,7 @@ event => state update => render
 
 This unidirectional data flow help you build incredibly simple applications that are easy to test and maintain.
 
-## Last words
+## Remember this
 
 Your aim as a React developer is to write declarative code as much as you can. It’s like learning how to drive a supercar.
 
