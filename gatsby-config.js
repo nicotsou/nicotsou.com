@@ -16,11 +16,6 @@ module.exports = {
       github: `nicotsou`,
     },
   },
-  flags: {
-    PRESERVE_WEBPACK_CACHE: true,
-    PARALLEL_SOURCING: true,
-    PRESERVE_FILE_DOWNLOAD_CACHE: true,
-  },
   plugins: [
     'gatsby-plugin-styled-components',
     {
