@@ -41,9 +41,7 @@ const PostList = ({ onLinkHover }) => {
             cover {
               publicURL
               childImageSharp {
-                fluid(maxWidth: 600) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(width: 1200, placeholder: BLURRED)
               }
             }
           }
@@ -53,7 +51,7 @@ const PostList = ({ onLinkHover }) => {
   `)
 
   return (
-    <List role="navigation" onMouseLeave={() => onLinkHover(null)}>
+    <List onMouseLeave={() => onLinkHover(null)}>
       {data.allMarkdownRemark.nodes.map((node, index) => (
         <PostItem key={index}>
           <PostLink

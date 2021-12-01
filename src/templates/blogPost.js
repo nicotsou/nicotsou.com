@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import Image from 'gatsby-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Header from '../components/Layout/Header'
 import { Body2, Heading1, Label2 } from '../styles/Typography'
 import BlogStyles from '../styles/BlogStyles'
@@ -8,7 +8,7 @@ import Footer from '../components/Layout/Footer'
 import AuthorAside from '../components/Layout/AuthorAside'
 import styled, { css } from 'styled-components'
 import CodeHighlighter from '../styles/CodeHighlighter'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 
 const Article = styled.article`
   margin-top: clamp(0.5rem, calc(100vh * 20 / 100), 9.5rem);
@@ -21,6 +21,16 @@ const StyledHeading1 = styled(Heading1)`
 const Cover = styled.section`
   max-width: 1250px;
   margin: 2rem auto 4rem auto;
+`
+
+const StyledCoverImage = styled(GatsbyImage)`
+  transition: border-radius 0.3s linear;
+
+  @media screen and (min-width: 1300px) {
+    img {
+      border-radius: calc(2.3 * 1rem);
+    }
+  }
 `
 
 const SuggestedArticles = styled.ul`
@@ -59,10 +69,11 @@ const BlogPostTemplate = ({ data, location }) => {
   const { html } = data?.markdownRemark
   const { title, date, description, cover } = data?.markdownRemark?.frontmatter
   const { previous, next } = data
+  const coverImage = getImage(cover)
 
   return (
     <main>
-      <SEO title={title} image={cover.publicURL} description={description} />
+      <Seo title={title} image={cover.publicURL} description={description} />
       <Header />
       <CodeHighlighter />
       <Article
@@ -77,11 +88,11 @@ const BlogPostTemplate = ({ data, location }) => {
           </header>
         </Section>
         <Cover>
-          <Image
+          <StyledCoverImage
             alt={title}
             aria-hidden="true"
             style={{ width: '100%', minHeight: '67vh' }}
-            fluid={cover?.childImageSharp?.fluid}
+            image={coverImage}
           />
         </Cover>
 
@@ -136,9 +147,7 @@ export const pageQuery = graphql`
         cover {
           publicURL
           childImageSharp {
-            fluid(maxWidth: 1900) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
+            gatsbyImageData(width: 2300, placeholder: BLURRED)
           }
         }
       }

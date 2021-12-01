@@ -1,5 +1,5 @@
 import React from 'react'
-import Img from 'gatsby-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 import { Transition } from 'react-transition-group'
 
@@ -34,12 +34,19 @@ const transitionStyles = {
   exited: { opacity: 0, backgroundColor: 'red' },
 }
 
-const DynamicCover = ({ image, visible }) => {
+const DynamicCover = ({ cover, visible }) => {
+  const coverImage = getImage(cover)
   return (
     <Transition in={visible} timeout={1000}>
       {(state) => (
         <BackgroundImage style={transitionStyles[state]}>
-          {image && <Img fluid={image} />}
+          {coverImage && (
+            <GatsbyImage
+              alt="background image"
+              role="presentation"
+              image={coverImage}
+            />
+          )}
         </BackgroundImage>
       )}
     </Transition>
