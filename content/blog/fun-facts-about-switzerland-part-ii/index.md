@@ -46,7 +46,7 @@ One of the most traditional Swiss delights is [Fondue](https://en.wikipedia.org/
 
 But be careful. They do smell a lot. I haven't been on sports that much in my life, but I can tell you that my socks after a long workout don't even compare to that smell. We always have to come up with a practical solution in order to cover the smell when we're inviting friends home to enjoy some cheese.
 
-My least favorite Swiss desert is called "Gipfeli". It looks a lot like a croissant. But it's not! I think the people who brought the first croissant from Austria forgot to put butter, sugar and make it crispy. It's a terrible disappointment when you are craving something sweet.
+My least favorite Swiss desert is called "Gipfeli". It looks a lot like a croissant. But it's not! I think the people who brought the first croissant from France forgot to put butter, sugar and make it crispy. It's a terrible disappointment when you are craving something sweet.
 
 ![Untitled](images/sausages.png)
 
