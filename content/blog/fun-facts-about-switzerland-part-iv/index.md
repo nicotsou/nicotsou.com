@@ -76,7 +76,7 @@ Finding an apartment can be very hard, especially in big cities. There was recen
 
 To rent an apartment, you need to prepare yourself for a fair amount of paperwork. After viewing the apartment, you will receive the official application form, which contains a lot of nice checkboxes like if you have any pets, if you play a music instrument or if you are a programmer. No, I'm kidding they don't ask you that, they get this information from the papers you are providing to them. Which papers?
 
-So, to get an apartment you have to provide them with your CV, a confirmation from the local authority that you don't own any money (check the previous section), a motivation letter with how much you want to rent this apartment, and some references. Yes, they call your boss to confirm that you are working, your neighbors to confirm you are not an annoying person, and of course, your current landlord, to check if you follow the rules as you're supposed to.
+So, to get an apartment you have to provide them with your CV, a confirmation from the local authority that you don't owe any money (check the previous section), a motivation letter with how much you want to rent this apartment, and some references. Yes, they call your boss to confirm that you are working, your neighbors to confirm you are not an annoying person, and of course, your current landlord, to check if you follow the rules as you're supposed to.
 
 > It kinda feels like this episode of Black Mirror, where people can rate each other from one to five stars for every interaction they have, which can impact their socioeconomic status.
 
