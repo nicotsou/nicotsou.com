@@ -5,7 +5,7 @@ description: TypeScript is a superset of JavaScript. All existing features of JS
 cover: './cover.jpg'
 ---
 
-> TypeScript adds support for _strongly typed programming_ in your JavaScript applications. It's tightly integrated with your text editor, to help you catch your errors early.
+> TypeScript adds support for _strongly typed programming_ in your JavaScript applications. It's tightly integrated with your text editor, to help you catch any errors early.
 
 TypeScript is a superset of JavaScript. All existing features of JS are already supported, but it adds syntax, which helps you build much more structured applications.
 
@@ -72,7 +72,7 @@ I love JavaScript. It runs anywhere, it doesn't limit you from coding anything y
 
 It didn’t create a good first impression on me, though. When I first started writing scripts in JavaScript, I really hated the language. You see, JavaScript hides a set of weird quirks, that can cost you a lot of time, if you are not familiar with them.
 
-> But what is wrong with JavaScript, you may ask.
+But what is wrong with JavaScript, you may ask.
 
 Well, the truth is, JavaScript was never designed to support the complexity of modern applications. It was designed back then when we were surfing the web using these ancient dial-up modems that were making [a characteristic noise](https://www.youtube.com/watch?v=gsNaR6FRuO0). It wasn't designed to write advanced applications like GMail, Netflix, Spotify and many more.
 
@@ -90,7 +90,7 @@ On top of that, the development experience is day and night. Your text editor si
 
 Photo Credit: [Lorenzo Herrera](https://unsplash.com/photos/p0j-mE6mGo4)
 
-> There were multiple attempts in its history to _fix_ JavaScript. In fact, today you will find more than 50 programming languages that compile to JavaScript.
+> There were multiple attempts in its history to _fix_ JavaScript.
 
 From the ancient ActionScript, CoffeeScript, ClosureScript and Elm, to the most recent ones Reason ML, Dart, LiveScript and many more. These languages provide a better developer experience and they are strongly typed. Some of them are object-oriented. Others are functional. At the end, the goal is the same. You write your apps in a higher level language that compiles to JavaScript.
 
@@ -189,7 +189,7 @@ TypeScript doesn't stop there.
 
 I can specifically set the types of my properties, without even setting an initial value. What if I had a `class` of music tracks:
 
-```tsx
+```typescript
 class Track {
   title: string
   artist: string
@@ -266,17 +266,19 @@ For the sake of this demonstration, we can enhance our `Track` class, that we me
 
 ```typescript
 class Track {
-  title: string;
-  artist: string;
-  album: string;
-  length: number;
+  title: string
+  artist: string
+  album: string
+  length: number
 
-  **constructor(title: string, artist: string, album: string, length: number) {
-    this.title = title;
-    this.artist = artist;
-    this.album = album;
-    this.length = length;
-  }**
+  // highlight-start
+  constructor(title: string, artist: string, album: string, length: number) {
+    this.title = title
+    this.artist = artist
+    this.album = album
+    this.length = length
+  }
+  // highlight-end
 }
 ```
 
@@ -299,7 +301,7 @@ tsc index.ts
 
 Now, take a look at the directory the file is located. You will notice that the TypeScript compiler has generated a new file called `index.js`. The output depends on the compiler configuration file. Here are the contents I got when I ran it:
 
-```typescript
+```js
 var Track = /** @class */ (function () {
   function Track(title, artist, album, length) {
     this.title = title
@@ -321,7 +323,7 @@ The code is quite similar to the one we had in the `index.ts` file. You will not
 
 That's due to the limitation JavaScript has for classes. Although it has been added in recent versions of EcmaScript, some of the browsers that are still used on production are still in a previous version.
 
-I'm talking about you, Internet Explorer.
+_I'm talking about you, Internet Explorer._
 
 If you are writing a backend application, you can try to run this example via node:
 
@@ -336,9 +338,9 @@ If you are targeting a client-based app, the `index.js` file is the one you are 
 ```html
 <!DOCTYPE html>
 <html>
-  **
+  // highlight-start
   <script type="text/javascript" src="./index.js"></script>
-  **
+  // highlight-end
 </html>
 <body>
   ...
