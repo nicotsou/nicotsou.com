@@ -5,11 +5,11 @@ description: In this article, we will discover what options JS provides for decl
 cover: './cover.jpg'
 ---
 
-Javascript has some powerful features for **functional programming**. At least a light version of it. 
+Javascript has some powerful features for **functional programming**. At least a light version of it.
 
 In this article, we will discover what options JS provides for declaring and consuming functions and we find out how to guard them with TypeScript types.
 
-This article belongs to my series Too Long To Read TypeScript. Every article covers in detail a core concept of the language. 
+This article belongs to my series Too Long To Read TypeScript. Every article covers in detail a core concept of the language.
 
 Cake? 🍰
 
@@ -19,7 +19,7 @@ You're probably familiar with the simple **function declaration**, which uses th
 
 ```jsx
 function add(a, b) {
-	return a + b;
+  return a + b
 }
 ```
 
@@ -28,7 +28,7 @@ The variables `a` and `b` are called **parameters**, when the signature of the f
 Another way, is to assign a function to a variable, or to an object property. This is called a **function expression**:
 
 ```jsx
-const fn = add;
+const fn = add
 fn(1, 3) // returns 4
 ```
 
@@ -48,13 +48,13 @@ Another way you can create a function is on the fly:
 
 ```tsx
 setTimeout(function() {
-	alert('Subscribe to my channel!').
+  alert('Subscribe to my channel!').
 }, 1000);
 ```
 
 These functions don't have a name, and thus we call them **anonymous function expressions**.
 
-Ah, yes! Consider adding names to your functions as much as you can. It helps with easier debugging. It also enables recursion, since there is no way for anonymous functions to refer to themselves. 
+Ah, yes! Consider adding names to your functions as much as you can. It helps with easier debugging. It also enables recursion, since there is no way for anonymous functions to refer to themselves.
 
 ## Adding type annotations with TypeScript
 
@@ -71,7 +71,7 @@ type Track = {
 }
 
 function getTrackTitles(tracks**: Track[]**)**:string[]** {
-	return 2; // Type error, the return value must be an array of strings
+  return 2; // Type error, the return value must be an array of strings
 }
 ```
 
@@ -85,10 +85,10 @@ We can define **optional parameters**:
 
 ```tsx
 type Track = {
-	title: string;
-  artist: string;
+  title: string
+  artist: string
   // highlight-start
-  isFavorite?: boolean;
+  isFavorite?: boolean
   // highlight-end
 }
 
@@ -103,13 +103,13 @@ function createTrack(
     title,
     artist,
     isFavorite,
-  };
+  }
 }
 ```
 
 Here the argument `isFavorite` is optional. We can call the function with or without this parameter.
 
-Optional parameters *cannot* be set for arguments when they have a default value:
+Optional parameters _cannot_ be set for arguments when they have a default value:
 
 ```tsx
 // this will not work
@@ -124,7 +124,7 @@ function createTrack(
     title,
     artist,
     isFavorite,
-  };
+  }
 }
 ```
 
@@ -146,7 +146,7 @@ function createTrack(
     title,
     artist,
     isFavorite,
-  };
+  }
 }
 ```
 
@@ -160,12 +160,12 @@ In the latest versions of JavaScript, we have the option to define **default fun
 
 ```jsx
 function add(a, b) {
-	return a + b;
+  return a + b;
 }
 add(); // returns NaN, when no value is passed
 
 function addWithDefaultValues(**a = 0, b = 0**) {
-	return a + b;
+  return a + b;
 }
 addWithDefaultValues(); // returns 0 when no arguments passed
 ```
@@ -178,7 +178,7 @@ Now let's see how type definition can work together with default values:
 
 ```tsx
 function add(a: number = 0, b: number = 0): number {
-	return a + b;
+  return a + b;
 ```
 
 ### void
@@ -187,11 +187,11 @@ If a function doesn't return anything, we can use they type `void`:
 
 ```tsx
 function annoyUsers()**: void** {
-	alert('Subscribe to my channel!').
+  alert('Subscribe to my channel!').
 }
 ```
 
-It is recommended to *always* provide a return value to your functions.
+It is recommended to _always_ provide a return value to your functions.
 
 ![gamepad.jpeg](images/gamepad.jpeg)
 
@@ -201,30 +201,30 @@ Another way to create an anonymous function is to use an **arrow function**:
 
 ```jsx
 const multiplyBy2 = (number) => {
-	return number * 2;
-};
+  return number * 2
+}
 
-[1, 2, 3, 4].map(multiplyBy2);
+[1, 2, 3, 4].map(multiplyBy2)
 ```
 
 As you can see the syntax is simpler and they end up taking much less space. But you can make it even shorter. Here are all the acceptable forms of arrow functions:
 
 ```jsx
 // Without arguments
-const sayHello = () => { 
-	return alert('hello') 
-};
+const sayHello = () => {
+  return alert('hello')
+}
 
 // With only one argument
-const sayHello = (name) => { 
-	return alert(`hello ${name}`) 
-};
+const sayHello = (name) => {
+  return alert(`hello ${name}`)
+}
 
 // Without return value
-const sayHello = (name) => alert(`hello ${name}`);
+const sayHello = (name) => alert(`hello ${name}`)
 
 // Returning an object
-const makeObject = (name) => ({ name }); 
+const makeObject = (name) => ({ name })
 ```
 
 ### Adding types to arrow functions
@@ -232,7 +232,7 @@ const makeObject = (name) => ({ name });
 And here's how we can define types for our arrow functions:
 
 ```jsx
-const add = (a: number, b: number): number => a + b;
+const add = (a: number, b: number): number => a + b
 ```
 
 Type annotations can also take the form of an arrow function, to indicate the signature of a function, with the given types for parameters and the return value. This works great with callbacks:
@@ -249,10 +249,10 @@ This is a function that calculates a given array of numbers, by using the provid
 
 ```tsx
 function randomFn() {
-  return "no clue what I'm doing";
+  return "no clue what I'm doing"
 }
 
-calculate([1, 2, 3, 4], randomFn); // type error, that's not my type of fn
+calculate([1, 2, 3, 4], randomFn) // type error, that's not my type of fn
 ```
 
 Here, `randomFn()` doesn't accept 2 numbers as arguments and it doesn't return a number. Therefore, this will not compile:
@@ -273,26 +273,26 @@ Arrow functions are widely used in modern applications. There are some fundament
 
 ## Hoisting
 
-JavaScript has a feature called **hoisting**. This allows us to use functions or variables before their actual declaration. 
+JavaScript has a feature called **hoisting**. This allows us to use functions or variables before their actual declaration.
 
-Check the example below. It will compile successfully in JS, and the function declarations will be automatically moved to the top of your file. 
+Check the example below. It will compile successfully in JS, and the function declarations will be automatically moved to the top of your file.
 
 ```jsx
-add(2,3) // returns 5
+add(2, 3) // returns 5
 
 function add(a, b) {
-	return a + b;
+  return a + b
 }
 ```
 
 Hoisting was very useful back in the days where scripts were randomly referenced within a HTML document, by making the scripting language easier to use. Nowadays, hoisting is yet another weird feature of JavaScript, you should be familiar with. Thankfully, there is a way to protect yourself from unwanted behavior.
 
-Arrow functions are *not* hoisted, similar to any other declaration that uses the `const` and `let` keywords:
+Arrow functions are _not_ hoisted, similar to any other declaration that uses the `const` and `let` keywords:
 
 ```jsx
-add(2,3) // we will get an error that the function is not declared yet
+add(2, 3) // we will get an error that the function is not declared yet
 
-const add = (a, b) => a + b;
+const add = (a, b) => a + b
 ```
 
 ## Function overloading
@@ -301,19 +301,19 @@ Many languages, like C#, or Java, allow multiple implementations of the same fun
 
 TypeScript adds support for **function overloading**. This allows you to have multiple functions with the same name within the same scope, but with a different set of arguments.
 
-The syntax differs from what you have used to see in other languages. At first, you need to define the *overload signatures*, which are function declarations without a body, and then to provide a function with the implementation:
+The syntax differs from what you have used to see in other languages. At first, you need to define the _overload signatures_, which are function declarations without a body, and then to provide a function with the implementation:
 
 ```tsx
 // overload signatures
-function search(title: string);
-function search(id: number);
+function search(title: string)
+function search(id: number)
 // actual implementation
 function search(nameOrId: string | number) {
   if (typeof nameOrId === 'number') {
-    console.log('searching by id');
+    console.log('searching by id')
   }
   if (typeof nameOrId === 'string') {
-    console.log('searching by name');
+    console.log('searching by name')
   }
 }
 ```
@@ -332,13 +332,13 @@ Are you ready for more? In this section I am listing some additional types that 
 
 ### object
 
-We discovered in a previous article the available types of JS. There, we also talked about *primitive* and *reference types*.
+We discovered in a previous article the available types of JS. There, we also talked about _primitive_ and _reference types_.
 
 If you are sure that a function always returns an object, but it can be a different object structure, you can use the special type `object`:
 
 ```tsx
 function makeObject(str: string): **object** {
-	return { str };
+  return { str };
 }
 ```
 
@@ -355,12 +355,12 @@ Here's a simple example that illustrates the difference between `any` and `unkno
 ```tsx
 // using any
 function play(file: any) {
-  file.play(); // works fine
+  file.play() // works fine
 }
 
 // using unknown
 function play(file: unknown) {
-  file.play(); // nope, name may not be 
+  file.play() // nope, name may not be
 }
 ```
 
@@ -372,18 +372,18 @@ With the `unknown` keyword we can also guard our arguments:
 
 ```tsx
 class ServerErrorResponse {
-  title: string;
+  title: string
 }
 
 // highlight-start
 function parseErrorResponse(response: unknown): string {
-// highlight-end
+  // highlight-end
   if (response instanceof ServerErrorResponse) {
-    return response.title;
+    return response.title
   }
 
   if (typeof response === 'string') {
-    return response;
+    return response
   }
 }
 ```
@@ -399,12 +399,12 @@ For the same purposes, TypeScript also provides a special keyword `Function` whi
 ```tsx
 // highlight-start
 function calculate(values: number[], fn: Function) {
-// highlight-end
-  values.reduce((previous, current) => fn(previous, current), 0);
+  // highlight-end
+  values.reduce((previous, current) => fn(previous, current), 0)
 }
 ```
 
-It is considered a good practice *not* to use the `Function` keyword over the technique we've learned in the previous sections, which uses an arrow function syntax to describe the signature of the function. It may be useful, when you are accepting multiple function signatures.
+It is considered a good practice _not_ to use the `Function` keyword over the technique we've learned in the previous sections, which uses an arrow function syntax to describe the signature of the function. It may be useful, when you are accepting multiple function signatures.
 
 Also, this can be confused with the `function` keyword that JS provides. Remember, the type is using a capital F.
 
@@ -415,11 +415,9 @@ Finally, in cases when we know that a function never returns a value, we can use
 ```tsx
 // highlight-start
 function throwError(message: string): never {
-// highlight-end
-	throw new Error(message);
+  // highlight-end
+  throw new Error(message)
 }
 ```
 
----
-
-Cover Credit: [Rodion Kutsaev](https://unsplash.com/photos/0d2zObuClQI)
+Cover Image Credit: [Rodion Kutsaev](https://unsplash.com/photos/0d2zObuClQI)
