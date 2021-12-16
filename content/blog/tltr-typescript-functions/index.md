@@ -1,5 +1,5 @@
 ---
-title: TLTR; TypeScript Functions
+title: Master Functions In Typescript
 date: '2021-12-16T22:12:00.000Z'
 description: In this article, we will discover what options JS provides for declaring and consuming functions and we find out how to guard them with TypeScript types.
 cover: './cover.jpg'
