@@ -44,7 +44,7 @@ export default function AuthorAside() {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/avatar.jpg/" }) {
         childImageSharp {
-          gatsbyImageData(width: 100, placeholder: BLURRED)
+          gatsbyImageData(width: 100, placeholder: BLURRED, quality: 95)
         }
       }
       site {
