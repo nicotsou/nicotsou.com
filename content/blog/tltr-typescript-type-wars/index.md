@@ -5,13 +5,11 @@ description: In this article, we will review and compare side-by-side the three 
 cover: './cover.jpg'
 ---
 
-In previous articles, we’ve seen that TypeScript is a superset of JavaScript, that adds strict type support and a better developer experience.
+In previous articles, we’ve seen that TypeScript is a superset of JavaScript, that adds strict type support and a better developer experience. We discovered [type aliases](/tltr-typescript-types), [classes](/tltr-typescript-classes) and [interfaces](/tltr-typescript-interfaces). Pretty cool stuff!
 
-Some of us, including the author of this blog, are pretty skeptical about choosing which of these types to use under which circumstances. Failing to do so, will increase confusion in your team and potentially will make your code hard to follow.
+Some of us, including the author of this blog, are pretty skeptical about choosing which of these types to use under certain circumstances. Failing to do so, will increase confusion in the team and potentially will make the code harder to follow. The most difficult to pick is how to define the structure of an object. We can either use a `class`, an `interface`, or even a plain `type` alias. There are some subtle differences between these three keywords. 
 
-The most difficult to pick is how to define the structure of an object. We can either use a `class`, an `interface`, or even a plain `type` alias. There are some subtle differences between these three keywords. In this article, I am reviewing their syntax, and comparing them side-by-side.
-
-I hope after reading the following paragraphs, you will feel more confident choosing the right type keywords in your projects.
+Well, not anymore! In this article, we will review their syntax and we will compare them side-by-side. Once and forever. I hope after reading the following paragraphs, you will feel more confident choosing the right type keywords in your projects, without any hesitation.
 
 Coconut? 🥥
 
