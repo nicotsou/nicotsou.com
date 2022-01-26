@@ -5,20 +5,18 @@ description: Understanding generics will help you read most of the TypeScript co
 cover: './cover.png'
 ---
 
-TypeScript can speed up our JavaScript projects. Its type system can show you errors right within your text editor. This can be cool most of the time, due to the fact that we can react faster when there are potential errors and spend less time on bug fixing and debugging. 
+TypeScript can speed up our JavaScript projects. Its type system can show you errors right within your text editor. This can be cool most of the time. By spotting errors faster, you spend less time on debugging and bug fixing. 
 
-It can also become a bottleneck. Due to the fact that JavaScript is a dynamic language and not strongly typed, sometimes it’s quite hard to express ourselves in a strongly typed environment, which enforces a lot of rules that previously were absent. 
+Type checking can also cause frustration. In fact, sometimes it’s quite hard to deal with types. Since there were no types around, JavaScript developers got used to writing flexible code that covered a lot of use cases. A function that accepts all kinds of objects. A class that can be applied to multiple types. The situation becomes worse when you have to support legacy JavaScript code.
 
-Since there were no types around, JavaScript developers got used to writing flexible code that covered a lot of use cases. A function that accepts all kinds of objects. A class that can be applied to multiple types. The situation gets a bit more cumbersome, when you have existing code that you have to port to TypeScript.
+Don’t get me wrong. Most of the time, having code that handles multiple types is convenient and totally legal. But how can we set boundaries?
 
-Don’t get me wrong. I’m not blaming this type of coding. Most of the times, it is perfectly legal. But there are times things can go very badly. You need to be able to set boundaries. To eliminate this flexibility, when it doesn’t make any sense.
-
-Moreover, there are cases that TypeScript is very demanding. You are not focusing on your product and its business logic, but instead you are writing unnecessary code, just to satisfy its type system.
+Moreover, there are cases that TypeScript becomes very demanding. Focusing on your product and its business logic becomes the hardest thing in the world. Instead, you are writing unnecessary code just to satisfy its type system.
 
 > If you spent a day in your life just trying to get rid of a type mismatch, that you don't even understand where it came from, you are not alone!
 > 
 
-Thankfully, TypeScript provides a solution to this problem and in this post I would like to present it to you.
+Thankfully, TypeScript provides a solution to this problem. It has support for generic types. This unlocks a ton of possibilities. Some people think this is the way to write code for your types. In the following paragraphs, we will learn what problem generics solve, their syntax, and how you can use them practically in your code.
 
 This article belongs to my series Too Long To Read TypeScript. Every article covers in detail a core concept of the language. I am also producing a [free YouTube course](https://www.youtube.com/watch?v=D_0KI6SePcA&list=PL73mkIDIrfyPKjkJ1V151lcgGEDHs3tgG).
 
