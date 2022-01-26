@@ -231,7 +231,9 @@ interface WithId {
 And here’s how to combine it with our generic type:
 
 ```tsx
-class Playlist<T **extends WithId**> {
+// highlight-start
+class Playlist<T extends WithId> {
+// highlight-end
   public items: T[] = [];
 
   addToPlaylist(newItem: T): void {
