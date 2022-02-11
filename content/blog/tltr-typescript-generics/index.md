@@ -351,6 +351,4 @@ You will witness one of the built-in type definitions that TypeScript already pr
 
 I would encourage you to spend some time reading type definition files. They will help you understand how to use generics in your code. They can act as a good practice to apply what you’ve learned. You can also take ideas about challenging topics and see how other developers have overcome them.
 
----
-
-Cover Credit: [Shubham Dhage](https://unsplash.com/photos/PACWvLRNzj8)
+Cover Photo Credit: [Shubham Dhage](https://unsplash.com/photos/PACWvLRNzj8)
