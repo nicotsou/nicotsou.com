@@ -70,7 +70,9 @@ type Track = {
   isFavorite: boolean;
 }
 
-function getTrackTitles(tracks**: Track[]**)**:string[]** {
+// highlight-start
+function getTrackTitles(tracks: Track[]): string[] {
+// highlight-end
   return 2; // Type error, the return value must be an array of strings
 }
 ```
@@ -164,7 +166,9 @@ function add(a, b) {
 }
 add(); // returns NaN, when no value is passed
 
-function addWithDefaultValues(**a = 0, b = 0**) {
+// highlight-start
+function addWithDefaultValues(a = 0, b = 0) {
+// highlight-end
   return a + b;
 }
 addWithDefaultValues(); // returns 0 when no arguments passed
@@ -186,7 +190,9 @@ function add(a: number = 0, b: number = 0): number {
 If a function doesn't return anything, we can use they type `void`:
 
 ```tsx
-function annoyUsers()**: void** {
+// highlight-start
+function annoyUsers(): void {
+// highlight-end
   alert('Subscribe to my channel!').
 }
 ```
@@ -238,7 +244,9 @@ const add = (a: number, b: number): number => a + b
 Type annotations can also take the form of an arrow function, to indicate the signature of a function, with the given types for parameters and the return value. This works great with callbacks:
 
 ```tsx
-function calculate(values: number[], fn: **(a: number, b: number) => number**) {
+// highlight-start
+function calculate(values: number[], fn: (a: number, b: number) => number) {
+// highlight-end
   values.reduce((previous, current) => fn(previous, current), 0);
 }
 
@@ -337,7 +345,9 @@ We discovered in a previous article the available types of JS. There, we also ta
 If you are sure that a function always returns an object, but it can be a different object structure, you can use the special type `object`:
 
 ```tsx
-function makeObject(str: string): **object** {
+// highlight-start
+function makeObject(str: string): object {
+// highlight-end
   return { str };
 }
 ```
