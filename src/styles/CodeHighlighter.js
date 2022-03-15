@@ -24,7 +24,10 @@ const CodeHighlighter = createGlobalStyle`
   }
 
   /*.namespace {} */
-  .token.comment,
+  .token.comment {
+    opacity: 0.4;
+  }
+
   .token.prolog,
   .token.doctype,
   .token.cdata {
@@ -56,10 +59,14 @@ const CodeHighlighter = createGlobalStyle`
     opacity: 0.5;
   }
   .token.atrule,
-  .token.attr-value,
-  .token.keyword {
+  .token.attr-value {
     opacity: 0.8;
   }
+
+  .token.keyword {
+    opacity: 0.9;
+  }
+
   .token.function {
     opacity: 0.65;
   }
