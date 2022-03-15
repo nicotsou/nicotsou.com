@@ -1,7 +1,7 @@
 ---
 title: Master Type Narrowing In Typescript
 date: '2022-03-15T22:12:00.000Z'
-description: Understanding generics will help you read most of the TypeScript code that was ever written.
+description: How do we narrow down a type to more specific ones? Everything you need to know.
 cover: './cover.png'
 ---
 
