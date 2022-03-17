@@ -17,11 +17,11 @@ Consider the following JavaScript function `getWidth()`:
 
 ```tsx
 function getWidth(width?: string | number) {
-  if (typeof width === 'string') {
-    return width
+  if (typeof width === 'number') {
+    return `${width}px`;
   }
 
-  return `${width}px`
+  return width;
 }
 ```
 
@@ -29,10 +29,10 @@ This basically returns values for the css `width` property. The logic is the fol
 
 ```tsx
 // number values get the suffix px:
-getWidth(100) // '100px'
+getWidth(100)  // '100px'
 // string values get no suffix:
-getWidth('100%') // '100%'
-getWidth('auto') // 'auto'
+getWidth('100%')  // '100%'
+getWidth('auto')  // 'auto'
 ```
 
 Can you guess what the type of the argument `width` is in every single line of the code above? Do you think this code will work as expected?
@@ -43,36 +43,37 @@ Chocolate? 🍫
 
 ## The Control Flow Analysis of TypeScript
 
-To solve the mystery, let’s fire up our favorite TypeScript text editor and paste the challenge there. Try to hover over the `width` argument in every single line. As you do that, you will notice that TypeScript will give you a special union type with all the types.
+To solve the mystery, let’s fire up our favorite TypeScript text editor and paste the challenge there. Try to hover over the `width` argument in every single line. As you do that, you will notice that TypeScript will give you a special union type with all the  types.
 
 Here’s what we have:
 
 ```jsx
 function getWidth(width?: string | number) {
-  if (typeof width === 'string') {
-    // string | number | undefined
-    return width // string
+  if (typeof width === 'number') {  // string | number | undefined
+    return `${width}px`;  // number
   }
-  return `${width}px` // number | undefined
+
+  return width;  // string | undefined
 }
 ```
 
-Notice that within the `if` block, the type of the argument `width` is a string. That’s logical, since we are checking it with an `if` conditional. But how does TypeScript know what it will be? Has it compiled the code already?
+Notice that within the `if` block, the type of the argument `width` is a number. That’s logical, since we are checking if the `width` parameter is a number within the `if` conditional. But how does TypeScript know what it will be? Has it compiled the code already? 
 
 It turns out that it does. 😏
 
 > TypeScript evaluates your code at compilation time, to detect how the type of a value changes at any given position.
+> 
 
 Combine this with type inference and you get pretty sophisticated error detections.
 
-Now, back to our example. If we hover over the `width` argument in the last `return` statement, we will see that the possible values are `number | undefined`. That’s logical, because if the `width` argument is _indeed_ a string, the execution will stop right inside the `if` block and our function will return the `width` as it is. TypeScript understands that, and removes the `string` type from the union. But what about the `undefined`? Will this be a problem?
+Now, back to our example. If we hover over the `width` argument in the last `return` statement, we will see that the possible values are `string | undefined`. That’s logical, because if the `width` argument was a number, the execution would have stopped right inside the `if` block. TypeScript understands that, and removes the `string` type from the union. But what about the `undefined`? Will this be a problem?
 
 Oops, I did it again! 😬
 
 Of course, `width` can be `undefined`, because it’s an optional parameter. This means that you will not get the best results if you call this function with no arguments:
 
 ```tsx
-getWidth() // returns 'undefinedpx'
+getWidth();  // returns 'undefinedpx'
 ```
 
 With the help of TypeScript, we know that our function needs some refactoring:
@@ -80,14 +81,14 @@ With the help of TypeScript, we know that our function needs some refactoring:
 ```tsx
 function getWidth(width?: string | number) {
   if (typeof width === 'number') {
-    return `${width}px`
+    return `${width}px`;
   }
 
-  return width || 'auto'
+  return width || 'auto';
 }
 ```
 
-Now, no matter what, the function will always return a value or it will default to `auto`. TypeScript helped me identify the bug here.
+Now, no matter what, the function will always return a value or it will default to `auto`. TypeScript helped me identify the bug here. 
 
 Now, you may be wondering, do I need to hover over my types and check all these things? Why didn’t TypeScript complain about this? 😒
 
@@ -96,10 +97,10 @@ I could have prevented this from happening, if I had specified a type for the re
 ```tsx
 function getWidth(width?: string | number): string {
   if (typeof width === 'number') {
-    return `${width}px`
+    return `${width}px`;
   }
 
-  return width // Error: Type undefined is not assignable to type string
+  return width;  // Error: Type undefined is not assignable to type string
 }
 ```
 
