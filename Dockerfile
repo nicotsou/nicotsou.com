@@ -1,5 +1,5 @@
 # Production build and serve
-FROM node:15
+FROM node:16
 WORKDIR '/app'
 COPY package.json yarn.lock .
 RUN yarn --pure-lockfile
