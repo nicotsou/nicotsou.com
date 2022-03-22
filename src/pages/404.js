@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { useState } from 'react'
 import { graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 import Footer from '../components/Layout/Footer'
@@ -6,6 +6,7 @@ import { Aside1, Label1 } from '../styles/Typography'
 import Logo from '../components/Layout/Logo'
 import PostList from '../components/PostList'
 import Seo from '../components/seo'
+import DynamicCover from '../components/DynamicCover'
 
 const Main = styled.main`
   margin: 0 auto;
@@ -30,9 +31,21 @@ const StyledLabel1 = styled(Label1)`
 `
 
 const NotFoundPage = ({ data }) => {
+  const [highlightedPost, setHighlightedPost] = React.useState(null)
+  const [isCoverVisible, setIsCoverVisible] = useState(false)
+
+  const handlePostHover = (post) => {
+    post && setHighlightedPost(post)
+    setIsCoverVisible(!!post)
+  }
+
   return (
     <Main>
       <Seo title="404: Not Found" />
+      <DynamicCover
+        visible={isCoverVisible}
+        cover={highlightedPost?.frontmatter?.cover}
+      />
       <Link to="/">
         <StyledLogo />
       </Link>
@@ -43,7 +56,7 @@ const NotFoundPage = ({ data }) => {
       <StyledLabel1 as="h1">
         The page you're looking for must be somewhere below.
       </StyledLabel1>
-      <PostList />
+      <PostList onLinkHover={handlePostHover} />
       <Footer />
     </Main>
   )
