@@ -48,9 +48,9 @@ const IndexPage = ({ data }) => {
         cover={highlightedPost?.frontmatter?.cover}
       />
       <StyledLogo />
-      <StyledAside1>Nicos Tsourektsidis</StyledAside1>
+      <StyledAside1>{quote}</StyledAside1>
       <StyledLabel1 as="h1">
-        Front-end developer. Based in Zurich, CH
+        Nicos Tsourektsidis, Front-end developer. Based in Zurich, CH
       </StyledLabel1>
       <PostList onLinkHover={handlePostHover} />
       <Footer />
