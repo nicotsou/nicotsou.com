@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'http://www.nicotsou.com',
-    title: 'NT',
+    title: 'Nicotsou',
     defaultTitle: 'Nicos Tsourektsidis',
     defaultDescription: 'Front-end developer. Based in Zurich, CH',
     defaultImage: '/avatar.jpg',
