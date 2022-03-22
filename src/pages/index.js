@@ -25,6 +25,9 @@ const StyledAside1 = styled(Aside1)`
 
 const StyledLabel1 = styled(Label1)`
   margin-top: 0.55rem;
+  > span {
+    white-space: nowrap;
+  }
 `
 
 const IndexPage = ({ data }) => {
@@ -50,7 +53,8 @@ const IndexPage = ({ data }) => {
       <StyledLogo />
       <StyledAside1>{quote}</StyledAside1>
       <StyledLabel1 as="h1">
-        Nicos Tsourektsidis, Front-end developer. Based in Zurich, CH
+        Nicos Tsourektsidis, Front-end developer.{' '}
+        <span>Based in Zurich, CH</span>
       </StyledLabel1>
       <PostList onLinkHover={handlePostHover} />
       <Footer />
