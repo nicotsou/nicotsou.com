@@ -25,8 +25,13 @@ const Seo = ({ description, article, title, image }) => {
     `
   )
 
-  const { defaultTitle, defaultImage, defaultDescription, siteUrl, social } =
-    site.siteMetadata
+  const {
+    title: defaultTitle,
+    defaultImage,
+    defaultDescription,
+    siteUrl,
+    social,
+  } = site.siteMetadata
 
   const seo = {
     title: title || defaultTitle,
@@ -38,7 +43,7 @@ const Seo = ({ description, article, title, image }) => {
   return (
     <Helmet
       title={seo.title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={defaultTitle ? `%s · ${defaultTitle}` : null}
     >
       <html lang="en" amp />
       <meta
