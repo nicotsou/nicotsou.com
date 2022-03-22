@@ -11,7 +11,6 @@ export const Body1Styles = css`
   line-height: 1.7rem;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 300;
-  word-spacing: 0.13rem;
 `
 
 export const Body2Styles = css`
@@ -36,7 +35,6 @@ export const Heading1Styles = css`
   font-size: 2.2rem;
   line-height: 1.558;
   letter-spacing: -0.01rem;
-  word-spacing: 0.26rem;
   margin-top: 1rem;
   margin-bottom: 3.3rem;
 `
@@ -47,7 +45,6 @@ export const Heading2Styles = css`
   font-size: 1.6rem;
   line-height: 2.25rem;
   letter-spacing: -0.03rem;
-  word-spacing: 0.175rem;
 `
 
 export const Heading3Styles = css`
@@ -56,7 +53,6 @@ export const Heading3Styles = css`
   font-size: 1.25rem;
   line-height: 2.1rem;
   letter-spacing: -0.0055rem;
-  word-spacing: 0.1rem;
 `
 
 export const Heading4Styles = css`
@@ -65,7 +61,6 @@ export const Heading4Styles = css`
   font-size: 1rem;
   line-height: 1.8rem;
   letter-spacing: -0.0055rem;
-  word-spacing: 0.1rem;
 `
 
 export const Heading5Styles = css`
@@ -74,7 +69,6 @@ export const Heading5Styles = css`
   font-size: 1rem;
   line-height: 1.25rem;
   letter-spacing: -0.0055rem;
-  word-spacing: 0.005rem;
 `
 
 export const Heading6Styles = css`
@@ -83,7 +77,6 @@ export const Heading6Styles = css`
   font-size: 1rem;
   line-height: 1.25rem;
   letter-spacing: -0.0055rem;
-  word-spacing: 0.005rem;
 `
 
 export const Label1Styles = css`
@@ -91,7 +84,6 @@ export const Label1Styles = css`
   font-weight: 300;
   font-size: 1.1rem;
   line-height: 1.55rem;
-  word-spacing: -0.095rem;
   letter-spacing: -0.02rem;
   color: rgba(var(--caption-color), 0.5);
 `
@@ -101,7 +93,6 @@ export const Label2Styles = css`
   font-weight: 300;
   font-size: 0.85rem;
   line-height: 1.35rem;
-  word-spacing: 0.1rem;
   letter-spacing: 0.0675rem;
   text-transform: uppercase;
   color: rgba(var(--caption-color), 0.5);
@@ -112,7 +103,6 @@ export const Label3Styles = css`
   font-weight: 300;
   font-size: 0.7rem;
   line-height: 1rem;
-  word-spacing: 0.02rem;
   letter-spacing: 0.06rem;
   text-transform: uppercase;
   color: rgba(var(--caption-color), 0.5);
@@ -123,7 +113,6 @@ export const CodeStyles = css`
   font-weight: 400;
   font-size: 1.05rem;
   line-height: 1.4rem;
-  word-spacing: 0.02rem;
   letter-spacing: 0;
 `
 
@@ -133,7 +122,6 @@ export const Aside1Styles = css`
   font-size: 1.8rem;
   line-height: 2.25rem;
   letter-spacing: -0.03rem;
-  word-spacing: 0.175rem;
 `
 
 export const Aside2Styles = css`
@@ -142,7 +130,6 @@ export const Aside2Styles = css`
   font-size: 1.25rem;
   line-height: 1.68;
   letter-spacing: -0.03rem;
-  word-spacing: 0.175rem;
 
   b,
   strong {
