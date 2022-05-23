@@ -1,10 +1,9 @@
 ---
-title: Conditional Types in TypeScript
+title: Master Conditional Types in TypeScript
 date: '2022-05-23T22:12:00.000Z'
-description: It's time to talk about TypeScript interfaces, once and forever.
+description: It's time to learn how to write conditional types in TypeScript, once and forever.
 cover: './cover.png'
 ---
-
 
 Generics can help you create something that acts like “functions”, but with types. What if I told you that you can use a ternary operator in our type aliases, to write advanced conditional types?
 
