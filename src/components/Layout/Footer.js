@@ -46,6 +46,9 @@ const HashLink = styled.a`
   display: inline;
   color: #0057b7;
   text-decoration: none;
+  font-weight: 700;
+  font-family: 'Merriweather', serif;
+  letter-spacing: 0.04em;
 
   &:visited,
   &:active {
@@ -54,8 +57,6 @@ const HashLink = styled.a`
 
   span {
     color: #e7c400;
-    font-weight: 700;
-    font-family: 'Merriweather', serif;
   }
 
   @media (prefers-color-scheme: dark) {
