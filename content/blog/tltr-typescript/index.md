@@ -217,7 +217,7 @@ You can also choose to enable TypeScript only in specific files. Let's say that 
 
 Here, I'm using the `.js` extension, but because I added the `//@ts-check` comment, my editor treats this file as a TypeScript code:
 
-![Screen Shot 2021-11-07 at 1.30.26 PM.png](images/ ts-check.png)
+![Screen Shot 2021-11-07 at 1.30.26 PM.png](images/ts-check.png)
 
 ### JSDoc
 
