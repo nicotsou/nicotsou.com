@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Icon from './Icon'
 import TwitterIcon from '../../images/twitter.svg'
-import MediumIcon from '../../images/medium.svg'
+import YouTubeIcon from '../../images/youtube.svg'
 import GithubIcon from '../../images/github.svg'
 import { Label3 } from '../../styles/Typography'
 import { graphql, useStaticQuery } from 'gatsby'
@@ -76,7 +76,7 @@ const Footer = ({ className }) => {
         siteMetadata {
           social {
             twitter
-            medium
+            youtube
             github
           }
         }
@@ -84,7 +84,7 @@ const Footer = ({ className }) => {
     }
   `)
   const social = data?.site?.siteMetadata?.social
-  const { twitter, medium, github } = social
+  const { twitter, youtube, github } = social
 
   return (
     <StyledFooter className={className}>
@@ -102,12 +102,12 @@ const Footer = ({ className }) => {
         </li>
         <li>
           <a
-            href={`https://medium.com/@${medium}`}
+            href={`https://www.youtube.com/user/${youtube}`}
             target="_blank"
             rel="noreferrer"
           >
             <Icon>
-              <MediumIcon />
+              <YouTubeIcon />
             </Icon>
           </a>
         </li>
