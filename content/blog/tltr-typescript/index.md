@@ -77,8 +77,7 @@ But what is wrong with JavaScript, you may ask.
 Well, the truth is, JavaScript was never designed to support the complexity of modern applications. It was designed back then when we were surfing the web using these ancient dial-up modems that were making [a characteristic noise](https://www.youtube.com/watch?v=gsNaR6FRuO0). It wasn't designed to write advanced applications like GMail, Netflix, Spotify and many more.
 
 ![Photo Credit: [Hello I'm Nick](https://unsplash.com/photos/6nqbKX5UI9I)](images/casettes.png)
-
-Photo Credit: [Hello I'm Nick](https://unsplash.com/photos/6nqbKX5UI9I)
+_Photo Credit: [Hello I'm Nick](https://unsplash.com/photos/6nqbKX5UI9I)_
 
 From the 90s to the Metaverse era, a lot of things have changed. Applications are now running fully on the browser. In the past, they were only running natively and you had to be home and use that huge computer with the CRT monitor. Now everybody is looking at their phones, even when they are not supposed to. Google is selling Chrome-based laptops. And don't forget, JS now runs on servers too. Even [NASA uses JavaScript](https://www.linkedin.com/pulse/how-nasa-uses-nodejs-rahul-rathod/).
 
@@ -87,8 +86,7 @@ Compared to languages like C# or Java, which are being used widely in the enterp
 On top of that, the development experience is day and night. Your text editor simply cannot compete with a sophisticated IDE like Xcode, or IntelliJ. Besides the code highlighting - which sometimes is very dum - and some common errors that can be handled with a linter, it doesn't provide any code completion suggestions, it doesn't recognize the types of your variables, and most importantly, it doesn't give you any sophisticated debugging tool.
 
 ![Photo Credit: [Lorenzo Herrera](https://unsplash.com/photos/p0j-mE6mGo4)](images/90s-tech.png)
-
-Photo Credit: [Lorenzo Herrera](https://unsplash.com/photos/p0j-mE6mGo4)
+_Photo Credit: [Lorenzo Herrera](https://unsplash.com/photos/p0j-mE6mGo4)_
 
 > There were multiple attempts in its history to _fix_ JavaScript.
 
@@ -211,8 +209,7 @@ The editor of my choice is [Visual Studio Code](https://code.visualstudio.com), 
 There are plugins for Eclipse, IntelliJ, Sublime Text, Emacs, Vim, and many more. They provide the same functionality, but some may have less debugging options. This doesn't mean you can't use a plain text editor, like Notepad++, but you will need to do some manual work to run and debug your application.
 
 ![Photo Credit: [Terry Lee](https://unsplash.com/photos/8OCgMK2SSOo)](images/nintendo.png)
-
-Photo Credit: [Terry Lee](https://unsplash.com/photos/8OCgMK2SSOo)
+_Photo Credit: [Terry Lee](https://unsplash.com/photos/8OCgMK2SSOo)_
 
 ### Type checking on demand
 
@@ -220,7 +217,7 @@ You can also choose to enable TypeScript only in specific files. Let's say that 
 
 Here, I'm using the `.js` extension, but because I added the `//@ts-check` comment, my editor treats this file as a TypeScript code:
 
-![Screen Shot 2021-11-07 at 1.30.26 PM.png](images/ ts-check.png)
+![Screen Shot 2021-11-07 at 1.30.26 PM.png](images/ts-check.png)
 
 ### JSDoc
 
@@ -360,8 +357,7 @@ To avoid running this command manually, every time you change your code, you can
 Now the TypeScript compiler will watch for changes and every time you save any of the ts files in this directory, it will re-transpile the code for you.
 
 ![Photo Credit: [Ben Blennerhassett](https://unsplash.com/photos/LR5eS1C9IUU)](images/phone.png)
-
-Photo Credit: [Ben Blennerhassett](https://unsplash.com/photos/LR5eS1C9IUU)
+_Photo Credit: [Ben Blennerhassett](https://unsplash.com/photos/LR5eS1C9IUU)_
 
 ## Our first TypeScript project
 
