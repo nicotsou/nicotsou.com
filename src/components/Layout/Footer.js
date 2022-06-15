@@ -74,7 +74,7 @@ const Footer = ({ className }) => {
         </li>
         <li>
           <a
-            href={`https://www.youtube.com/user/@${youtube}`}
+            href={`https://www.youtube.com/user/${youtube}`}
             target="_blank"
             rel="noreferrer"
           >
