@@ -39,6 +39,34 @@ const SocialList = styled.ul`
 
 const Copyright = styled(Label3)`
   line-height: 2rem;
+  text-transform: none;
+`
+
+const HashLink = styled.a`
+  display: inline;
+  color: #0057b7;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Merriweather', serif;
+  letter-spacing: 0.04em;
+
+  &:visited,
+  &:active {
+    color: #0057b7;
+  }
+
+  span {
+    color: #e7c400;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: #2a8fff;
+
+    &:visited,
+    &:active {
+      color: #2a8fff;
+    }
+  }
 `
 
 const Footer = ({ className }) => {
@@ -95,7 +123,12 @@ const Footer = ({ className }) => {
           </a>
         </li>
       </SocialList>
-      <Copyright>#prayforukraine - &copy; 2020-2 NT</Copyright>
+      <Copyright>
+        <HashLink href="https://u24.gov.ua" target="_blank">
+          <span>#</span>prayforukraine
+        </HashLink>{' '}
+        - &copy; 2020-2 NT
+      </Copyright>
     </StyledFooter>
   )
 }
