@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Icon from './Icon'
 import TwitterIcon from '../../images/twitter.svg'
-import MediumIcon from '../../images/medium.svg'
+import YouTubeIcon from '../../images/youtube.svg'
 import GithubIcon from '../../images/github.svg'
 import { Label3 } from '../../styles/Typography'
 import { graphql, useStaticQuery } from 'gatsby'
@@ -39,6 +39,34 @@ const SocialList = styled.ul`
 
 const Copyright = styled(Label3)`
   line-height: 2rem;
+  text-transform: none;
+`
+
+const HashLink = styled.a`
+  display: inline;
+  color: #0057b7;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Merriweather', serif;
+  letter-spacing: 0.04em;
+
+  &:visited,
+  &:active {
+    color: #0057b7;
+  }
+
+  span {
+    color: #e7c400;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: #2a8fff;
+
+    &:visited,
+    &:active {
+      color: #2a8fff;
+    }
+  }
 `
 
 const Footer = ({ className }) => {
@@ -48,7 +76,7 @@ const Footer = ({ className }) => {
         siteMetadata {
           social {
             twitter
-            medium
+            youtube
             github
           }
         }
@@ -56,7 +84,7 @@ const Footer = ({ className }) => {
     }
   `)
   const social = data?.site?.siteMetadata?.social
-  const { twitter, medium, github } = social
+  const { twitter, youtube, github } = social
 
   return (
     <StyledFooter className={className}>
@@ -74,12 +102,12 @@ const Footer = ({ className }) => {
         </li>
         <li>
           <a
-            href={`https://medium.com/@${medium}`}
+            href={`https://www.youtube.com/user/${youtube}`}
             target="_blank"
             rel="noreferrer"
           >
             <Icon>
-              <MediumIcon />
+              <YouTubeIcon />
             </Icon>
           </a>
         </li>
@@ -95,7 +123,12 @@ const Footer = ({ className }) => {
           </a>
         </li>
       </SocialList>
-      <Copyright>#prayforukraine - &copy; 2020-2 NT</Copyright>
+      <Copyright>
+        <HashLink href="https://u24.gov.ua" target="_blank">
+          <span>#</span>prayforukraine
+        </HashLink>{' '}
+        - &copy; 2020-2 NT
+      </Copyright>
     </StyledFooter>
   )
 }

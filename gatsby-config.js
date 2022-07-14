@@ -13,6 +13,7 @@ module.exports = {
     social: {
       twitter: `nicotsou`,
       medium: `nicotsou`,
+      youtube: `creatorgr`,
       github: `nicotsou`,
     },
   },

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 40" width="40" height="40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{clip-path:url(#SVGID_00000097479947010225482350000000158592442156652715_);}
+	.st2{fill:#082229;}
+</style>
+<g id="Twitter">
+	<rect id="Rectangle" class="st0" width="40" height="40"/>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="4.3" y="9.2" width="31.5" height="22.3"/>
+		</defs>
+		<clipPath id="SVGID_00000085245560634521427900000014378586086302787992_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g id="Group_11" style="clip-path:url(#SVGID_00000085245560634521427900000014378586086302787992_);">
+			<path class="fillable" id="Path_1" class="st2" d="M29.2,9.2H10.8c-3.6,0-6.5,2.9-6.5,6.5V25c0,3.6,2.9,6.5,6.5,6.5h18.4c3.6,0,6.5-2.9,6.5-6.5
+				v-9.2C35.7,12.1,32.8,9.2,29.2,9.2 M24.8,20.8l-8.6,4.1c-0.2,0.1-0.4,0-0.5-0.2c0,0,0-0.1,0-0.2v-8.5c0-0.2,0.2-0.3,0.3-0.3
+				c0.1,0,0.1,0,0.2,0l8.6,4.4c0.2,0.1,0.2,0.3,0.2,0.5C24.9,20.7,24.8,20.8,24.8,20.8"/>
+		</g>
+	</g>
+</g>
+</svg>
