@@ -1,0 +1,5 @@
+# Netlify Redirects
+# https://docs.netlify.com/routing/redirects/#syntax-for-the-redirects-file
+
+# tltr-typescript.com - Landing page
+tltr-typescript.com/* nicotsou.com/tltr-ts-landing:splat 301!
