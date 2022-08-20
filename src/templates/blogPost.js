@@ -74,7 +74,7 @@ const BlogPostTemplate = ({ data, location }) => {
   return (
     <main>
       <Seo title={title} image={cover.publicURL} description={description} />
-      <Header />
+      <Header breadcrumb="Blog" />
       <CodeHighlighter />
       <Article
         className="blog-post"
