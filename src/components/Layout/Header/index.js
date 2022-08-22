@@ -27,13 +27,24 @@ const StyledLabel2 = styled(Label2)`
   white-space: nowrap;
 `
 
-const Header = () => {
+const StyledLink = styled(Link)`
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(var(--text-color));
+    text-decoration: none;
+  }
+`
+
+const Header = ({ breadcrumb }) => {
   return (
     <StyledHeader>
       <Link to="/">
         <Logo size={Logo.sizes.small} />
       </Link>
-      <StyledLabel2>Nicos Tsourektsidis \ Blog</StyledLabel2>
+      <StyledLabel2>
+        <StyledLink to="/">Nicos Tsourektsidis</StyledLink> \ {breadcrumb}
+      </StyledLabel2>
     </StyledHeader>
   )
 }
