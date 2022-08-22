@@ -165,5 +165,6 @@ module.exports = {
         name: `assets`,
       },
     },
+    'gatsby-plugin-netlify',
   ],
 }
