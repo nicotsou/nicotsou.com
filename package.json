@@ -42,6 +42,7 @@
     "gatsby-plugin-sharp": "4.0.1",
     "gatsby-plugin-sitemap": "5.0.0",
     "gatsby-plugin-styled-components": "5.0.0",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-copy-linked-files": "5.0.0",
     "gatsby-remark-embed-spotify": "^2.1.1",
     "gatsby-remark-images": "6.0.0",

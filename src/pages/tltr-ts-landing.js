@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Aside1 } from '../styles/Typography'
+import { ProximaFont } from '../styles/LandingTypography'
 import Logo from '../components/Layout/Logo'
 import Seo from '../components/seo'
 
@@ -17,10 +17,7 @@ const StyledLogo = styled(Logo)`
   margin-top: calc(100vh * 20 / 100);
 `
 
-const StyledAside1 = styled(Aside1)`
-  margin-top: 3.85rem;
-  max-width: 580px;
-`
+const StyledAside1 = styled.h1(ProximaFont)
 
 const NotFoundPage = () => {
   return (
