@@ -11,6 +11,7 @@ import {
   Aside1Styles,
   Heading6Styles,
   Label2Styles,
+  Label1Styles,
 } from '../styles/Typography'
 
 const BlogStyles = css`
@@ -73,6 +74,11 @@ const BlogStyles = css`
     @media screen and (min-width: 900px) {
       margin: 6rem -3rem 5rem 7rem;
     }
+  }
+
+  strong,
+  i {
+    font-weight: bold;
   }
 
   code {
@@ -162,6 +168,10 @@ const BlogStyles = css`
         margin-bottom: 5rem;
       }
     }
+  }
+
+  small {
+    ${Label2Styles}
   }
 `
 
