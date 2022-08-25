@@ -58,6 +58,7 @@ const StyledFooter = styled(Footer)`
 const Hero = styled.div`
   ${SectionStyles}
   height: 73vh;
+  min-height: 700px;
   width: 100vw;
   padding: 0;
 `
@@ -158,7 +159,7 @@ const HeroFrame = styled.div`
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-  min-height: 500px;
+  min-height: 890px;
   top: 0;
   left: 0;
   z-index: -1;
