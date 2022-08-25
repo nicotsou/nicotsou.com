@@ -71,8 +71,13 @@ const BlogStyles = css`
     }
 
     @media screen and (min-width: 900px) {
-      margin: 6rem -3rem 5rem 7rem;
+      margin: 6rem -2rem 5rem 7rem;
     }
+  }
+
+  strong,
+  i {
+    font-weight: bold;
   }
 
   code {
@@ -130,7 +135,7 @@ const BlogStyles = css`
   }
 
   :not(.gatsby-resp-image-wrapper) {
-    img {
+    img:not([role='presentation']) {
       width: 100vw;
       max-width: calc(640px + 2rem);
       margin: 2rem auto 2rem -1rem;
@@ -162,6 +167,10 @@ const BlogStyles = css`
         margin-bottom: 5rem;
       }
     }
+  }
+
+  small {
+    ${Label2Styles}
   }
 `
 

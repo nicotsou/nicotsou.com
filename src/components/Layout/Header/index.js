@@ -8,12 +8,12 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   max-width: 1250px;
-  margin: 3rem auto;
+  margin: 0 auto;
   line-height: 2rem;
-  padding: 0 1rem;
+  padding: 3rem 1rem;
 
   @media screen and (min-width: 880px) {
-    padding: 0 3rem;
+    padding: 3rem;
   }
 `
 
@@ -36,9 +36,9 @@ const StyledLink = styled(Link)`
   }
 `
 
-const Header = ({ breadcrumb }) => {
+const Header = ({ breadcrumb, className }) => {
   return (
-    <StyledHeader>
+    <StyledHeader className={className}>
       <Link to="/">
         <Logo size={Logo.sizes.small} />
       </Link>
