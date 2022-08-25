@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 import { useLocation } from '@reach/router'
 
-const Seo = ({ description, article, title, image }) => {
+const Seo = ({ description, article, title, image, children }) => {
   const { pathname } = useLocation()
   const { site } = useStaticQuery(
     graphql`
@@ -68,6 +68,7 @@ const Seo = ({ description, article, title, image }) => {
         <meta name="twitter:description" content={seo.description} />
       )}
       {seo.image && <meta name="twitter:image" content={seo.image} />}
+      {children}
     </Helmet>
   )
 }

@@ -11,7 +11,6 @@ import {
   Aside1Styles,
   Heading6Styles,
   Label2Styles,
-  Label1Styles,
 } from '../styles/Typography'
 
 const BlogStyles = css`
@@ -72,7 +71,7 @@ const BlogStyles = css`
     }
 
     @media screen and (min-width: 900px) {
-      margin: 6rem -3rem 5rem 7rem;
+      margin: 6rem -2rem 5rem 7rem;
     }
   }
 
@@ -136,7 +135,7 @@ const BlogStyles = css`
   }
 
   :not(.gatsby-resp-image-wrapper) {
-    img {
+    img:not([role='presentation']) {
       width: 100vw;
       max-width: calc(640px + 2rem);
       margin: 2rem auto 2rem -1rem;

@@ -11,7 +11,7 @@ import CodeHighlighter from '../styles/CodeHighlighter'
 import Seo from '../components/seo'
 
 const Article = styled.article`
-  margin-top: clamp(0.5rem, calc(100vh * 20 / 100), 9.5rem);
+  margin-top: clamp(0.5rem, 10vh, 9.5rem);
 `
 
 const StyledHeading1 = styled(Heading1)`
