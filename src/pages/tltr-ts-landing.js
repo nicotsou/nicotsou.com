@@ -65,10 +65,9 @@ const Hero = styled.div`
 
 const HeroDescription = styled.div`
   margin-top: 3rem;
-  margin-right: 3rem;
 
   @media screen and (min-width: 780px) {
-    margin: 3rem 3.5rem 0 3.5rem;
+    max-width: 80%;
   }
 `
 
@@ -108,7 +107,7 @@ const ErrorHighlighter = styled.span`
 
 const Title = styled.h1`
   padding-top: calc(180 / 1060 * 100vh);
-  margin-left: 1.6rem;
+  margin-left: 3rem;
 
   @media screen and (min-width: 780px) {
     padding-top: calc(270 / 1060 * 100vh);
