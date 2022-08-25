@@ -278,7 +278,7 @@ const LinksPage = () => {
       <Article className="blog-post">
         <ArticleSection>
           <Aside>
-            A course for JavaScript developers that want to master{' '}
+            A course for JavaScript developers who seek to master{' '}
             <ErrorHighlighter>type checking</ErrorHighlighter>.
             <Author>
               Created by <Link to="/">Nicos Tsourektsidis</Link>
@@ -294,8 +294,9 @@ const LinksPage = () => {
             <a href="https://2021.stateofjs.com/en-US/other-tools/#javascript_flavors">
               most popular
             </a>{' '}
-            way of having types in JavaScript. In stark contrast to older tools,
-            you can choose to use your favorite tools and libraries. In fact,{' '}
+            way of having types in JavaScript. In stark contrast to older
+            solutions, you can choose to use your favorite tools and libraries.
+            In fact,{' '}
             <strong>
               developers prefer to learn TypeScript over JavaScript
             </strong>
@@ -304,7 +305,7 @@ const LinksPage = () => {
           <p>JavaScript never had types.</p>
           <p>
             Switching your mindset takes time. Adding types to a language that
-            hasn't been made for them is also a trivial thing. Thankfully,
+            hasn't been built with strict types is challenging. Thankfully,
             TypeScript developers have found a practical way.
           </p>
           <p>
@@ -313,8 +314,8 @@ const LinksPage = () => {
             codebase with TypeScript? Are you repeating yourself? How can you
             help your team improve their code?
           </p>
-          <p>No it's not easy. </p>
-          <p>But there is a better way.</p>
+          <p>Feeling overwhelmed by all the posibilities? </p>
+          <p>No need to...</p>
           <blockquote>
             <p>
               Let’s make TypeScript{' '}
@@ -325,16 +326,16 @@ const LinksPage = () => {
             </p>
           </blockquote>
           <p>
-            This course is being designed from the ground up; it's efficient and
-            it contains much more than an average tutorial will give you. Video
-            tutorials with their associated references, useful articles, coding
-            challenges, fun facts, cheatsheets, quizzes, and more surprises are
-            coming along the way. Everything you need to{' '}
-            <strong>💥 triumph on that tech interview</strong>.
+            This course is being designed from the ground up. I'm putting a lot
+            of effort to present it as efficient as possible. It will contain
+            video tutorials with their associated references, useful articles,
+            coding challenges, fun facts, cheatsheets, quizzes, and more
+            surprises are coming along the way. Everything you need to{' '}
+            <strong>💥 triumph during your tech interview</strong>.
           </p>
           <p>
             <strong>Get comfortable working with types 😎</strong>. We'll start
-            with the very basics, learing how TypeScript works. You will launch
+            with the very basics, learning how TypeScript works. You will launch
             your first application from the very beginning. We will review
             fundamental JavaScript features and quirks that will help you
             increase code quality. Choose what you want to learn based on your
@@ -352,16 +353,6 @@ const LinksPage = () => {
             new applications. This will help you make the right choices and move
             more efficiently. Discover common pitfalls and misconceptions. My
             goal is to help you <strong>🧑🏿‍💻 become a better engineer</strong>.
-          </p>
-          <h3>Contribute</h3>
-          <p>
-            The full contents of this course will be{' '}
-            <strong>
-              <em>open source</em>
-            </strong>
-            . Feel free to comment, suggest changes via pull requests, and share
-            your feedback and help me make this course{' '}
-            <strong> 🤩 awesome</strong>!
           </p>
 
           <hr />
