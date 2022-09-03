@@ -77,7 +77,7 @@ const BlogStyles = css`
 
   strong,
   i {
-    font-weight: bold;
+    font-weight: 500;
   }
 
   code {
