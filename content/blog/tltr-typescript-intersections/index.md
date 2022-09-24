@@ -2,6 +2,7 @@
 title: Master Intersections In Typescript
 date: '2022-10-03T22:12:00.000Z'
 description: A deep dive into TypeScript’s intersections. We will learn the syntax, and explain everything you need to know about them.
+type: post
 cover: './cover.jpg'
 ---
 

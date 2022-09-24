@@ -28,7 +28,7 @@ const StyledCoverImage = styled(GatsbyImage)`
 
   @media screen and (min-width: 1300px) {
     img {
-      border-radius: calc(2.3 * 1rem);
+      border-radius: 2.3rem;
     }
   }
 `
@@ -73,7 +73,7 @@ const BlogPostTemplate = ({ data, location }) => {
 
   return (
     <main>
-      <Seo title={title} image={cover.publicURL} description={description} />
+      <Seo title={title} image={cover?.publicURL} description={description} />
       <Header breadcrumb="Blog" />
       <CodeHighlighter />
       <Article
@@ -102,7 +102,18 @@ const BlogPostTemplate = ({ data, location }) => {
         />
 
         <Section>
-          <AuthorAside />
+          <AuthorAside>
+            Hey, thanks for reading! In this personal blog I share thoughts and
+            tutorials about coding.{' '}
+            <a
+              href="https://twitter.com/nicotsou"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Follow my work on Twitter
+            </a>
+            .
+          </AuthorAside>
           <nav>
             <SuggestedArticles>
               <li>

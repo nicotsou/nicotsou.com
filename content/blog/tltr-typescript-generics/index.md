@@ -2,6 +2,7 @@
 title: Introducing Typescript Generics
 date: '2022-01-26T22:12:00.000Z'
 description: Understanding generics will help you read most of the TypeScript code that was ever written. 
+type: post
 cover: './cover.png'
 ---
 

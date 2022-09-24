@@ -2,6 +2,7 @@
 title: Music For Creative Minds
 date: '2021-04-20T23:46:37.121Z'
 cover: './cover.jpg'
+type: post
 description: Every month I curate the music that help me concentrate, create and feel, in a music playlist series called "Cherry Pick".
 ---
 

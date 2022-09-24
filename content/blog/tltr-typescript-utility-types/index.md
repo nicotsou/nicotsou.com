@@ -2,6 +2,7 @@
 title: TLTR; TypeScript Utility Types
 date: '2022-06-15T22:12:00.000Z'
 description: Utility types help you create new types on the fly, from existing types. They help you reduce code duplication and enforce strict rules.
+type: post
 cover: './cover.jpg'
 ---
 

@@ -28,18 +28,18 @@ const BackgroundImage = styled.div`
 `
 
 const transitionStyles = {
-  entering: { backgroundColor: 'red', opacity: 1 },
-  entered: { backgroundColor: 'red', opacity: 1 },
-  exiting: { opacity: 0, backgroundColor: 'red' },
-  exited: { opacity: 0, backgroundColor: 'red' },
+  entering: { backgroundColor: 'rgba(var(--bg-color), 0.5)', opacity: 1 },
+  entered: { backgroundColor: 'rgba(var(--bg-color), 0.5)', opacity: 1 },
+  exiting: { opacity: 0, backgroundColor: 'rgba(var(--bg-color), 0.5)' },
+  exited: { opacity: 0, backgroundColor: 'rgba(var(--bg-color), 0.5)' },
 }
 
-const DynamicCover = ({ cover, visible }) => {
+const DynamicCover = ({ cover, visible, className }) => {
   const coverImage = getImage(cover)
   return (
     <Transition in={visible} timeout={1000}>
       {(state) => (
-        <BackgroundImage style={transitionStyles[state]}>
+        <BackgroundImage style={transitionStyles[state]} className={className}>
           {coverImage && (
             <GatsbyImage
               alt="background image"

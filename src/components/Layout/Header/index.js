@@ -36,6 +36,10 @@ const StyledLink = styled(Link)`
   }
 `
 
+const IconPlaceholder = styled.div`
+  width: 2rem;
+`
+
 const Header = ({ breadcrumb, className }) => {
   return (
     <StyledHeader className={className}>
@@ -45,6 +49,7 @@ const Header = ({ breadcrumb, className }) => {
       <StyledLabel2>
         <StyledLink to="/">Nicos Tsourektsidis</StyledLink> \ {breadcrumb}
       </StyledLabel2>
+      <IconPlaceholder />
     </StyledHeader>
   )
 }

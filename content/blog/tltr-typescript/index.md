@@ -2,6 +2,7 @@
 title: TLTR; TypeScript
 date: '2021-12-01T22:12:00.000Z'
 description: TypeScript is a superset of JavaScript. All existing features of JS are already supported, but it adds syntax, which helps you build much more structured applications.
+type: post
 cover: './cover.jpg'
 ---
 

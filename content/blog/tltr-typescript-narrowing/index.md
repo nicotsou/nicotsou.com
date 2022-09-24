@@ -2,6 +2,7 @@
 title: Master Type Narrowing In Typescript
 date: '2022-03-15T22:12:00.000Z'
 description: How do we narrow down a type to more specific ones? Everything you need to know.
+type: post
 cover: './cover.png'
 ---
 

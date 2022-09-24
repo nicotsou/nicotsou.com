@@ -17,9 +17,13 @@ const StyledDivider = styled(Divider)`
   margin: 4rem 0 0 0;
 `
 
-const Avatar = styled(GatsbyImage)`
+const StyledAvatarLink = styled.a`
   flex-shrink: 0;
   display: block;
+  width: 4rem;
+`
+
+const Avatar = styled(GatsbyImage)`
   margin-right: 1rem;
 
   img {
@@ -39,7 +43,7 @@ const StyledLabel3 = styled(Label3)`
   margin-top: 0.7rem;
 `
 
-export default function AuthorAside() {
+export default function AuthorAside({ children }) {
   const data = useStaticQuery(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/avatar.jpg/" }) {
@@ -51,7 +55,6 @@ export default function AuthorAside() {
         siteMetadata {
           author {
             name
-            summary
             bio
           }
           social {
@@ -66,26 +69,20 @@ export default function AuthorAside() {
 
   const avatarImage = getImage(data?.avatar)
   const author = data?.site?.siteMetadata?.author?.name
-  const summary = data?.site?.siteMetadata?.author?.summary
 
   return (
     <>
       <StyledDivider />
       <Aside>
-        <a href="https://twitter.com/nicotsou" target="_blank" rel="noreferrer">
+        <StyledAvatarLink
+          href="https://twitter.com/nicotsou"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Avatar alt="avatar" image={avatarImage} />
-        </a>
+        </StyledAvatarLink>
         <div>
-          <StyledBody3>
-            {summary}{' '}
-            <a
-              href="https://twitter.com/nicotsou"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Follow my work on Twitter
-            </a>
-          </StyledBody3>
+          <StyledBody3>{children}</StyledBody3>
           <StyledLabel3>{author}</StyledLabel3>
         </div>
       </Aside>

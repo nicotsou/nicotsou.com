@@ -2,6 +2,7 @@
 title: Master Conditional Types in TypeScript
 date: '2022-05-23T22:12:00.000Z'
 description: It's time to learn how to write conditional types in TypeScript, once and forever.
+type: post
 cover: './cover.png'
 ---
 

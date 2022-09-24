@@ -6,14 +6,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Define a template for blog post
   const blogPost = path.resolve(`./src/templates/blogPost.js`)
+  const coursePage = path.resolve(`./src/templates/coursePage.js`)
 
   // Get all markdown blog posts sorted by date
-  const result = await graphql(
+  let result = await graphql(
     `
       {
         allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: ASC }
-          limit: 1000
+          filter: { frontmatter: { type: { eq: "post" } } }
         ) {
           nodes {
             id
@@ -36,6 +37,34 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const posts = result.data.allMarkdownRemark.nodes
 
+  result = await graphql(
+    `
+      {
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___order], order: ASC }
+          filter: { frontmatter: { type: { eq: "course" } } }
+        ) {
+          nodes {
+            id
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    `
+  )
+
+  if (result.errors) {
+    reporter.panicOnBuild(
+      `There was an error loading your blog posts`,
+      result.errors
+    )
+    return
+  }
+
+  const coursePages = result.data.allMarkdownRemark.nodes
+
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
   // `context` is available in the template as a prop and as a variable in GraphQL
@@ -49,9 +78,30 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         path: post.fields.slug,
         component: blogPost,
         context: {
-          id: post.id,
           previousPostId,
           nextPostId,
+          id: post.id,
+          type: 'post',
+        },
+      })
+    })
+  }
+
+  if (coursePages.length > 0) {
+    coursePages.forEach((page, index) => {
+      console.log('a', page.id, index)
+      const previousPageId = index === 0 ? null : coursePages[index - 1].id
+      const nextPageId =
+        index === coursePages.length - 1 ? null : coursePages[index + 1].id
+
+      createPage({
+        path: `courses/tltr-typescript${page.fields.slug}`,
+        component: coursePage,
+        context: {
+          previousPageId,
+          nextPageId,
+          id: page.id,
+          type: 'course',
         },
       })
     })
@@ -106,6 +156,11 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       date: Date @dateformat
+      type: String
+      youtubeVideoId: String
+      order: Int
+      module: String
+      articleSlug: String
     }
 
     type Fields {

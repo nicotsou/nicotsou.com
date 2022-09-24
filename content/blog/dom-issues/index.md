@@ -2,6 +2,7 @@
 title: Why People Are Afraid Of The DOM?
 date: '2021-04-28T23:46:37.121Z'
 cover: './cover.jpg'
+type: post
 description: The Document Object Model is a tree your browser produces to represent the UI of a website.
 ---
 
