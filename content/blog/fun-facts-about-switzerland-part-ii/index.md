@@ -2,6 +2,7 @@
 title: Fun Facts About Switzerland, Part II
 date: '2021-11-03T22:12:00.000Z'
 description: ''
+type: post
 cover: './cover.jpg'
 ---
 

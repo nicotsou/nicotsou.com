@@ -2,6 +2,7 @@
 title: Why I Became A Software Engineer
 date: '2021-03-21T22:12:00.000Z'
 description: Can you easily tell what your main driver was? Do you think it *still* drives you today or was there something you lost in the process?
+type: post
 cover: './cover.jpg'
 quote: It’s those pixels you can’t take your eyes off. All these little details that fit together perfectly.
 ---

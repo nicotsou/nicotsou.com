@@ -2,6 +2,7 @@
 title: The Structural Type System of TypeScript
 date: '2022-05-14T22:12:00.000Z'
 description: What differenciates TypeScript from all the other programming languages? How its types are related?
+type: post
 cover: './cover.png'
 ---
 

@@ -2,6 +2,7 @@
 title: Master Classes In Typescript
 date: '2021-12-22T22:12:00.000Z'
 description: Discover how TypeScript helps us create classes and how it transforms JavaScript into a more traditional OOP experience.
+type: post
 cover: './cover.png'
 ---
 

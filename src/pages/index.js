@@ -7,6 +7,7 @@ import Logo from '../components/Layout/Logo'
 import PostList from '../components/PostList'
 import Seo from '../components/seo'
 import DynamicCover from '../components/DynamicCover'
+import PostItem from '../components/PostItem'
 
 const Main = styled.main`
   margin: 0 auto;
@@ -35,6 +36,7 @@ const IndexPage = ({ data }) => {
   const [isCoverVisible, setIsCoverVisible] = useState(false)
 
   const handlePostHover = (post) => {
+    console.log(post)
     post && setHighlightedPost(post)
     setIsCoverVisible(!!post)
   }
@@ -56,7 +58,17 @@ const IndexPage = ({ data }) => {
         Nicos Tsourektsidis, Front-end developer.{' '}
         <span>Based in Zurich, CH</span>
       </StyledLabel1>
-      <PostList onLinkHover={handlePostHover} />
+      <PostList onMouseLeave={() => handlePostHover(null)}>
+        {data.allMarkdownRemark.nodes.map((node, index) => (
+          <PostItem
+            key={index}
+            onLinkHover={() => handlePostHover(node)}
+            to={node.fields.slug}
+          >
+            {node.frontmatter.title}
+          </PostItem>
+        ))}
+      </PostList>
       <Footer />
     </Main>
   )
@@ -71,10 +83,26 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      filter: { frontmatter: { type: { eq: "post" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       nodes {
+        excerpt
+        fields {
+          slug
+        }
         frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
           quote
+          cover {
+            publicURL
+            childImageSharp {
+              gatsbyImageData(width: 1200, placeholder: BLURRED)
+            }
+          }
         }
       }
     }

@@ -2,6 +2,7 @@
 title: 4 Advanced TypeScript Features to Create Types Dynamically
 date: '2022-06-22T22:12:00.000Z'
 description: Let me show you 4 advanced TypeScript features that will help you create types automatically, so that you don't have to manually do that.
+type: post
 cover: './cover.png'
 ---
 

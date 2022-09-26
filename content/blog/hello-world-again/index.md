@@ -2,6 +2,7 @@
 title: Hello World, Again
 date: '2021-02-14T22:12:00.000Z'
 description: ''
+type: post
 cover: './cover.jpg'
 ---
 

@@ -2,6 +2,7 @@
 title: 2021; A Retrospective
 date: '2022-01-05T22:12:00.000Z'
 description: In this Types Special, we will discover how JavaScript deals with types and how you can make your life simpler with TypeScript.
+type: post
 cover: './cover.jpg'
 ---
 This post is dedicated to 2021. I will try to summarize all the important events, changes, content I consumed and things I learned. Happy new year everyone!

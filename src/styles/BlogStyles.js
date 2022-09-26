@@ -169,6 +169,23 @@ const BlogStyles = css`
     }
   }
 
+  .gatsby-resp-iframe-wrapper {
+    width: 100vw;
+    max-width: calc(640px + 2rem) !important;
+    margin: 2rem auto 2rem -1rem !important;
+
+    @media screen and (min-width: 780px) {
+      max-width: 100vw;
+      margin: 5rem 0 5rem calc(-50vw + 375px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: calc(750px + 40%) !important;
+      margin: 5rem auto 5rem -20% !important;
+      border-radius: calc(1.5 * 1rem);
+    }
+  }
+
   small {
     ${Label2Styles}
   }

@@ -2,6 +2,7 @@
 title: Fun Facts About Switzerland, Part IV
 date: '2021-11-24T22:12:00.000Z'
 description: 'How you answer a phone call in Switzerland? How you can buy goods without paying a rappen? Why people in Switzerland know what time and day will wash their clothes next year?'
+type: post
 cover: './cover.jpg'
 ---
 
