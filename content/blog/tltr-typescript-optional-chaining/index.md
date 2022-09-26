@@ -73,7 +73,7 @@ Thankfully, the newer versions of JavaScript have a solution.
 
 ---
 
-With **optional chaining**, the code becomes clean:
+Here's how **optional chaining** reduces the clutter:
 
 ```tsx
 function getTimesPlayed(track: Track): number {
