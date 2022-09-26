@@ -132,12 +132,16 @@ Another interesting question is, what will happen if two object structures have 
 
 ```tsx
 type User = {
-  **id: string;**
+  // highlight-start
+  id: string;
+  // highlight-end
   name: string;
 }
 
 type Order = {
-  **id: string;**
+  // highlight-start
+  id: string;
+  // highlight-end
   total: number;
 }
 
@@ -149,7 +153,9 @@ In the example above, both the `User` and the `Order` types have a common `id` p
 ```tsx
 // the equivalent result of User & Order
 type UserOrder = {
-	**id: string;**
+	// highlight-start
+  id: string;
+  // highlight-end
   name: string;
 	total: number;
 }
@@ -161,13 +167,17 @@ Easy! But what if we had properties with the same name, but with different *type
 type User = {
   id: string;
   name: string;
-	**length: string;**
+	// highlight-start
+  length: string;
+  // highlight-end
 }
 
 type Order = {
-  ****id: string;
+  id: string;
   total: number;
-	**length: number;**
+	// highlight-start
+  length: number;
+  // highlight-end
 }
 
 type UserOrder = User & Order;
