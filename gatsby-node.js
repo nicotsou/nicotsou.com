@@ -89,7 +89,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   if (coursePages.length > 0) {
     coursePages.forEach((page, index) => {
-      console.log('a', page.id, index)
       const previousPageId = index === 0 ? null : coursePages[index - 1].id
       const nextPageId =
         index === coursePages.length - 1 ? null : coursePages[index + 1].id

@@ -1,6 +1,6 @@
 ---
 title: Master Intersections In Typescript
-date: '2022-10-03T22:12:00.000Z'
+date: '2022-09-03T22:12:00.000Z'
 description: A deep dive into TypeScript’s intersections. We will learn the syntax, and explain everything you need to know about them.
 type: post
 cover: './cover.jpg'
@@ -16,26 +16,25 @@ Fortune cookie? 🥠
 
 ## What’s an intersection?
 
-In TypeScript, you can use the intersection `&` operator, to merge two object types into one. The result will be a *new* type which will include all unique members, plus the members that they have in common, as long as they have the same type.
+In TypeScript, you can use the intersection `&` operator, to merge two object types into one. The result will be a _new_ type which will include all unique members, plus the members that they have in common, as long as they have the same type.
 
 > An intersection practically merges the members of two object structures into a new type.
-> 
 
 Here’s an example that illustrates its usage:
 
 ```tsx
 type FileBase = {
-  filename: string;
-  play: () => void;
+  filename: string
+  play: () => void
 }
 
 type Song = FileBase & {
-	extension: 'mp3';
-};
+  extension: 'mp3'
+}
 
 type VideoClip = FileBase & {
-  extension: 'mp3';
-};
+  extension: 'mp3'
+}
 ```
 
 Here we have a type alias called `FileBase`, which represents a downloadable file. All the other types extend this type alias, by adding additional object members.
@@ -44,20 +43,20 @@ The equivalent result will be the following:
 
 ```tsx
 type Song = {
-	// properties from FileBase
-	filename: string;
-  play: () => void;
-	// properties from Song
-	type: string;
-};
+  // properties from FileBase
+  filename: string
+  play: () => void
+  // properties from Song
+  type: string
+}
 
 type VideoClip = {
-	// properties from FileBase
-	filename: string;
-  play: () => void;
-	// properties from VideoClip
-	type: string;
-};
+  // properties from FileBase
+  filename: string
+  play: () => void
+  // properties from VideoClip
+  type: string
+}
 ```
 
 Pretty neat! 🤘
@@ -70,23 +69,23 @@ Let’s say that all your models have a common property. That could be an `id`. 
 
 ```tsx
 interface Id {
-	id: `${ 'U' | 'X' }-${number}`
+  id: `${'U' | 'X'}-${number}`
 }
 ```
 
-Our `id` property accepts strings that start with `U-` or `X-`, followed by a number. For example, we could have an id like `U-123`. 
+Our `id` property accepts strings that start with `U-` or `X-`, followed by a number. For example, we could have an id like `U-123`.
 
 To create new types that re-use this id logic, we can use an intersection:
 
 ```tsx
 type User = Id & {
-  username: string;
-  email: string;
+  username: string
+  email: string
 }
 
 type Order = Id & {
-  total: number;
-};
+  total: number
+}
 ```
 
 An alternative way would be to create a new type on-the-fly. In the following example we are creating a `User` that is also an `Order`:
@@ -97,7 +96,7 @@ const userWithOrder: User & Order = {
   total: 123,
   username: 'nicotsou',
   email: 'no@spam.please',
-};
+}
 ```
 
 It’s pretty obvious what the type of `userWithOrder` could be, by reading this example. We didn’t have to come up with a name, which sometimes is really difficult to get right.
@@ -111,19 +110,18 @@ I mentioned in the beginning about the misbehavior of intersections. There are s
 So far, we were using object structures. You may be wondering, will intersections work with literal types?
 
 ```tsx
-type WhatAmI = boolean & string;
+type WhatAmI = boolean & string
 ```
 
-The answer is *no*.
+The answer is _no_.
 
-> Intersections *only* work with object structures.
-> 
+> Intersections _only_ work with object structures.
 
-If you try to use them with literal types, you will get back `never`. In fact, *both* types must be object structures:
+If you try to use them with literal types, you will get back `never`. In fact, _both_ types must be object structures:
 
 ```tsx
-type WhatAmI = boolean & string;  // never
-type WhatAboutMe = string & { name: string }  // never
+type WhatAmI = boolean & string // never
+type WhatAboutMe = string & { name: string } // never
 ```
 
 That makes sense; there can’t be any type that is a `boolean` and at the same time a `string`. That’s why TypeScript will assign `never` to the previous types, preventing us from assigning any values on it. If you remember, the type `never` is a wildcard, that behaves exactly like that.
@@ -133,19 +131,19 @@ Another interesting question is, what will happen if two object structures have 
 ```tsx
 type User = {
   // highlight-start
-  id: string;
+  id: string
   // highlight-end
-  name: string;
+  name: string
 }
 
 type Order = {
   // highlight-start
-  id: string;
+  id: string
   // highlight-end
-  total: number;
+  total: number
 }
 
-type UserOrder = User & Order;
+type UserOrder = User & Order
 ```
 
 In the example above, both the `User` and the `Order` types have a common `id` property. As expected, this will be included in the result object structure:
@@ -153,47 +151,47 @@ In the example above, both the `User` and the `Order` types have a common `id` p
 ```tsx
 // the equivalent result of User & Order
 type UserOrder = {
-	// highlight-start
-  id: string;
+  // highlight-start
+  id: string
   // highlight-end
-  name: string;
-	total: number;
+  name: string
+  total: number
 }
 ```
 
-Easy! But what if we had properties with the same name, but with different *types*?
+Easy! But what if we had properties with the same name, but with different _types_?
 
 ```tsx
 type User = {
-  id: string;
-  name: string;
-	// highlight-start
-  length: string;
+  id: string
+  name: string
+  // highlight-start
+  length: string
   // highlight-end
 }
 
 type Order = {
-  id: string;
-  total: number;
-	// highlight-start
-  length: number;
+  id: string
+  total: number
+  // highlight-start
+  length: number
   // highlight-end
 }
 
-type UserOrder = User & Order;
+type UserOrder = User & Order
 ```
 
-The property `length` exists in both types, but it’s a `string` value in `User` and a `number` value in `Order`. 
+The property `length` exists in both types, but it’s a `string` value in `User` and a `number` value in `Order`.
 
 How TypeScript will behave here? Let’s figure it out:
 
 ```tsx
 // The equivalent result of User & Order
 type UserOrder = {
-	id: string;
-  name: string;
-	total: number;
-	length: never;
+  id: string
+  name: string
+  total: number
+  length: never
 }
 ```
 
@@ -203,11 +201,11 @@ And that’s for a good reason. 😉
 
 ## Understanding intersections
 
-Now you may ask… what do we mean by calling this thing an *intersection*? 🤔
+Now you may ask… what do we mean by calling this thing an _intersection_? 🤔
 
-This term comes from math, and more specifically the theory of [Set](https://en.wikipedia.org/wiki/Intersection_(set_theory))s. A Set is the mathematical model for a *collection* of different *things*.
+This term comes from math, and more specifically the theory of [Set](<https://en.wikipedia.org/wiki/Intersection_(set_theory)>)s. A Set is the mathematical model for a _collection_ of different _things_.
 
-We programmers call them *arrays*. 🤓
+We programmers call them _arrays_. 🤓
 
 ![intersection-math-diagram.png](images/intersection-math-diagram.png)
 
@@ -221,21 +219,21 @@ Now, the object structure that we get as a result doesn’t make any sense. It�
 
 Why is the name of this feature so confusing?
 
-Well, my friends… After some [research](https://stackoverflow.com/questions/38855908/naming-of-typescripts-union-and-intersection-types), I was able to understand why TypeScript developers named it this way. As Einstein famously said “When we think about TypeScript intersections, instead of thinking about types as sets of object properties, we could instead focus on *scalar* variables and their sets of permissible values”. 
+Well, my friends… After some [research](https://stackoverflow.com/questions/38855908/naming-of-typescripts-union-and-intersection-types), I was able to understand why TypeScript developers named it this way. As Einstein famously said “When we think about TypeScript intersections, instead of thinking about types as sets of object properties, we could instead focus on _scalar_ variables and their sets of permissible values”.
 
 Yeah, I know what you’re thinking. TypeScript was not invented back then. But it’s ok. Everybody is creating memes and putting words in Einstein’s mouth. Why can’t I?
 
-To understand how intersections relate to math, let’s experiment with *literal types*. Consider a set of metadata for songs and another one for video clips:
+To understand how intersections relate to math, let’s experiment with _literal types_. Consider a set of metadata for songs and another one for video clips:
 
 ```tsx
-type SongMetadata = 'length' | 'album' | 'title' | 'artist';
-type MovieMetadata = 'length' | 'director' | 'title';
+type SongMetadata = 'length' | 'album' | 'title' | 'artist'
+type MovieMetadata = 'length' | 'director' | 'title'
 ```
 
-Here, there are some *common* metadata, like `title` and `length`. We could get those, by using an intersection:
+Here, there are some _common_ metadata, like `title` and `length`. We could get those, by using an intersection:
 
 ```tsx
-type CommonMetadata = SongMeta & MovieMetadata  // "length" | "title"
+type CommonMetadata = SongMeta & MovieMetadata // "length" | "title"
 ```
 
 Now, if we compare this example to the diagram we saw previously, math makes total sense:
@@ -250,11 +248,11 @@ Having a union will result in a larger set, containing all the metadata for both
 
 ![typescript-union-diagram.png](images/typescript-union-diagram.png)
 
-A union combines *all* the values they have in common or not. An intersection, on the other side, combines *only* the common values:
+A union combines _all_ the values they have in common or not. An intersection, on the other side, combines _only_ the common values:
 
 ```tsx
-type AllMetadata = SongMeta | MovieMetadata  // "length" | "album" | "album" | "director" | "artist" | "title"
-type CommonMetadata = SongMeta & MovieMetadata  // "length" | "title"
+type AllMetadata = SongMeta | MovieMetadata // "length" | "album" | "album" | "director" | "artist" | "title"
+type CommonMetadata = SongMeta & MovieMetadata // "length" | "title"
 ```
 
 Here, I have another million dollar question for you…
@@ -265,31 +263,31 @@ Remember our previous example?
 
 ```tsx
 type User = Id & {
-  email: string;
-  username: string;
-};
+  email: string
+  username: string
+}
 ```
 
 You can get the same result if you use an interface in combination with the `extends` keyword:
 
 ```tsx
 interface User extends Id {
-  username: string;
-  email: string;
+  username: string
+  email: string
 }
 ```
 
-The `extends` keyword is more suitable for implementing OOP structures. **It’s basically a [JavaScript feature](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends).** 
+The `extends` keyword is more suitable for implementing OOP structures. **It’s basically a [JavaScript feature](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends).**
 
-Although you can use it with interfaces, which is a TypeScript-only feature, you *can’t* use it with type aliases.
+Although you can use it with interfaces, which is a TypeScript-only feature, you _can’t_ use it with type aliases.
 
-It comes with other limitations. For example, it can only be used with types that have statically known members. You can’t use it with *dynamically* generated types.
+It comes with other limitations. For example, it can only be used with types that have statically known members. You can’t use it with _dynamically_ generated types.
 
 If you are not working with classes and OOP is not important to you, it’s better to avoid the `extends` keyword altogether. Intersections can provide much more functionality.
 
 ---
 
-For those who find these concepts difficult, you can check out my previous posts. I have a series of articles about TypeScript. I write about my experience learning the language and I’m trying to explain my mental model using practical examples. 
+For those who find these concepts difficult, you can check out my previous posts. I have a series of articles about TypeScript. I write about my experience learning the language and I’m trying to explain my mental model using practical examples.
 
 If you are a visual person like me, you can also check out my 📺[YouTube series about TypeScript](https://youtube.com/playlist?list=PL73mkIDIrfyPKjkJ1V151lcgGEDHs3tgG).
 
