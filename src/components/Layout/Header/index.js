@@ -8,12 +8,12 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   max-width: 1250px;
-  margin: 3rem auto;
+  margin: 0 auto;
   line-height: 2rem;
-  padding: 0 1rem;
+  padding: 3rem 1rem;
 
   @media screen and (min-width: 880px) {
-    padding: 0 3rem;
+    padding: 3rem;
   }
 `
 
@@ -27,13 +27,29 @@ const StyledLabel2 = styled(Label2)`
   white-space: nowrap;
 `
 
-const Header = () => {
+const StyledLink = styled(Link)`
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(var(--text-color));
+    text-decoration: none;
+  }
+`
+
+const IconPlaceholder = styled.div`
+  width: 2rem;
+`
+
+const Header = ({ breadcrumb, className }) => {
   return (
-    <StyledHeader>
+    <StyledHeader className={className}>
       <Link to="/">
         <Logo size={Logo.sizes.small} />
       </Link>
-      <StyledLabel2>Nicos Tsourektsidis \ Blog</StyledLabel2>
+      <StyledLabel2>
+        <StyledLink to="/">Nicos Tsourektsidis</StyledLink> \ {breadcrumb}
+      </StyledLabel2>
+      <IconPlaceholder />
     </StyledHeader>
   )
 }

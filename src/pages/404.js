@@ -7,6 +7,7 @@ import Logo from '../components/Layout/Logo'
 import PostList from '../components/PostList'
 import Seo from '../components/seo'
 import DynamicCover from '../components/DynamicCover'
+import PostItem from '../components/PostItem'
 
 const Main = styled.main`
   margin: 0 auto;
@@ -56,7 +57,17 @@ const NotFoundPage = ({ data }) => {
       <StyledLabel1 as="h1">
         The page you're looking for must be somewhere below.
       </StyledLabel1>
-      <PostList onLinkHover={handlePostHover} />
+      <PostList onMouseLeave={() => handlePostHover(null)}>
+        {data.allMarkdownRemark.nodes.map((node, index) => (
+          <PostItem
+            key={index}
+            onLinkHover={() => handlePostHover(node)}
+            to={node.fields.slug}
+          >
+            {node.frontmatter.title}
+          </PostItem>
+        ))}
+      </PostList>
       <Footer />
     </Main>
   )
@@ -69,6 +80,28 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    allMarkdownRemark(
+      filter: { frontmatter: { type: { eq: "post" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+          cover {
+            publicURL
+            childImageSharp {
+              gatsbyImageData(width: 1200, placeholder: BLURRED)
+            }
+          }
+        }
       }
     }
   }

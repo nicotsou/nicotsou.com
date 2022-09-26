@@ -2,6 +2,7 @@
 title: Types Of TypeScript
 date: '2021-12-08T22:12:00.000Z'
 description: In this Types Special, we will discover how JavaScript deals with types and how you can make your life simpler with TypeScript.
+type: post
 cover: './cover.jpg'
 ---
 

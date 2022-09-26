@@ -2,6 +2,7 @@
 title: 'Type Wars: The TypeScript Saga'
 date: '2022-01-19T22:12:00.000Z'
 description: In this article, we will review and compare side-by-side the three main TypeScript keywords to create object structures.
+type: post
 cover: './cover.jpg'
 ---
 

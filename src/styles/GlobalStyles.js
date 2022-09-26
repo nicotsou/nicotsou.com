@@ -5,9 +5,9 @@ import { Body1Styles } from './Typography'
 
 const Variables = createGlobalStyle`
   :root {
-    --text-color: var(--ukraine-blue-value);
-    --bg-color: var(--ukraine-yellow-light-value);
-    --caption-color: var(--ukraine-blue-value);
+    --text-color: var(--leather-value);
+    --bg-color: var(--white-value);
+    --caption-color: var(--leather-value);
   }
 `
 
@@ -21,9 +21,9 @@ const ColorStyles = createGlobalStyle`
   // Dark mode
   @media (prefers-color-scheme: dark) {
     :root {
-      --text-color: var(--ukraine-yellow-light-value);
-      --bg-color: var(--ukraine-blue-dark-value);
-      --caption-color: var(--ukraine-yellow-light-value);
+      --text-color: var(--white-value);
+      --bg-color: var(--dark-leather-value);
+      --caption-color: var(--white-value);
     }
   }
 `

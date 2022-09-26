@@ -1,18 +1,18 @@
 module.exports = {
   siteMetadata: {
     siteUrl: 'http://www.nicotsou.com',
-    title: 'NT',
+    title: 'Nicotsou',
     defaultTitle: 'Nicos Tsourektsidis',
     defaultDescription: 'Front-end developer. Based in Zurich, CH',
     defaultImage: '/avatar.jpg',
     author: {
       name: `Nicos Tsourektsidis`,
-      summary: `Hey, thanks for reading! In this personal blog I share thoughts and tutorials about coding.`,
       bio: `Nicos Tsourektsidis, Front-end developer. Based in Zurich, CH`,
     },
     social: {
       twitter: `nicotsou`,
       medium: `nicotsou`,
+      youtube: `creatorgr`,
       github: `nicotsou`,
     },
   },
@@ -26,6 +26,7 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-netlify',
     'gatsby-plugin-react-svg',
     {
       resolve: 'gatsby-plugin-manifest',
@@ -39,9 +40,28 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: 'gatsby-remark-embed-video',
+            options: {
+              maxWidth: 1050,
+              ratio: 2.1 * 0.68,
+              related: false,
+              noIframeBorder: true,
+              loadingStrategy: 'lazy',
+              urlOverrides: [
+                {
+                  id: 'youtube',
+                  embedURL: (videoId) =>
+                    `https://www.youtube-nocookie.com/embed/${videoId}`,
+                },
+              ],
+              containerClass: 'embedVideo-container',
+            },
+          },
+          'gatsby-remark-responsive-iframe',
+          {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 2100,
+              maxWidth: 1050,
               backgroundColor: 'transparent',
             },
           },
@@ -121,6 +141,27 @@ module.exports = {
       options: {
         gatsbyRemarkPlugins: [
           {
+            resolve: 'gatsby-remark-embed-video',
+            options: {
+              width: 800,
+              ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
+              height: 400, // Optional: Overrides optional.ratio
+              related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
+              noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
+              loadingStrategy: 'lazy', //Optional: Enable support for lazy-load offscreen iframes. Default is disabled.
+              urlOverrides: [
+                {
+                  id: 'youtube',
+                  embedURL: (videoId) =>
+                    `https://www.youtube-nocookie.com/embed/${videoId}`,
+                },
+              ], //Optional: Override URL of a service provider, e.g to enable youtube-nocookie support
+              containerClass: 'embedVideo-container', //Optional: Custom CSS class for iframe container, for multiple classes separate them by space
+              iframeId: false, //Optional: if true, iframe's id will be set to what is provided after 'video:' (YouTube IFrame player API requires iframe id)
+              sandbox: 'allow-same-origin allow-scripts allow-presentation', // Optional: iframe sandbox options - Default: undefined
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1900,
@@ -138,6 +179,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/courses/tltr-typescript`,
+        name: `typescript-course`,
       },
     },
     {
@@ -163,5 +211,6 @@ module.exports = {
         name: `assets`,
       },
     },
+    'gatsby-plugin-netlify',
   ],
 }

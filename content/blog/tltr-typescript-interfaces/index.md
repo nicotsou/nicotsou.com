@@ -2,6 +2,7 @@
 title: Master Interfaces In Typescript
 date: '2021-12-29T22:12:00.000Z'
 description: It's time to talk about TypeScript interfaces, once and forever.
+type: post
 cover: './cover.png'
 ---
 
