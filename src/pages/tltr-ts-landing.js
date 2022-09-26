@@ -204,19 +204,15 @@ const LinksPage = () => {
 
           <hr />
 
-          <h3>Is it ready?</h3>
+          <h3>Is this course ready?</h3>
+          <p>
+            The course is not yet completed. I’m releasing learning materials
+            and platform features in short increments.
+          </p>
           <p>
             I'm impatient by design; I wanted to share my course with everyone
             from the very beginning. That's why I'm launching this course far
             ahead of its completion.
-          </p>
-          <p>But that's a good thing!</p>
-          <p>
-            I have already released a lot of content in my YouTube channel and
-            in my personal blog. I wanted a better experience for my viewers. I
-            decided not to use one of the existing tutorial platforms, but to
-            build my own courseware. This will give me the opportunity to
-            provide <strong>awesome 🌟 content</strong>.
           </p>
 
           <h3>How to enroll?</h3>
