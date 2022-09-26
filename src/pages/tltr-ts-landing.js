@@ -176,7 +176,7 @@ const LinksPage = () => {
             <strong>triumph during your 😎 tech interview</strong>.
           </p>
           <p>
-            <strong>It targets all levels.</strong>, from juniors to leads. Just
+            <strong>It targets all levels;</strong> From juniors to leads. Just
             choose what you want to study first. We'll start with the basics,
             reviewing fundamental JavaScript quirky behaviors. I'll teach you
             how to avoid them by using TypeScript. Trust me, everything will
