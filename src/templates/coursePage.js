@@ -124,6 +124,10 @@ const CoursePageTemplate = ({ data }) => {
         />
 
         <Section>
+          {!youtubeVideoId && (
+            <p>A video for this topic will be available soon.</p>
+          )}
+
           {articleSlug && (
             <>
               ✍️ <Link to={articleSlug}>Read the article</Link>.

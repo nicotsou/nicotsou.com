@@ -36,7 +36,6 @@ const IndexPage = ({ data }) => {
   const [isCoverVisible, setIsCoverVisible] = useState(false)
 
   const handlePostHover = (post) => {
-    console.log(post)
     post && setHighlightedPost(post)
     setIsCoverVisible(!!post)
   }
