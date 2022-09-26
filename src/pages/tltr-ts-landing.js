@@ -214,13 +214,18 @@ const LinksPage = () => {
             from the very beginning. That's why I'm launching this course far
             ahead of its completion.
           </p>
+          <p>But that's a good thing!</p>
+          <p>
+            I'm a huge fan of agile and lean startup. Getting feedback at an
+            early stage will help this course become better.
+          </p>
 
           <h3>How to enroll?</h3>
           <p>
             You can <strong>pay as much as you want to enroll</strong>.
           </p>
           <p>
-            I'm also launching a <strong>premium ⚱️ tier</strong> for people who
+            I'm also launching a <strong>👑 Premium tier</strong> for people who
             want to support my work.
           </p>
 
