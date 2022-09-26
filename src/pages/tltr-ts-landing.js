@@ -106,36 +106,57 @@ const LinksPage = () => {
           </Aside>
           <p>
             The complexity of modern applications demands better development
-            tools. <strong>Static typing</strong> adds a lot of confidence to
-            build large scale single page applications.
+            tools. Static typing <strong>builds 💪 confidence</strong> and helps
+            you <strong>scale 📈 your applications</strong>.
           </p>
           <p>
             TypeScript is by far the{' '}
             <a href="https://2021.stateofjs.com/en-US/other-tools/#javascript_flavors">
               most popular
             </a>{' '}
-            way of having types in JavaScript. In stark contrast to older
-            solutions, you can choose to use your favorite tools and libraries.
-            In fact,{' '}
+            way of having types in JavaScript. In fact,{' '}
             <strong>
               developers prefer to learn TypeScript over JavaScript
             </strong>
             .
           </p>
-          <p>JavaScript never had types.</p>
           <p>
-            Switching your mindset takes time. Adding types to a language that
-            hasn't been built with strict types is challenging. Thankfully,
-            TypeScript developers have found a practical way.
+            It took me a lot of time to properly learn TypeScript. I was never
+            expecting it would have been so complicated. I've been working with
+            JavaScript for years. I've been using types in other languages. And
+            still it wasn't a straightforward process for me. You see...
+          </p>
+          <blockquote>
+            <p>JavaScript never had strict types.</p>
+          </blockquote>
+          <p>
+            <strong>Shifting your mindset takes ⏳ time</strong>. Your codebase
+            changes. The way you're writing code changes. Compiler{' '}
+            <ErrorHighlighter>errors</ErrorHighlighter> will become your next
+            best friends.
+          </p>
+          <p>Been there. Done that.</p>
+          <p>Ah, and adding types is only the beginning.</p>
+          <p>
+            Even if you are familiar with static typing languages,{' '}
+            <strong>TypeScript is a different kind of 🍇 fruit</strong>. You can
+            dynamically generate your types.
           </p>
           <p>
-            Ah, and <strong>adding types is only the beginning.</strong> There
-            are several other aspects. What’s the best way of structuring your
-            codebase with TypeScript? Are you repeating yourself? How can you
-            help your team improve their code?
+            In fact, if you are repeating your type annotations in multiple
+            files, you're probably doing something wrong.
           </p>
-          <p>Feeling overwhelmed by all the possibilities? </p>
-          <p>No need to...</p>
+          <p>
+            And it's hard to make design decisions. What is the right keyword to
+            use? What is the proper way to structure your code? Will my code
+            scale or I waste my time?
+          </p>
+          <p>
+            I found myself spending an enormous amount of time studying
+            TypeScript; books, videos, tutorials, documentation pages, chats
+            with friends, code reviews...
+          </p>
+          <p>You don't have to go that far!</p>
           <blockquote>
             <p>
               Let’s make TypeScript{' '}
@@ -146,45 +167,67 @@ const LinksPage = () => {
             </p>
           </blockquote>
           <p>
-            This course is being designed from the ground up. I'm putting a lot
-            of effort to present it as efficient as possible. It will contain
-            video tutorials with their associated references, useful articles,
-            coding challenges, fun facts, cheatsheets, quizzes, and more
-            surprises are coming along the way. Everything you need to{' '}
-            <strong>💥 triumph during your tech interview</strong>.
+            I designed this course from the ground up. With 📺{' '}
+            <strong>video tutorials</strong>, 📑 <strong>articles</strong>, 💻{' '}
+            <strong>coding challenges</strong>, and more 💎{' '}
+            <strong>surprises</strong> are coming along the way. Pretty soon you
+            will find <strong>🎒 workshops</strong> to help you practice what
+            you're learning. Basically everything you need to{' '}
+            <strong>triumph during your 😎 tech interview</strong>.
           </p>
           <p>
-            <strong>Get comfortable working with types 😎</strong>. We'll start
-            with the very basics, learning how TypeScript works. You will launch
-            your first application from the very beginning. We will review
-            fundamental JavaScript features and quirks that will help you
-            increase code quality. Choose what you want to learn based on your
-            experience and seniority.
+            <strong>It targets all levels.</strong>, from juniors to leads. Just
+            choose what you want to study first. We'll start with the basics,
+            reviewing fundamental JavaScript quirky behaviors. I'll teach you
+            how to avoid them by using TypeScript. Trust me, everything will
+            make sense to you after watching that part of the course.
           </p>
           <p>
-            We will discover advanced TypeScript features that will help you
-            structure your applications in ways you never imagined. Your way to{' '}
-            <strong>become a TypeScript 🎖 expert in your team</strong>. I will
-            explain my mental model to help you understand the different types
-            and the meaning behind them.
+            Wouldn't be great if you were able to read and understand every
+            TypeScript file? We'll get there! I will present you the most
+            advanced TypeScript features. I will share my mental model to help
+            you understand how everything is connected. You'll learn how to
+            structure your apps in ways you never imagined. That's your ticket
+            to <strong>become a TypeScript 🎖 Pro</strong>.
           </p>
           <p>
-            Learn best practices to incorporate TypeScript in your existing or
-            new applications. This will help you make the right choices and move
-            more efficiently. Discover common pitfalls and misconceptions. My
-            goal is to help you <strong>🧑🏿‍💻 become a better engineer</strong>.
+            At the end of this course you will learn how to apply best practices
+            and make the right design decisions. It's our duty to{' '}
+            <strong>write high 👌 quality code</strong>.
           </p>
+          <p>
+            Join me in this learning journey and{' '}
+            <strong>become a better software 🧑🏿‍💻 engineer</strong>.
+          </p>
+          <br />
+          <p>Nicos</p>
 
           <hr />
 
-          <h2>Get free access!</h2>
+          <h3>Is it ready?</h3>
           <p>
-            The course is ✍️ <i>work in progress</i>.
+            I'm impatient by design; I wanted to share my course with everyone
+            from the very beginning. That's why I'm launching this course far
+            ahead of its completion.
+          </p>
+          <p>But that's a good thing!</p>
+          <p>
+            I have already released a lot of content in my YouTube channel and
+            in my personal blog. I wanted a better experience for my viewers. I
+            decided not to use one of the existing tutorial platforms, but to
+            build my own courseware. This will give me the opportunity to
+            provide <strong>awesome 🌟 content</strong>.
+          </p>
+
+          <h3>How to enroll?</h3>
+          <p>
+            You can <strong>pay as much as you want to enroll</strong>.
           </p>
           <p>
-            Subscribe to my newsletter and you will be the first who will access
-            it for free.
+            I'm also launching a <strong>premium ⚱️ tier</strong> for people who
+            want to support my work.
           </p>
+
           <br />
           <br />
           <NotifyPrompt />

@@ -156,7 +156,7 @@ const LinksPage = ({ data }) => {
     <main>
       <GlobalStyleModifier />
       <Seo
-        title="TLTR; TypeScript - Students Companion"
+        title="TLTR; TypeScript - Course content"
         image={courseThumbImage}
         description="A course for JavaScript developers who seek to master type checking with TypeScript. Created by Nicos Tsourektsidis."
       >
@@ -177,9 +177,9 @@ const LinksPage = ({ data }) => {
       >
         <Section>
           <header>
-            <Label2>TLTR; TypeScript</Label2>
+            <Label2>Course Content</Label2>
             <StyledHeading1 itemProp="headline">
-              Students Companion
+              TLTR; TypeScript
             </StyledHeading1>
           </header>
         </Section>

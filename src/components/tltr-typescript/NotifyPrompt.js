@@ -46,11 +46,11 @@ const LaunchText = styled.span`
 const NotifyPrompt = () => {
   return (
     <center>
-      <StyledLink href="https://fantastic-crafter-6730.ck.page/88d8f79c35">
-        Notify me
+      <StyledLink href="https://nicotsou.gumroad.com/l/TLTR-typescript">
+        Enroll now
       </StyledLink>
       <StyledDisclaimer>
-        <LaunchText>Beta is about to 🚀 soon.</LaunchText>
+        <LaunchText>Work in 🚜 progress.</LaunchText>
       </StyledDisclaimer>
     </center>
   )

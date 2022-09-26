@@ -97,7 +97,7 @@ const CoursePageTemplate = ({ data }) => {
         <Section>
           <header>
             <Label2>
-              <BreadcrumbLink to="/courses/tltr-typescript/students-companion">
+              <BreadcrumbLink to="/courses/tltr-typescript">
                 TLTR; Typescript
               </BreadcrumbLink>{' '}
               \ {module}
