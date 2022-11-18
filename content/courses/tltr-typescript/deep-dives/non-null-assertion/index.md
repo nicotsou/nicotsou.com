@@ -1,9 +1,11 @@
 ---
-title: Intersections
+title: Non-Null Assertion
 module: Deep Dives
 type: course
 cover: './cover.jpg'
 order: 1500
-youtubeVideoId: 80POE3q_HCo
+youtubeVideoId:
 articleSlug: /tltr-typescript-intersections
 ---
+
+Video will be posted soon.
