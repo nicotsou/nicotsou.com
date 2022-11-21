@@ -7,6 +7,10 @@
   "keywords": [
     "gatsby"
   ],
+  "engines": {
+    "node": ">=18.12.0",
+    "npm": ">=19.1.2"
+  },
   "scripts": {
     "start": "gatsby develop -H 0.0.0.0",
     "develop": "gatsby develop",
