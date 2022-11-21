@@ -236,31 +236,29 @@ const LinksPage = ({ data }) => {
 
 export default LinksPage
 
-export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(
-      filter: { frontmatter: { type: { eq: "course" } } }
-      sort: { fields: [frontmatter___order], order: ASC }
-    ) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
-          quote
-          module
-          cover {
-            publicURL
-            childImageSharp {
-              gatsbyImageData(width: 1200, placeholder: BLURRED)
-            }
+export const pageQuery = graphql`{
+  allMarkdownRemark(
+    filter: {frontmatter: {type: {eq: "course"}}}
+    sort: {frontmatter: {order: ASC}}
+  ) {
+    nodes {
+      excerpt
+      fields {
+        slug
+      }
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        title
+        description
+        quote
+        module
+        cover {
+          publicURL
+          childImageSharp {
+            gatsbyImageData(width: 1200, placeholder: BLURRED)
           }
         }
       }
     }
   }
-`
+}`

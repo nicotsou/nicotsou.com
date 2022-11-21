@@ -75,35 +75,33 @@ const IndexPage = ({ data }) => {
 
 export default IndexPage
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
+export const pageQuery = graphql`{
+  site {
+    siteMetadata {
+      title
     }
-    allMarkdownRemark(
-      filter: { frontmatter: { type: { eq: "post" } } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
-          quote
-          cover {
-            publicURL
-            childImageSharp {
-              gatsbyImageData(width: 1200, placeholder: BLURRED)
-            }
+  }
+  allMarkdownRemark(
+    filter: {frontmatter: {type: {eq: "post"}}}
+    sort: {frontmatter: {date: DESC}}
+  ) {
+    nodes {
+      excerpt
+      fields {
+        slug
+      }
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        title
+        description
+        quote
+        cover {
+          publicURL
+          childImageSharp {
+            gatsbyImageData(width: 1200, placeholder: BLURRED)
           }
         }
       }
     }
   }
-`
+}`

@@ -10,21 +10,19 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Get all markdown blog posts sorted by date
   let result = await graphql(
-    `
-      {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: ASC }
-          filter: { frontmatter: { type: { eq: "post" } } }
-        ) {
-          nodes {
-            id
-            fields {
-              slug
-            }
-          }
-        }
+    `{
+  allMarkdownRemark(
+    sort: {frontmatter: {date: ASC}}
+    filter: {frontmatter: {type: {eq: "post"}}}
+  ) {
+    nodes {
+      id
+      fields {
+        slug
       }
-    `
+    }
+  }
+}`
   )
 
   if (result.errors) {
@@ -38,21 +36,19 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const posts = result.data.allMarkdownRemark.nodes
 
   result = await graphql(
-    `
-      {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___order], order: ASC }
-          filter: { frontmatter: { type: { eq: "course" } } }
-        ) {
-          nodes {
-            id
-            fields {
-              slug
-            }
-          }
-        }
+    `{
+  allMarkdownRemark(
+    sort: {frontmatter: {order: ASC}}
+    filter: {frontmatter: {type: {eq: "course"}}}
+  ) {
+    nodes {
+      id
+      fields {
+        slug
       }
-    `
+    }
+  }
+}`
   )
 
   if (result.errors) {
