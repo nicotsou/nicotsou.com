@@ -36,6 +36,7 @@ const transitionStyles = {
 
 const DynamicCover = ({ cover, visible, className }) => {
   const coverImage = getImage(cover)
+
   return (
     <Transition in={visible} timeout={1000}>
       {(state) => (
