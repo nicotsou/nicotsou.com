@@ -116,7 +116,8 @@ const BlogPostTemplate = ({ data, location }) => {
         <Section>
           <AuthorAside>
             Hey, thanks for reading! In this blog I share thoughts and tutorials
-            about coding, technology, and content creation.
+            about coding, technology, and content creation. Subscribe for some
+            exclusive content.
           </AuthorAside>
           <SignUp />
           <nav>
