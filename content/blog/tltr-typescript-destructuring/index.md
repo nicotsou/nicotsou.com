@@ -1,12 +1,12 @@
 ---
 title: Mastering Destructuring Assignment
 date: '2022-12-09T22:12:00.000Z'
-description: Nullish Coalescing allows you to “fall back” to a default value when dealing with the nullable values.
+description: Destructuring is one of these _aha_ moments you have as a software engineer.
 type: post
 cover: './cover.jpg'
 ---
 
-Destructuring is one of these _aha_ moments you have as a software engineer. It's actually a JavaScript feature.
+Destructuring is one of these _aha_ moments you have as a software engineer.
 
 > After spending your life trying to read values from arrays or objects, you discover the syntax that changes your life. Forever.
 
