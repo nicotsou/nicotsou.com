@@ -50,6 +50,7 @@ const SuggestedArticlesLink = styled(Link)`
   align-items: center;
   gap: 0.5rem;
   text-overflow: ellipsis;
+  max-width: 15rem;
 `
 
 const SectionStyles = css`

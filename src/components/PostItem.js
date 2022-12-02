@@ -5,7 +5,7 @@ import { Heading3Styles } from '../styles/Typography'
 
 const StyledListItem = styled.li`
   margin-top: 1rem;
-  max-width: 26rem;
+  max-width: 20rem;
 `
 
 const PostLink = styled(Link)`
