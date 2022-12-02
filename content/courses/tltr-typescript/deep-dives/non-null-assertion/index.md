@@ -4,8 +4,8 @@ module: Deep Dives
 type: course
 cover: './cover.jpg'
 order: 1500
-youtubeVideoId:
-articleSlug: /tltr-typescript-intersections
+youtubeVideoId: W-6vYZaVWqo
+articleSlug: /tltr-typescript-non-null-assertion
 ---
 
-Video will be posted soon.
+Let's master of the most controversial features Of TypeScript. The non-null assertion operator allows you to check nullable values by placing an exclamation mark at the end of the expression. Join me in this episode to learn how it works.
