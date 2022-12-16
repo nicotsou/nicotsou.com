@@ -1,5 +1,5 @@
 ---
-title: Master Spread Operator
+title: Master Spread Operator With TypeScript
 date: '2022-12-16T22:12:00.000Z'
 description: Nullish Coalescing allows you to “fall back” to a default value when dealing with the nullable values.
 type: post
@@ -165,7 +165,7 @@ Here’s how we can use it:
 ```tsx
 const genres = ['Rock', 'Pop', 'RnB']
 const [first, second, ...rest] = genres
-rest // ['RnB']
+console.log(rest) // ['RnB']
 ```
 
 This will basically store all the _remaining_ items in a variable that we named `rest`.
@@ -189,7 +189,5 @@ genres('Rock', 'Pop', 'RnB', 'HipHop', 'Metal') // Rock, Pop, and 3 more...
 ```
 
 The function receives an infinite number of strings. It returns the first two values, and displays the count of the remaining ones. Here we use the rest operator to store the remaining arguments in the `otherArgs` variable.
-
----
 
 Cover photo credit: [Alper Güzeler](https://unsplash.com/photos/5JE9AQqWo_Q)
