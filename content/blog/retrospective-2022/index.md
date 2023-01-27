@@ -118,6 +118,6 @@ Always open for music recommendation. 🤗
 
 And here we are. It’s true that 2023 didn’t start with the best intentions. But this won’t stop us from getting the most out of it. Until next year, stay safe, stay curious. 🙂
 
-You can read my last-years retrospective here.
+Read my last year's retrospective [here](/retrospective-2021).
 
 Many thanks to [Vernon Raineil Cenzon](https://unsplash.com/photos/vLF2n8fiFPY) for his amazing cover photo.
