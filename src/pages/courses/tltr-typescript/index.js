@@ -214,16 +214,15 @@ const LinksPage = ({ data }) => {
 
         <Section>
           <AuthorAside>
-            Hey, Thank you so much for checking out my course. It's still work
-            in progress.{' '}
+            Hey, thanks for enrolling in my course. Don't forget to{' '}
             <a
-              href="https://twitter.com/nicotsou"
+              href="http://twitter.com/share?text=I just enrolled to this TypeScript course for free by @nicotsou. Check it out!&url=http://tltr-typescript.com&hashtags=hashtag1,hashtag2,hashtag3"
               target="_blank"
               rel="noreferrer"
             >
-              Share
+              share
             </a>{' '}
-            your thoughts about it.
+            your experience with your friends on Twitter.
           </AuthorAside>
         </Section>
       </Article>
@@ -236,29 +235,31 @@ const LinksPage = ({ data }) => {
 
 export default LinksPage
 
-export const pageQuery = graphql`{
-  allMarkdownRemark(
-    filter: {frontmatter: {type: {eq: "course"}}}
-    sort: {frontmatter: {order: ASC}}
-  ) {
-    nodes {
-      excerpt
-      fields {
-        slug
-      }
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        title
-        description
-        quote
-        module
-        cover {
-          publicURL
-          childImageSharp {
-            gatsbyImageData(width: 1200, placeholder: BLURRED)
+export const pageQuery = graphql`
+  {
+    allMarkdownRemark(
+      filter: { frontmatter: { type: { eq: "course" } } }
+      sort: { frontmatter: { order: ASC } }
+    ) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+          quote
+          module
+          cover {
+            publicURL
+            childImageSharp {
+              gatsbyImageData(width: 1200, placeholder: BLURRED)
+            }
           }
         }
       }
     }
   }
-}`
+`
