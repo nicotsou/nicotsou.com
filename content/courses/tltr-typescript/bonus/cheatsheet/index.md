@@ -287,7 +287,7 @@ The moment we start typing our `case` block, autocompletion kicks in:
 ## Functions
 
 <details>
-  <summary>Functions</summary>
+  <summary>Arguments</summary>
 
 ```tsx
 
