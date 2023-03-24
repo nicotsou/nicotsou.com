@@ -117,6 +117,22 @@ const BlogStyles = css`
     ${DividerStyles}
   }
 
+  details {
+    margin-bottom: 1rem;
+    transition: max-height 0.1s ease;
+    height: auto;
+    max-height: 1.5rem;
+
+    &[open] {
+      max-height: 99rem;
+      transition: max-height 0.6s ease;
+    }
+
+    summary {
+      cursor: pointer;
+    }
+  }
+
   .gatsby-resp-image-wrapper {
     width: 100vw;
     max-width: calc(640px + 2rem) !important;
