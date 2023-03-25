@@ -2,7 +2,7 @@
 title: Practicing Modules
 module: Code Organization
 type: course
-cover:
+cover: cover.jpg
 order: 6100
 youtubeVideoId:
 articleSlug: /tltr-typescript-modules
@@ -12,7 +12,7 @@ In this lab, we will build a plain TypeScript project to practice modules.
 
 If you’re new to TypeScript, and modules are a new thing for you, I highly recommend you practice the following examples. If you see any errors, try to search for and resolve them by yourself.
 
-There’s a magical thing happening when you try the things you’re learning. They stick. ☺️
+> There’s a magical thing happening when you try the things you’re learning. They stick. ☺️
 
 If you spot a mistake in the examples below, or you want to suggest something, feel free to create a merge request. I would really appreciate your input.
 
@@ -342,4 +342,4 @@ I hope you managed to come up with a similar result.
 
 ### 4. Bonus step 👨🏻‍🎨
 
-Now let’s experiment with the CommonJS approach. Read the instructions in the next section and try to refactor the code to use CommonJS instead of ES Modules.
+Now let’s experiment with the CommonJS approach. Read the instructions in [my article](/tltr-typescript-modules/) and try to refactor the code to use CommonJS instead of ES Modules.

@@ -387,4 +387,12 @@ You will notice that TypeScript by default outputs your modules using CommonJS:
 
 Which may give you an idea on how popular they are in the Node.js ecosystem. That’s only to maximize compatibility, though. No developers are using CommonJS these days to write code. ES Modules will slowly become the one and only standard for JavaScript applications.
 
+## Let's practice what we've learned! 🧑🏿‍💻👩‍💻
+
+I have prepared for you a small lab in which you will create a small TypeScript project from scratch and you will experiment with modules in TypeScript. It doesn't require you to know any framework, since we're not really going to implement something complex. However, you will have a solid understanding on how modules work after going through it.
+
+To access the lab, [enroll to my TLTR; TypeScript course for free](https://tltr-typescript.com).
+
+That's all forlks! I'll be happy to hear your feedback about the article, as well as the course itself.
+
 Many thanks to [Shubham Dhage](https://unsplash.com/photos/mjl0yIdSi18) for his amazing cover art.
