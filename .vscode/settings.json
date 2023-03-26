@@ -1,0 +1,14 @@
+{
+  "grammarly.selectors": [
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "content/blog/tltr-declarative-ui/index.md"
+    },
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "content/blog/why-I-became-a-software-engineer/index.md"
+    }
+  ]
+}
