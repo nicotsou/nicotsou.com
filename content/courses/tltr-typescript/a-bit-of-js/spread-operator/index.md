@@ -4,8 +4,8 @@ module: A bit of JavaScript
 type: course
 cover: './cover.jpg'
 order: 3000
-youtubeVideoId:
+youtubeVideoId: QQZL-LdCqNc
 articleSlug: /tltr-typescript-intersections
 ---
 
-A video will be published soon.
+Understand the basics of the spread operator and use it properly in your code. Learn how to use it with arrays and object structures. We also learn the rest operator. I tried to collect the most common use cases I have seen implemented in production codebases.

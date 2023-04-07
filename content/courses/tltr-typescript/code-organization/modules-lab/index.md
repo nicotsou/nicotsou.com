@@ -4,7 +4,7 @@ module: Code Organization
 type: course
 cover: cover.jpg
 order: 6100
-youtubeVideoId:
+youtubeVideoId: djO2TmnhKOE
 articleSlug: /tltr-typescript-modules
 ---
 
