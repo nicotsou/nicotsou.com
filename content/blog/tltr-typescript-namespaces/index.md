@@ -114,18 +114,20 @@ namespace MyApp {
   }
 
   export class Error {
-    message?: string;
-    stack?: string;
+    message?: string
+    stack?: string
   }
 
   export interface User {
-    name: string;
+    name: string
   }
 }
 
-**namespace MyApp {
-  export const API_KEY = 'youwillneverknow';
-}**
+// highlight-start
+namespace MyApp {
+  export const API_KEY = 'youwillneverknow'
+}
+// highlight-end
 ```
 
 TypeScript will _merge_ these two blocks of code into a single one, resulting in a namespace that includes the 3 types we declared above, plus the `API_KEY` variable.
@@ -369,10 +371,14 @@ We want to have a single `index.ts` file as a starting point. We also want to co
 
 ```tsx
 {
-	**"include": ["./index.ts"],** 	/* We will use this file as a root */
+  // highlight-start
+  "include": ["./index.ts"], 	/* We will use this file as a root */
+  // highlight-end
 	"compilerOptions": {
 		...
-		**"outDir": "./dist"** /* The compiler will output the files here */
+    // highlight-start
+		"outDir": "./dist" /* The compiler will output the files here */
+    // highlight-end
 	}
 }
 ```
@@ -386,7 +392,9 @@ Sure, we could eventually export it and import it, but this will not work. So wh
 In `main.ts` we’ll have to add the following comment:
 
 ```tsx
+// highlight-start
 /// <reference path="MyService/index.ts" />
+// highlight-end
 
 const user: MyService.User = {
   name: 'Nicos',
@@ -400,9 +408,11 @@ This is not just a comment for TypeScript, since it starts with a triple slash. 
 The code above will import the MyService index file. But we haven’t done yet. We need to edit that file to help TypeScript connect the dots and include all the other files:
 
 ```tsx
+// highlight-start
 /// <reference path="User.ts" />
 /// <reference path="HttpStatusCodes.ts" />
 /// <reference path="ErrorResponse.ts" />
+// highlight-end
 
 namespace MyService {
   export const API_KEY = 'youwillneverknow'
