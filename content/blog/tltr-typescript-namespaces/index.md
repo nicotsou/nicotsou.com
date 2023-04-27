@@ -506,7 +506,7 @@ Namespaces are:
 - Hard to work with and reason about.
 - Suitable for creating type definitions.
 - Typing existing JavaScript applications that aren’t migrated to TypeScript.
-- Unlike modules, they can span multiple files and can be concatenated using `[outFile](https://www.typescriptlang.org/tsconfig#outFile)`.
+- Unlike modules, they can span multiple files and can be concatenated using [outFile](https://www.typescriptlang.org/tsconfig#outFile).
 - Namespaces support ambient declarations, that can help you define types outside the scope of your application.
 
 ## TypeScript 5.0 is moving away from namespaces 🗞️
