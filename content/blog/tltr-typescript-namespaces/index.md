@@ -395,11 +395,7 @@ const user: MyService.User = {
 console.log(MyService.API_KEY)
 ```
 
-This is not just a comment for TypeScript, since it starts with a triple slash. It’s called **[triple-slash directive](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html)**.
-
-And yes, it’s XML syntax.
-
-This basically tells TypeScript which namespace we want to _extend_. Kinda like an `import` statement.
+This is not just a comment for TypeScript, since it starts with a triple slash. It’s called **[triple-slash directive](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html)**. And yes, it’s XML syntax. It basically tells TypeScript which namespace we want to _reference_. Kinda acts like an `import` statement.
 
 The code above will import the MyService index file. But we haven’t done yet. We need to edit that file to help TypeScript connect the dots and include all the other files:
 
