@@ -47,7 +47,7 @@ class Playlist<T extends WithId> {
 
 The class Playlist`<T extends WithId>` is a [generic class](https://nicotsou.com/tltr-typescript-generics/) with a **generic constraint** on the interface `WithId`. Not all types are acceptable here. It accepts a type `T` that *extends* the `WithId<T>` interface. Practically, this means that type `T` must contain all the members of the `WithId` interface.
 
-Why do we need that? Because within our `removeFromPlaylist()` method we are consuming the `id` property of an `item`. If we don’t put this constraint `T extends WithId`, TypeScript will complain because otherwise `T` can be *any* object structure. It may or may not contain an `id` property. Of course we can use a [type guard](https://nicotsou.com/tltr-typescript-narrowing/) to check if the id exists in our object by limiting the accepted types using the `extends` keyword, we make the whole implementation cleaner and less sensitive to errors.
+Why do we need that? Because within our `removeFromPlaylist()` method we are consuming the `id` property of an `item`. If we don’t put this constraint `T extends WithId`, TypeScript will complain because otherwise `T` can be *any* object structure. It may or may not contain an `id` property. Of course we can use a [type guard](https://nicotsou.com/tltr-typescript-narrowing/) to check if the id exists in our object, but by limiting the accepted types using the `extends` keyword, we make the whole implementation cleaner and less sensitive to errors.
 
 ## Conditional types
 
