@@ -33,6 +33,7 @@ Assuming that you’re working on a modern TypeScript project, and you’re usin
 But I know why you’re still reading this article. You want to know everything about namespaces. Let me present to you how namespaces work and why they _may_ be useful.
 
 ![](images/watercolor-1.jpg)
+_Namespaces are like abstract art. You can mix and match different shapes of objects and lines of code._
 
 ## How to use a namespace? 🧑🏿‍💻
 
@@ -364,6 +365,7 @@ Now, you may think that’s much easier compared to manually exporting and impor
 Normally codebases for libraries have relatively small codebases. Applications on the other hand have a lot of different views and objects that would be extremely impractical to keep them on the global scope.
 
 ![](images/watercolor-2.jpg)
+_More abstract art ^\_^_
 
 To simulate how a real application works, let’s do some compiler adjustments.
 
