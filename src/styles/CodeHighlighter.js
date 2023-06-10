@@ -20,20 +20,24 @@ const CodeHighlighter = createGlobalStyle`
   :not(pre) > code[class*='language-'] {
     padding: 4px 6px;
     border-radius: 0.3em;
-    background: rgba(var(--text-color), 0.05);
+    background: rgba(var(--text-color), var(--box-bg-opacity));
   }
 
   /*.namespace {} */
   .token.comment {
-    opacity: 0.4;
+    color: rgba(var(--text-color), .35);
   }
-
+  
   .token.prolog,
   .token.doctype,
   .token.cdata {
     opacity: 0.65;
   }
-  /* .token.punctuation {} */
+
+  .token.punctuation {
+    color: rgba(var(--text-color), 1);
+  }
+  
   .token.property,
   .token.tag,
   .token.boolean,
@@ -41,35 +45,38 @@ const CodeHighlighter = createGlobalStyle`
   .token.constant,
   .token.symbol,
   .token.deleted {
-    color: rgba(var(--text-color), 0.85);
+    color: rgba(var(--text-color), 0.5);
   }
+
   .token.selector,
   .token.attr-name,
   .token.string,
   .token.char,
   .token.builtin,
   .token.inserted {
-    opacity: 0.65;
+    color: rgba(var(--text-color), 0.5);
   }
   .token.operator,
   .token.entity,
   .token.url,
   .language-css .token.string,
   .style .token.string {
-    opacity: 0.5;
+    color: rgba(var(--text-color), 0.66);
   }
+
   .token.atrule,
   .token.attr-value {
-    opacity: 0.8;
+    color: rgba(var(--text-color), 0.9);
   }
 
   .token.keyword {
-    opacity: 0.9;
+    color: rgba(var(--text-color), .5);
   }
 
   .token.function {
-    opacity: 0.65;
+    color: rgba(var(--text-color), .55);
   }
+
   .token.regex,
   .token.important,
   .token.variable {
@@ -111,7 +118,7 @@ const CodeHighlighter = createGlobalStyle`
   }
 
   .gatsby-highlight-code-line {
-    background-color: rgba(var(--text-color), 0.05);
+    background-color: rgba(var(--text-color), var(--box-bg-opacity));
     display: block;
     margin: -0.125rem -3rem;
     padding: 0.125rem 3rem;
