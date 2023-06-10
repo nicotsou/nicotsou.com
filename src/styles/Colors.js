@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, css } from 'styled-components'
 
 const Colors = createGlobalStyle`
   :root {
@@ -15,7 +15,22 @@ const Colors = createGlobalStyle`
     --tltr-blue-value: 22, 7, 138;
     --tltr-black-value: 2, 5, 23;
     --tltr-awesome-value: 255, 26, 107;
-}
+  }
+`
+
+export const Pride = css`
+  background-image: linear-gradient(
+    90deg,
+    rgba(191, 95, 255, 1) 0%,
+    rgba(83, 156, 255, 1) 20%,
+    rgba(111, 255, 89, 1) 30%,
+    rgba(255, 247, 46, 1) 40%,
+    rgba(255, 168, 96, 1) 50%,
+    rgba(255, 94, 94, 1) 70%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `
 
 export default Colors

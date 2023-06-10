@@ -12,6 +12,7 @@ import {
   Heading6Styles,
   Label2Styles,
 } from '../styles/Typography'
+import { Pride } from '../styles/Colors'
 
 const BlogStyles = css`
   p {
@@ -60,6 +61,7 @@ const BlogStyles = css`
 
   blockquote {
     margin: 3rem 0 4rem 3rem;
+    ${Pride}
 
     p {
       ${Aside1Styles}

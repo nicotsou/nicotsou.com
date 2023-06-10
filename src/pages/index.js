@@ -8,6 +8,7 @@ import PostList from '../components/PostList'
 import Seo from '../components/seo'
 import DynamicCover from '../components/DynamicCover'
 import PostItem from '../components/PostItem'
+import { Pride } from '../styles/Colors'
 
 const Main = styled.main`
   margin: 0 auto;
@@ -22,6 +23,7 @@ const StyledLogo = styled(Logo)`
 const StyledAside1 = styled(Aside1)`
   margin-top: 3.85rem;
   max-width: 580px;
+  ${Pride}
 `
 
 const StyledLabel1 = styled(Label1)`
@@ -75,33 +77,35 @@ const IndexPage = ({ data }) => {
 
 export default IndexPage
 
-export const pageQuery = graphql`{
-  site {
-    siteMetadata {
-      title
-    }
-  }
-  allMarkdownRemark(
-    filter: {frontmatter: {type: {eq: "post"}}}
-    sort: {frontmatter: {date: DESC}}
-  ) {
-    nodes {
-      excerpt
-      fields {
-        slug
-      }
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+export const pageQuery = graphql`
+  {
+    site {
+      siteMetadata {
         title
-        description
-        quote
-        cover {
-          publicURL
-          childImageSharp {
-            gatsbyImageData(width: 1200, placeholder: BLURRED)
+      }
+    }
+    allMarkdownRemark(
+      filter: { frontmatter: { type: { eq: "post" } } }
+      sort: { frontmatter: { date: DESC } }
+    ) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+          quote
+          cover {
+            publicURL
+            childImageSharp {
+              gatsbyImageData(width: 1200, placeholder: BLURRED)
+            }
           }
         }
       }
     }
   }
-}`
+`
