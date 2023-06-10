@@ -14,7 +14,7 @@ const CONVERTKIT_FORM_ID = '3382032'
 const CONVERTKIT_PUBLIC_API_KEY = 'enqnB60zz9yHfAppSdBe1g'
 
 const Container = styled.div`
-  background-color: rgba(var(--text-color), 0.05);
+  background-color: rgba(var(--text-color), var(--box-bg-opacity));
   backdrop-filter: blur(20px);
   border-radius: calc(0.9 * 1rem);
   line-height: 1;

@@ -8,6 +8,7 @@ const Variables = createGlobalStyle`
     --text-color: var(--leather-value);
     --bg-color: var(--white-value);
     --caption-color: var(--leather-value);
+    --box-bg-opacity: 0.03;
   }
 `
 
