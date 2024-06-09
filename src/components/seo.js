@@ -3,14 +3,7 @@ import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import { useLocation } from '@reach/router'
 
-const Seo = ({
-  article,
-  title,
-  image,
-  children,
-  lang = 'en',
-  description = '',
-}) => {
+const Seo = ({ article, title, image, children, description = '' }) => {
   const { pathname } = useLocation()
   const { site } = useStaticQuery(
     graphql`
