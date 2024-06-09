@@ -5,24 +5,49 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
   // Define a template for blog post
-  const blogPost = path.resolve(`./src/templates/blogPost.js`)
-  const coursePage = path.resolve(`./src/templates/coursePage.js`)
+  const blogPostTemplate = path.resolve(`./src/templates/blogPost.js`)
+  const coursePageTemplate = path.resolve(`./src/templates/coursePage.js`)
+  const mdPageTemplate = path.resolve(`./src/templates/mdPage.js`)
 
   // Get all markdown blog posts sorted by date
   let result = await graphql(
-    `{
-  allMarkdownRemark(
-    sort: {frontmatter: {date: ASC}}
-    filter: {frontmatter: {type: {eq: "post"}}}
-  ) {
-    nodes {
-      id
-      fields {
-        slug
+    `
+      query NodeQuery {
+        posts: allMarkdownRemark(
+          sort: { frontmatter: { date: ASC } }
+          filter: { frontmatter: { type: { eq: "post" } } }
+        ) {
+          nodes {
+            id
+            fields {
+              slug
+            }
+          }
+        }
+        course: allMarkdownRemark(
+          sort: { frontmatter: { order: ASC } }
+          filter: { frontmatter: { type: { eq: "course" } } }
+        ) {
+          nodes {
+            id
+            fields {
+              slug
+            }
+          }
+        }
+        mdPages: allMarkdownRemark(
+          sort: { frontmatter: { order: ASC } }
+          filter: { frontmatter: { type: { eq: "page" } } }
+        ) {
+          nodes {
+            id
+            fields {
+              slug
+            }
+          }
+        }
       }
-    }
-  }
-}`
+    `
   )
 
   if (result.errors) {
@@ -33,33 +58,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
 
-  const posts = result.data.allMarkdownRemark.nodes
-
-  result = await graphql(
-    `{
-  allMarkdownRemark(
-    sort: {frontmatter: {order: ASC}}
-    filter: {frontmatter: {type: {eq: "course"}}}
-  ) {
-    nodes {
-      id
-      fields {
-        slug
-      }
-    }
-  }
-}`
-  )
-
-  if (result.errors) {
-    reporter.panicOnBuild(
-      `There was an error loading your blog posts`,
-      result.errors
-    )
-    return
-  }
-
-  const coursePages = result.data.allMarkdownRemark.nodes
+  const posts = result.data.posts.nodes
+  const coursePages = result.data.course.nodes
+  const mdPages = result.data.mdPages.nodes
 
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
@@ -72,7 +73,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: post.fields.slug,
-        component: blogPost,
+        component: blogPostTemplate,
         context: {
           previousPostId,
           nextPostId,
@@ -91,12 +92,25 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: `courses/tltr-typescript${page.fields.slug}`,
-        component: coursePage,
+        component: coursePageTemplate,
         context: {
           previousPageId,
           nextPageId,
           id: page.id,
           type: 'course',
+        },
+      })
+    })
+  }
+
+  if (mdPages.length > 0) {
+    mdPages.forEach((page) => {
+      createPage({
+        path: page.fields.slug,
+        component: mdPageTemplate,
+        context: {
+          id: page.id,
+          type: 'page',
         },
       })
     })
@@ -156,6 +170,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       order: Int
       module: String
       articleSlug: String
+      navHeaderTitle: String
     }
 
     type Fields {

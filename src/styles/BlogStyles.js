@@ -89,6 +89,7 @@ const BlogStyles = css`
 
   pre {
     background-color: rgba(var(--text-color), var(--box-bg-opacity));
+    backdrop-filter: blur(20px);
     border-radius: calc(0.9 * 1rem);
     line-height: 1;
     padding: 0.88rem 1rem;

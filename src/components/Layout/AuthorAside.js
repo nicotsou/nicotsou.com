@@ -1,9 +1,10 @@
 import * as React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 import { Body3, Label3 } from '../../styles/Typography'
 import Divider from './Divider'
+import Avatar from './Avatar'
 
 const Aside = styled.aside`
   padding: 2rem 4rem 1rem 1rem;
@@ -23,12 +24,8 @@ const StyledAvatarLink = styled.a`
   width: 4rem;
 `
 
-const Avatar = styled(GatsbyImage)`
+const StyledAvatar = styled(Avatar)`
   margin-right: 1rem;
-
-  img {
-    border-radius: 100%;
-  }
 `
 
 const StyledBody3 = styled(Body3)`
@@ -42,15 +39,17 @@ const StyledBody3 = styled(Body3)`
 const StyledLabel3 = styled(Label3)`
   margin-top: 0.7rem;
 `
+const StyledLink = styled(Link)`
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`
 
 export default function AuthorAside({ children }) {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/avatar.jpg/" }) {
-        childImageSharp {
-          gatsbyImageData(width: 100, placeholder: BLURRED, quality: 95)
-        }
-      }
       site {
         siteMetadata {
           author {
@@ -67,23 +66,20 @@ export default function AuthorAside({ children }) {
     }
   `)
 
-  const avatarImage = getImage(data?.avatar)
   const author = data?.site?.siteMetadata?.author?.name
 
   return (
     <>
       <StyledDivider />
       <Aside>
-        <StyledAvatarLink
-          href="https://twitter.com/nicotsou"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Avatar alt="avatar" image={avatarImage} />
+        <StyledAvatarLink href="/about">
+          <StyledAvatar />
         </StyledAvatarLink>
         <div>
           <StyledBody3>{children}</StyledBody3>
-          <StyledLabel3>{author}</StyledLabel3>
+          <StyledLabel3>
+            <StyledLink to="/about">{author}</StyledLink>
+          </StyledLabel3>
         </div>
       </Aside>
     </>

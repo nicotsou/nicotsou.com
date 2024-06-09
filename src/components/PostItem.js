@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Heading3Styles } from '../styles/Typography'
 
 const StyledListItem = styled.li`
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   max-width: 20rem;
 `
 

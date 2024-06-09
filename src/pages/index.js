@@ -33,6 +33,14 @@ const StyledLabel1 = styled(Label1)`
   }
 `
 
+const StyledLink = styled.a`
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`
+
 const IndexPage = ({ data }) => {
   const [highlightedPost, setHighlightedPost] = useState(null)
   const [isCoverVisible, setIsCoverVisible] = useState(false)
@@ -56,8 +64,8 @@ const IndexPage = ({ data }) => {
       <StyledLogo />
       <StyledAside1>{quote}</StyledAside1>
       <StyledLabel1 as="h1">
-        Nicos Tsourektsidis, Front-end developer.{' '}
-        <span>Based in Zurich, CH</span>
+        <StyledLink href="/about">Nicos Tsourektsidis</StyledLink>, Front-end
+        developer. <span>Based in Zurich, CH</span>
       </StyledLabel1>
       <PostList onMouseLeave={() => handlePostHover(null)}>
         {data.allMarkdownRemark.nodes.map((node, index) => (

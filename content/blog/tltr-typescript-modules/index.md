@@ -111,7 +111,7 @@ export default MyComponent
 For example, when we’re implementing a React component similar to the one above, it’s common to use the default export for the component itself, having in mind that there’s going to be a single component per file. We normally export other elements (such as helper functions, types etc.) with named exports.
 
 ![A retro car](images/retro-car.jpg)
-_The concept of modules is similar to how apart from multiple smaller components. Credit: [Daniel Salgado](https://unsplash.com/@danielsalgado)_
+_The concept of modules is similar to how cars apart from multiple smaller components. Credit: [Daniel Salgado](https://unsplash.com/@danielsalgado)_
 
 ## Import statements for Pros
 
