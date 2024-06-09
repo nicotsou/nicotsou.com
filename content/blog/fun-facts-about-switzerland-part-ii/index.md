@@ -87,7 +87,7 @@ That's all folks. I have to go. Suddenly I am craving Bratwurst. Don't worry, I 
 
 I have more things to share with you. I am already preparing the third part, with more fascinating facts about Switzerland. So stay tuned. You know where you will find me.
 
-If you are living in Switzerland, don't hesitate to suggest your favorite fun facts. You can [reply to this tweet](https://twitter.com/nicotsou/status/1455967631081619460?s=21).
+If you are living in Switzerland, don't hesitate to suggest your favorite fun facts. You can [reply to this tweet](https://x.com/nicotsou/status/1455967631081619460?s=21).
 
 Adieu 👋
 
