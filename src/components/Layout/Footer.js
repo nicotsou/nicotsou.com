@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Icon from './Icon'
-import TwitterIcon from '../../images/twitter.svg'
+import XIcon from '../../images/x.svg'
 import YouTubeIcon from '../../images/youtube.svg'
 import GithubIcon from '../../images/github.svg'
 import { Label3 } from '../../styles/Typography'
@@ -91,17 +91,6 @@ const Footer = ({ className }) => {
       <SocialList>
         <li>
           <a
-            href={`https://twitter.com/${twitter}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Icon>
-              <TwitterIcon />
-            </Icon>
-          </a>
-        </li>
-        <li>
-          <a
             href={`https://www.youtube.com/user/${youtube}`}
             target="_blank"
             rel="noreferrer"
@@ -122,13 +111,15 @@ const Footer = ({ className }) => {
             </Icon>
           </a>
         </li>
+        <li>
+          <a href={`https://x.com/${twitter}`} target="_blank" rel="noreferrer">
+            <Icon>
+              <XIcon />
+            </Icon>
+          </a>
+        </li>
       </SocialList>
-      <Copyright>
-        <HashLink href="https://u24.gov.ua" target="_blank">
-          <span>#</span>prayforukraine
-        </HashLink>{' '}
-        - &copy; 2020-3 NT
-      </Copyright>
+      <Copyright>&copy; 2024 NT</Copyright>
     </StyledFooter>
   )
 }

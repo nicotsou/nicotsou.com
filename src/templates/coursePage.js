@@ -131,11 +131,7 @@ const CoursePageTemplate = ({ data }) => {
           )}
           <AuthorAside>
             Hey, I hope you found this page useful.{' '}
-            <a
-              href="https://twitter.com/nicotsou"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://x.com/nicotsou" target="_blank" rel="noreferrer">
               Let me know
             </a>{' '}
             your thoughts. Feel free to{' '}

@@ -1,5 +1,5 @@
 ---
-title: Learn React By Building A Twitter Clone
+title: Learn React By Building A X Clone
 date: '2021-05-06T23:46:37.121Z'
 cover: './cover.jpg'
 type: post
@@ -607,7 +607,7 @@ Avatar.propTypes = {
 export default Avatar
 ```
 
-This basically doesn't display the image of the user, but it just renders the first letter of their username. Having access to profile images requires access to the [Twitter developer api](https://developer.twitter.com/en). I thought this project is already too much for people who start with React and I didn't want to introduce extra complexity. In a future post we will learn how to consume apis, by implementing more complex React applications.
+This basically doesn't display the image of the user, but it just renders the first letter of their username. Having access to profile images requires access to the [X developer api](https://developer.x.com/en). I thought this project is already too much for people who start with React and I didn't want to introduce extra complexity. In a future post we will learn how to consume apis, by implementing more complex React applications.
 
 Here's the associated stylesheet `/src/components/Avatar.css`:
 
@@ -750,7 +750,7 @@ Let's put everything together into `/src/components/App.jsx`:
 // App.jsx
 import ComposeForm from './ComposeForm'
 import Timeline from './Timeline'
-import { FaTwitter } from 'react-icons/fa'
+import { FaX } from 'react-icons/fa'
 import './App.css'
 
 import tweets from '../tweets.json'
@@ -758,7 +758,7 @@ import tweets from '../tweets.json'
 function App() {
   return (
     <div className="app">
-      <FaTwitter className="app-logo" size="2em" />
+      <FaX className="app-logo" size="2em" />
       <ComposeForm />
       <div className="separator"></div>
       <Timeline tweets={tweets} />
@@ -929,7 +929,7 @@ import { nanoid } from 'nanoid'
 // highlight-end
 import ComposeForm from './ComposeForm'
 import Timeline from './Timeline'
-import { FaTwitter } from 'react-icons/fa'
+import { FaX } from 'react-icons/fa'
 import './App.css'
 
 // highlight-start
@@ -968,7 +968,7 @@ function App() {
 
   return (
     <div className="app">
-      <FaTwitter className="app-logo" size="2em" />
+      <FaX className="app-logo" size="2em" />
       // highlight-start
       <ComposeForm onSubmit={handlePostTweet} />
       // highlight-end
@@ -1096,7 +1096,7 @@ Here's how you can quickly sort those tweets:
 </ul>
 ```
 
-Another issue that we have is the fact that the dates aren't really readable. We want something closer to how Twitter displays the dates.
+Another issue that we have is the fact that the dates aren't really readable. We want something closer to how X displays the dates.
 
 To deal with this issue, we will have to install another npm package:
 

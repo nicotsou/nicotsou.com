@@ -216,13 +216,13 @@ const LinksPage = ({ data }) => {
           <AuthorAside>
             Hey, thanks for enrolling in my course. Don't forget to{' '}
             <a
-              href="http://twitter.com/share?text=I just enrolled to this TypeScript course for free by @nicotsou. Check it out!&url=http://tltr-typescript.com&hashtags=hashtag1,hashtag2,hashtag3"
+              href="http://x.com/share?text=I just enrolled to this TypeScript course for free by @nicotsou. Check it out!&url=http://tltr-typescript.com&hashtags=hashtag1,hashtag2,hashtag3"
               target="_blank"
               rel="noreferrer"
             >
               share
             </a>{' '}
-            your experience with your friends on Twitter.
+            your experience with your friends on X.
           </AuthorAside>
         </Section>
       </Article>

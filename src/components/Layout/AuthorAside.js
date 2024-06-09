@@ -75,7 +75,7 @@ export default function AuthorAside({ children }) {
       <StyledDivider />
       <Aside>
         <StyledAvatarLink
-          href="https://twitter.com/nicotsou"
+          href="https://x.com/nicotsou"
           target="_blank"
           rel="noreferrer"
         >

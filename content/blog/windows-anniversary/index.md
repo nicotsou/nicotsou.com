@@ -253,7 +253,7 @@ _Scanning a stop code may give you more information about what has failed._
 
 The blue screens have a QR code so that you can interact with them. Don’t get confused. It’s not like Pokemon Go. But actually, this would be a nice game to play with your friends. Collect error codes and [earn points](https://www.microsoft.com/en-us/rewards/search-and-earn).
 
-When Paint was added to the list of deprecated software, [activists](https://twitter.com/kaylacolgan/status/889465766667591681?s=61&t=-0schIy_9kbMVOAnITe8nQ) around the world were protesting on social media, convincing Microsoft to revert to their decision. Thanks to [them](https://twitter.com/saalem1975/status/889477864269246464?s=61&t=dp9-ibQGkklC-bYxhH1mow) we can now enjoy our favorite design software of our youth.
+When Paint was added to the list of deprecated software, [activists](https://x.com/kaylacolgan/status/889465766667591681?s=61&t=-0schIy_9kbMVOAnITe8nQ) around the world were protesting on social media, convincing Microsoft to revert to their decision. Thanks to [them](https://x.com/saalem1975/status/889477864269246464?s=61&t=dp9-ibQGkklC-bYxhH1mow) we can now enjoy our favorite design software of our youth.
 
 ![A PC with RGB lights.](images/pc-with-rgb-lights.png)
 _It was the time we stopped worrying about driver incompatibility issues and we focused more on how many RGB lights our PC could fit._
