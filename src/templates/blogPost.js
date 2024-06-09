@@ -76,9 +76,9 @@ const StyledFooter = styled(Footer)`
   ${SectionStyles}
 `
 
-const BlogPostTemplate = ({ data, location }) => {
+const BlogPostTemplate = ({ data }) => {
   const { html } = data?.markdownRemark
-  const { title, date, description, cover } = data?.markdownRemark?.frontmatter
+  const { title, date, cover } = data?.markdownRemark?.frontmatter
   const { previous, next } = data
   const coverImage = getImage(cover)
   const [isDynamicCoverVisible, setIsDynamicCoverVisible] = useState(false)
@@ -86,7 +86,6 @@ const BlogPostTemplate = ({ data, location }) => {
 
   return (
     <main>
-      <Seo title={title} image={cover?.publicURL} description={description} />
       <Header breadcrumb="Blog" />
       <CodeHighlighter />
       <Article
@@ -160,6 +159,13 @@ const BlogPostTemplate = ({ data, location }) => {
       <StyledFooter />
       <DynamicCover visible={isDynamicCoverVisible} cover={dynamicCover} />
     </main>
+  )
+}
+
+export function Head({ location, params, data, pageContext }) {
+  const { title, date, description, cover } = data?.markdownRemark?.frontmatter
+  return (
+    <Seo title={title} image={cover?.publicURL} description={description} />
   )
 }
 
