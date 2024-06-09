@@ -123,12 +123,7 @@ const Footer = ({ className }) => {
           </a>
         </li>
       </SocialList>
-      <Copyright>
-        <HashLink href="https://u24.gov.ua" target="_blank">
-          <span>#</span>prayforukraine
-        </HashLink>{' '}
-        - &copy; 2020-3 NT
-      </Copyright>
+      <Copyright>- &copy; 2020-3 NT</Copyright>
     </StyledFooter>
   )
 }
