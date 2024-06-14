@@ -37,9 +37,7 @@ module.exports = {
         },
       },
     },
-    'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
-    'gatsby-plugin-netlify',
     'gatsby-plugin-react-svg',
     {
       resolve: 'gatsby-plugin-manifest',
@@ -224,6 +222,5 @@ module.exports = {
         name: `assets`,
       },
     },
-    'gatsby-plugin-netlify',
   ],
 }

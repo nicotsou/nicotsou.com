@@ -1,17 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 import { useLocation } from '@reach/router'
 
-const Seo = ({
-  article,
-  title,
-  image,
-  children,
-  lang = 'en',
-  description = '',
-}) => {
+const Seo = ({ article, title, image, children, description = '' }) => {
   const { pathname } = useLocation()
   const { site } = useStaticQuery(
     graphql`
@@ -48,15 +40,13 @@ const Seo = ({
   }
 
   return (
-    <Helmet
-      title={seo.title}
-      titleTemplate={defaultTitle ? `%s · ${defaultTitle}` : null}
-    >
+    <>
       <html lang="en" amp />
       <meta
         http-equiv="cache-control"
         content="public, max-age=0, must-revalidate"
       />
+      <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
@@ -76,7 +66,7 @@ const Seo = ({
       )}
       {seo.image && <meta name="twitter:image" content={seo.image} />}
       {children}
-    </Helmet>
+    </>
   )
 }
 
