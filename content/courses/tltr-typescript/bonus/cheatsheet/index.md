@@ -462,4 +462,4 @@ You can check out the following:
 
 ---
 
-This is still work in progress. I’m planning to add more sections as I’m adding content to my course. Do you have anything else in mind you want to suggest? Just send me a DM on Twitter.
+This is still work in progress. I’m planning to add more sections as I’m adding content to my course. Do you have anything else in mind you want to suggest? Just send me a DM on X.

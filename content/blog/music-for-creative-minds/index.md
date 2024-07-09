@@ -18,7 +18,7 @@ My series is called "Cherry pick" and I try to publish a new playlist every mont
 
 [https://open.spotify.com/playlist/0dgel6H5PCKuJqMc2KJBn5?si=62baa21159bd4d1c](https://open.spotify.com/playlist/0dgel6H5PCKuJqMc2KJBn5?si=62baa21159bd4d1c)
 
-Sounds interesting? Make sure you follow me on Twitter so that you get notified when I release a new playlist.
+Sounds interesting? Make sure you follow me on X so that you get notified when I release a new playlist.
 
 Do you have any good music to suggest? DM me the song or create your own public playlist. I would be really happy to listen something new.
 

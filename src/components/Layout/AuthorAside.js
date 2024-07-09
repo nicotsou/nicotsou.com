@@ -72,8 +72,12 @@ export default function AuthorAside({ children }) {
     <>
       <StyledDivider />
       <Aside>
-        <StyledAvatarLink href="/about">
-          <StyledAvatar />
+        <StyledAvatarLink
+          href="https://x.com/nicotsou"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Avatar alt="avatar" image={avatarImage} />
         </StyledAvatarLink>
         <div>
           <StyledBody3>{children}</StyledBody3>

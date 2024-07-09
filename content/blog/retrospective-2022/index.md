@@ -44,7 +44,7 @@ In other news, the situation with the chip shortage for consumer devices became 
 
 At least until another pandemic knocks on our doors. Or a missile. Or an alien spaceship. You can’t be sure what is fiction and what is reality anymore. 🤔
 
-We also had a drama with Elon Musk buying Twitter and firing thousands of employees. Which kinda opened Pandora’s box. Big tech companies are laying off hundreds of employees, they are killing departments, and discontinuing products. And yet their profits are [growing](https://www.theverge.com/2023/1/26/23571659/tech-layoffs-facebook-google-amazon).
+We also had a drama with Elon Musk buying X and firing thousands of employees. Which kinda opened Pandora’s box. Big tech companies are laying off hundreds of employees, they are killing departments, and discontinuing products. And yet their profits are [growing](https://www.theverge.com/2023/1/26/23571659/tech-layoffs-facebook-google-amazon).
 
 Ah, and how could I forget?
 
