@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 import { Body3, Label3 } from '../../styles/Typography'
 import Divider from './Divider'
 import Avatar from './Avatar'
+import { getImage } from 'gatsby-plugin-image'
 
 const Aside = styled.aside`
   padding: 2rem 4rem 1rem 1rem;
@@ -67,6 +67,7 @@ export default function AuthorAside({ children }) {
   `)
 
   const author = data?.site?.siteMetadata?.author?.name
+  const avatarImage = getImage(data?.avatar)
 
   return (
     <>
