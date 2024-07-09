@@ -61,7 +61,8 @@ const BlogStyles = css`
 
   blockquote {
     margin: 3rem 0 4rem 3rem;
-    ${Pride}
+    // Pride month 🏳️‍🌈
+    ${() => new Date().getMonth() === 5 && Pride}
 
     p {
       ${Aside1Styles}
