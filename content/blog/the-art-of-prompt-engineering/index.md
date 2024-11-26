@@ -20,9 +20,9 @@ We’ve known for a while that AI is transformative. Self-driving cars, personal
 
 > **Prompt engineering is the _blueprint_ for successful AI products.**
 
-Just look around; AI is reshaping every corner of our digital landscape. From Gmail suggesting email completions to Midjourney generating artwork, from GitHub Copilot writing code to Jasper crafting marketing copy — GenAI has become as ubiquitous as smartphones. Better than the Metaverse. Companies are racing to integrate AI capabilities into their products, and professionals across industries are discovering that mastering these tools isn't just an option anymore. It's becoming a necessity for staying competitive.
+Just look around; AI is reshaping every corner of our digital landscape. From Gmail suggesting email completions to Midjourney generating artwork, from GitHub Copilot writing code to Jasper crafting marketing copy — GenAI has become as ubiquitous as smartphones. Companies are racing to integrate AI capabilities into their products, and professionals across industries are discovering that mastering these tools isn't just an option anymore. It's becoming a necessity for staying competitive.
 
-And what's at the heart of all these innovations? Spoiler Alert!
+I dare to say, it's a bigger success than the Metaverse. There, I said it! And what's at the heart of all these innovations? Spoiler Alert!
 
 ## The Art of Talking to Machines
 
@@ -31,7 +31,7 @@ Here’s the thing: Large Language Models (LLMs) like ChatGPT are incredibly sma
 ![Diagram: LLM Prompt](images/prompt-engineering-diagram.png)
 _Every LLM interraction starts with a user prompt._
 
-At the heart of every response from an LLM lies an intricate process that begins with your prompt. Here’s the short version: LLMs are trained on massive datasets of text — think everything from books and articles to code and social media. Their goal? To predict the most likely next word or _token_ based on the context you provide.
+At the heart of every response from an LLM lies an intricate process that begins with your prompt. Here’s the short version: LLMs are trained on massive datasets of text—think everything from books and articles to code and social media. Their goal? To predict the most likely next word or _token_ based on the context you provide.
 
 Ask a vague question like, “Tell me about history,” and you’ll probably get a Wikipedia-like overview that’s about as thrilling as a tax document. But ask, “Explain the causes of the French Revolution in a conversational tone, as if you were telling a story to a high school student,” and voilà, you get something compelling, insightful, and tailored to your needs.
 
