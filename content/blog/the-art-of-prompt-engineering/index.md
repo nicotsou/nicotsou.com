@@ -82,12 +82,16 @@ The type of LLM you choose depends on your needs, whether you’re analyzing dat
 
 ## Magic mushrooms and their implications
 
-When you type a prompt, the LLM doesn’t “know” things in the way humans do. Instead, it uses patterns and probabilities learned during training to generate a response. If you ask, “Explain photosynthesis in simple terms,” the model analyzes your input, matches it with patterns it has seen before, and constructs a coherent answer.
+When you type a prompt, the LLM doesn’t “know” things in the way humans do. Instead, it uses patterns and probabilities learned during training to generate a response. In the context of AI and machine learning, **hallucinations** refer to instances where a model generates information that is not based on real data or facts.
 
 ![Diagram: LLM Temperature](images/llm-training-data-miss.png)
-_The best case scenario when the LLM isn't trained to answer our question._
+_Asking an LLM something it's not trained to answer can lead to "creative" results._
 
-No, we’re not talking about trippy visuals and mushrooms. In AI terms, hallucinations happen when the model generates outputs that are factually incorrect or completely made up. For example, if you ask about an obscure historical event, the model might confidently invent details that sound plausible but are false.
+No, we’re not talking about trippy visuals and mushrooms. In AI terms, hallucinations occur when the model fabricates non-existent facts, generates inaccurate information, produces nonsensical content, or displays biased responses. For example, if you ask about an obscure historical event, the model might confidently invent details that sound plausible but are actually false.
+
+This happens because LLMs are essentially pattern-matching machines operating on probability - they don't truly understand or verify the information they generate. When the model encounters a prompt that requires information beyond its training data or encounters ambiguous patterns, it might fill in gaps with plausible-sounding but incorrect information rather than admitting uncertainty.
+
+This is particularly concerning in fields like healthcare, legal advice, or academic research, where accuracy is paramount.
 
 ## Turning up the heat
 
