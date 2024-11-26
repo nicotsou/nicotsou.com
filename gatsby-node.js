@@ -2,7 +2,7 @@ const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
 
   // Define a template for blog post
   const blogPost = path.resolve(`./src/templates/blogPost.js`)
@@ -10,19 +10,21 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Get all markdown blog posts sorted by date
   let result = await graphql(
-    `{
-  allMarkdownRemark(
-    sort: {frontmatter: {date: ASC}}
-    filter: {frontmatter: {type: {eq: "post"}}}
-  ) {
-    nodes {
-      id
-      fields {
-        slug
+    `
+      {
+        allMarkdownRemark(
+          sort: { frontmatter: { date: ASC } }
+          filter: { frontmatter: { type: { eq: "post" } } }
+        ) {
+          nodes {
+            id
+            fields {
+              slug
+            }
+          }
+        }
       }
-    }
-  }
-}`
+    `
   )
 
   if (result.errors) {
@@ -36,19 +38,21 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const posts = result.data.allMarkdownRemark.nodes
 
   result = await graphql(
-    `{
-  allMarkdownRemark(
-    sort: {frontmatter: {order: ASC}}
-    filter: {frontmatter: {type: {eq: "course"}}}
-  ) {
-    nodes {
-      id
-      fields {
-        slug
+    `
+      {
+        allMarkdownRemark(
+          sort: { frontmatter: { order: ASC } }
+          filter: { frontmatter: { type: { eq: "course" } } }
+        ) {
+          nodes {
+            id
+            fields {
+              slug
+            }
+          }
+        }
       }
-    }
-  }
-}`
+    `
   )
 
   if (result.errors) {
@@ -101,6 +105,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
+
+  // Redirect short link
+  createRedirect({
+    fromPath: `/l`,
+    toPath: `/links`,
+    isPermanent: true,
+    force: true,
+    redirectInBrowser: true,
+  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
