@@ -101,6 +101,13 @@ const Footer = ({ className }) => {
           </a>
         </li>
         <li>
+          <a href={`https://x.com/${twitter}`} target="_blank" rel="noreferrer">
+            <Icon>
+              <XIcon />
+            </Icon>
+          </a>
+        </li>
+        <li>
           <a
             href={`https://github.com/${github}`}
             target="_blank"
@@ -108,13 +115,6 @@ const Footer = ({ className }) => {
           >
             <Icon>
               <GithubIcon />
-            </Icon>
-          </a>
-        </li>
-        <li>
-          <a href={`https://x.com/${twitter}`} target="_blank" rel="noreferrer">
-            <Icon>
-              <XIcon />
             </Icon>
           </a>
         </li>
