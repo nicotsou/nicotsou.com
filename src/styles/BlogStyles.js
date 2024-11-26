@@ -141,6 +141,14 @@ const BlogStyles = css`
     max-width: calc(640px + 2rem) !important;
     margin: 2rem auto 2rem -1rem !important;
 
+    // Images that have an alt tag that starts with "Diagram" are inverted in dark mode
+    &:has(img[alt^='Diagram']) {
+      @media (prefers-color-scheme: dark) {
+        filter: invert();
+        mix-blend-mode: plus-lighter;
+      }
+    }
+
     @media screen and (min-width: 780px) {
       max-width: 100vw !important;
       margin: 5rem 0 5rem calc(-50vw + 375px) !important;
@@ -171,6 +179,7 @@ const BlogStyles = css`
     }
   }
 
+  // Images with captions
   :not(.gatsby-resp-image-wrapper) img,
   .gatsby-resp-image-wrapper,
   p > .gatsby-resp-image-wrapper {
