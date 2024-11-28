@@ -99,7 +99,7 @@ const IndexPage = ({ data }) => {
           <ArticleSection>
             <p>
               I occasionally give talks on a variety of topics, including
-              Generative AI, Frontend Engineering, and Architectural Design.
+              Generative AI, Frontend Engineering, and Software Architecture.
             </p>
           </ArticleSection>
 
