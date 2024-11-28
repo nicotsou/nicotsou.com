@@ -4,7 +4,7 @@ import Footer from '../components/Layout/Footer'
 import Seo from '../components/seo'
 import Header from '../components/Layout/Header'
 import links from '../../content/links/links.json'
-import { Heading3Styles, Heading1 } from '../styles/Typography'
+import { Heading1 } from '../styles/Typography'
 
 const Article = styled.article`
   margin-top: clamp(0.5rem, calc(100vh * 20 / 100), 9.5rem);
@@ -36,7 +36,10 @@ const ListItem = styled.li`
 `
 
 const StyledLink = styled.a`
-  ${Heading3Styles}
+  font-family: 'Merriweather', serif;
+  font-size: 1.25rem;
+  line-height: 2.1rem;
+  letter-spacing: -0.0055rem;
   font-weight: 300;
   text-decoration: none;
 `
