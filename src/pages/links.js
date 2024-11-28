@@ -44,15 +44,15 @@ const StyledLink = styled.a`
   text-decoration: none;
 `
 
+const StyledFooter = styled(Footer)`
+  ${SectionStyles}
+`
+
+const Section = styled.section`
+  ${SectionStyles}
+`
+
 const LinksPage = () => {
-  const StyledFooter = styled(Footer)`
-    ${SectionStyles}
-  `
-
-  const Section = styled.section`
-    ${SectionStyles}
-  `
-
   return (
     <main>
       <Seo title="Nicos Tsourektsidis \ Links" />
