@@ -1,5 +1,5 @@
 ---
-title: 'Scaling UI: Enterprise Strategies For Building Reusable Component Libraries'
+title: 'Enterprise Strategies For Building Reusable Component Libraries'
 date: '2023-09-10T22:12:00.000Z'
 description: Strategies for creating and maintaining reusable UI component libraries in an enterprise environment
 type: talk

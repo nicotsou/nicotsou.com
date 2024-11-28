@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import { graphql } from 'gatsby'
 import styled, { css } from 'styled-components'
 import Footer from '../components/Layout/Footer'
-import { Heading1 } from '../styles/Typography'
+import { Heading1, Label1, Label2 } from '../styles/Typography'
 import PostList from '../components/PostList'
 import Seo from '../components/seo'
 import DynamicCover from '../components/DynamicCover'
 import PostItem from '../components/PostItem'
 import Header from '../components/Layout/Header'
+import BlogStyles from '../styles/BlogStyles'
 
 const Main = styled.main`
   margin: 0 auto;
@@ -42,6 +43,12 @@ const StyledFooter = styled(Footer)`
   ${SectionStyles}
 `
 
+const ArticleSection = styled.section`
+  ${BlogStyles}
+
+  margin-bottom: 6rem;
+`
+
 const IndexPage = ({ data }) => {
   const [highlightedPost, setHighlightedPost] = useState(null)
   const [isCoverVisible, setIsCoverVisible] = useState(false)
@@ -54,6 +61,20 @@ const IndexPage = ({ data }) => {
   const quote = data?.allMarkdownRemark?.nodes.find(
     (node) => node?.frontmatter?.quote
   )?.frontmatter?.quote
+
+  const talksGroupedByYear = data.allMarkdownRemark.nodes.reduce(
+    (acc, node) => {
+      const year = new Date(node.frontmatter.date).getFullYear()
+      if (!acc[year]) {
+        acc[year] = []
+      }
+      acc[year].push(node)
+      return acc
+    },
+    {}
+  )
+
+  const years = Object.keys(talksGroupedByYear).sort((a, b) => b - a)
 
   return (
     <main>
@@ -74,20 +95,30 @@ const IndexPage = ({ data }) => {
           <header>
             <StyledHeading1 itemProp="headline">Talks</StyledHeading1>
           </header>
-          <PostList onMouseLeave={() => handlePostHover(null)}>
-            {data.allMarkdownRemark.nodes.map((node, index) => {
-              console.log(`talks${node.fields.slug}`)
-              return (
-                <PostItem
-                  key={index}
-                  onLinkHover={() => handlePostHover(node)}
-                  to={`/talks${node.fields.slug}`}
-                >
-                  {node.frontmatter.title}
-                </PostItem>
-              )
-            })}
-          </PostList>
+
+          <ArticleSection>
+            <p>
+              I occasionally give talks on a variety of topics, including
+              Generative AI, Frontend Engineering, and Architectural Design.
+            </p>
+          </ArticleSection>
+
+          {years.map((year) => (
+            <div key={year}>
+              <PostList onMouseLeave={() => handlePostHover(null)}>
+                <Label2>{year}</Label2>
+                {talksGroupedByYear[year].map((node, index) => (
+                  <PostItem
+                    key={index}
+                    onLinkHover={() => handlePostHover(node)}
+                    to={`/talks${node.fields.slug}`}
+                  >
+                    {node.frontmatter.title}
+                  </PostItem>
+                ))}
+              </PostList>
+            </div>
+          ))}
         </Section>
       </Article>
       <StyledFooter />
