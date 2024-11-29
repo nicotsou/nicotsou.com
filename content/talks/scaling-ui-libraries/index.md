@@ -9,11 +9,11 @@ cover: './cover.jpeg'
 
 In collaboration with Iurii Bura.
 
-In this talk, we will cover the key strategies for creating and maintaining reusable UI component libraries in an enterprise environment. We will review some of the key attributes such as increased development speed, improved consistency, accessibility, and maintenance costs.
+This talk covers key strategies for creating and maintaining reusable UI component libraries in an enterprise environment. It highlights important attributes such as increased development speed, improved consistency, accessibility, and reduced maintenance costs.
 
-We will share real-world examples and case studies of successful component library implementation in large enterprises. Diving into best practices, from creating a design system to incorporating version control and documentation.
+We share our examples from real-world applications and case studies that illustrate successful component library implementations in large enterprises, offering insights into best practices—from establishing a design system to incorporating version control and thorough documentation.
 
-Attendees will leave with a comprehensive understanding of the benefits and process, and be equipped with the tools and knowledge needed to start implementing a component library in their own organization.
+Attendees gain a comprehensive understanding of the benefits and processes involved, along with practical tools and knowledge to implement a component library within their own organizations.
 
 ## Key Topics Covered
 
