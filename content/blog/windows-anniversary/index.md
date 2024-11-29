@@ -32,7 +32,7 @@ _The design wasn’t inspired by Lego. It’s just most computers were only able
 
 I don’t have much to share here, since I never had the chance to [play](https://www.pcjs.org/software/pcx86/sys/windows/1.01/ega/) with the first version of Windows. My depute to the world of bad software engineering was with…
 
-### Windows 3.1
+## Windows 3.1
 
 Windows OS was becoming so advanced that it jumped to 2.1 versions ahead. OK, that’s what I thought was true for many years, up until [Wikipedia](https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions) became a thing. This was my first ever Windows version, and the truth is I was hating it. But not for the reason you may think of.
 
@@ -55,7 +55,7 @@ _These kind of errors used to scare those who didn't understand how computers wo
 
 And just as the world was finally recovering, a new disaster began to emerge...
 
-### Windows 95
+## Windows 95
 
 Also known as "The 32-bit OS", [Windows 95](https://www.youtube.com/watch?v=miZHa7ZC6Z0) debuts with a new set of minimum technical requirements. In other words, you would have to buy a new PC.
 
@@ -80,11 +80,11 @@ The Web is starting to becoming a thing. Of course, Internet connections were so
 
 [Where](https://en.wikipedia.org/wiki/Where_do_you_want_to_go_today%3F) do you want to go today?
 
-### Windows NT
+## Windows NT
 
 Nobody paid attention all these years. Why should you?
 
-### Windows 98
+## Windows 98
 
 Released in 1998 (really now?) Windows 98 was taking advantage of new technologies. If your PC had [MMX](<https://en.wikipedia.org/wiki/MMX_(instruction_set)>), DVD Drive, USB port and an AGP card, Windows 98 could have taken the advance of them.
 
@@ -105,7 +105,7 @@ Oh common, I told you that Windows 98 _could_ take advantage of the new technolo
 
 Hands down Windows 98 was one of the best versions of Windows ever. It remained for many years our favorite choice. It wasn’t because it was _that_ good, it was because the other versions were _so_ awful. Overall, it was a stable and performant OS.
 
-### Windows ME
+## Windows ME
 
 The revelation of software engineering. A real masterpiece in the world of Operating Systems.
 
@@ -124,13 +124,13 @@ _Broken promises._
 
 For the first time, you can delete the files within `System`, `System 32`, and `Windows` folders. Not a bad idea actually, because all these files needed a complete erase and rewrite from the ground up. But wait a minute, this green-field project exists. It is called...
 
-### Windows 2000
+## Windows 2000
 
 No, not that one. I told you, nobody cares about good Operating Systems. Besides, this was released together with ME.
 
 I’m talking about…
 
-### Windows XP
+## Windows XP
 
 ![Boot screen of Windows XP](images/db6dw1k-47c4d90d-f5b5-4b31-a06e-2c2c0dc30501.gif)
 _You could tell from the boot screen that this brings something fresh._
@@ -155,7 +155,7 @@ Windows supports multiple users. Yes, that's exactly what it means! Now your mom
 ![The Enterprise-looking window for user selection has now been replaced by this friendly screen.](images/windows-xp-user-logon.png)
 _The Enterprise-looking window for user selection has now been replaced by this friendly welcome screen._
 
-### Windows Vista
+## Windows Vista
 
 Welcome to the future. No more crappy error messages and static blue screens. Time to replace them with fancy 3D windows that are flying in the air. It’s called Aero, and the [wow starts now](https://www.youtube.com/watch?v=QN5DW8jlkB0)!
 
@@ -178,7 +178,7 @@ This was by far the most hated version in the history of Windows. I remember the
 
 Microsoft had to change. They had to come up with a plan. And they did it.
 
-### Windows 7
+## Windows 7
 
 Known as “the fast OS”, Windows 7 was an attempt to fix the mess that Vista created. And it worked. People were looking forward to migrating their PCs.
 
@@ -191,7 +191,7 @@ Windows 7 focused on solving the biggest pain points users had. They also introd
 
 Sure, Windows 7 was a great OS, but it wasn’t designed to support the variety of devices and touch interfaces that were becoming more and more popular. Those users wanted something more touch-friendly. And they got it. All of us did…
 
-### Windows 8
+## Windows 8
 
 A Microsoft product designer, waiting in the subway, was struck with inspiration while staring at a signboard. Suddenly, an idea sparked within him.
 
@@ -224,7 +224,7 @@ No, I’m just kidding. This never happened. Everybody was switching back to Win
 
 And the story repeats itself.
 
-### Windows 8.1
+## Windows 8.1
 
 It takes courage to stay innovative. And Microsoft did it again. This time they brought back the Start Menu. No more full-screen bullshit. Ah, and you can shut down your PC from the Start Menu as well.
 
@@ -235,7 +235,7 @@ This was a patch version, with some leftovers from the previous version that cou
 
 But you know what they say... Haters gonna hate. And that’s what they did back then. So Microsoft didn’t have any other choice...
 
-### Windows 10
+## Windows 10
 
 No more ugly patches, no more mobile-looking apps, and no more slides to unlock. Windows 10 now runs anywhere. PCs, tablets, laptops, ARMs, Macs, Cloud, you name it. And each device is getting the UI it deserves.
 
@@ -262,7 +262,7 @@ Also known as “the last version of Windows”, since Microsoft announced they 
 
 And yet they did it again.
 
-### Windows 11
+## Windows 11
 
 Microsoft discovered what people _actually_ needed: Rounded corners.
 

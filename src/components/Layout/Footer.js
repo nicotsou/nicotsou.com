@@ -42,33 +42,6 @@ const Copyright = styled(Label3)`
   text-transform: none;
 `
 
-const HashLink = styled.a`
-  display: inline;
-  color: #0057b7;
-  text-decoration: none;
-  font-weight: 700;
-  font-family: 'Merriweather', serif;
-  letter-spacing: 0.04em;
-
-  &:visited,
-  &:active {
-    color: #0057b7;
-  }
-
-  span {
-    color: #e7c400;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    color: #2a8fff;
-
-    &:visited,
-    &:active {
-      color: #2a8fff;
-    }
-  }
-`
-
 const Footer = ({ className }) => {
   const data = useStaticQuery(graphql`
     query FooterQuery {
@@ -94,6 +67,7 @@ const Footer = ({ className }) => {
             href={`https://www.youtube.com/user/${youtube}`}
             target="_blank"
             rel="noreferrer"
+            aria-label="YouTube"
           >
             <Icon>
               <YouTubeIcon />
@@ -101,7 +75,12 @@ const Footer = ({ className }) => {
           </a>
         </li>
         <li>
-          <a href={`https://x.com/${twitter}`} target="_blank" rel="noreferrer">
+          <a
+            href={`https://x.com/${twitter}`}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="X"
+          >
             <Icon>
               <XIcon />
             </Icon>
@@ -112,6 +91,7 @@ const Footer = ({ className }) => {
             href={`https://github.com/${github}`}
             target="_blank"
             rel="noreferrer"
+            aria-label="github"
           >
             <Icon>
               <GithubIcon />

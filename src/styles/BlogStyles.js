@@ -88,6 +88,23 @@ const BlogStyles = css`
     position: relative;
   }
 
+  aside {
+    background-color: rgba(var(--text-color), var(--box-bg-opacity));
+    border-radius: calc(0.9 * 1rem);
+
+    padding: 0.88rem 1rem;
+    margin: 2rem 0;
+    position: relative;
+    max-width: 100%;
+
+    @media screen and (min-width: 927px) {
+      border-radius: calc(1.5 * 1rem);
+      padding: 2.4rem 3rem;
+      margin: 3rem -3rem;
+      max-width: auto;
+    }
+  }
+
   pre {
     background-color: rgba(var(--text-color), var(--box-bg-opacity));
     border-radius: calc(0.9 * 1rem);
