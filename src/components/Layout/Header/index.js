@@ -40,14 +40,19 @@ const IconPlaceholder = styled.div`
   width: 2rem;
 `
 
-const Header = ({ breadcrumb, className }) => {
+const Header = ({ breadcrumb, breadcrumbLink, className }) => {
   return (
     <StyledHeader className={className}>
       <Link to="/">
         <Logo size={Logo.sizes.small} />
       </Link>
       <StyledLabel2>
-        <StyledLink to="/">Nicos Tsourektsidis</StyledLink> \ {breadcrumb}
+        <StyledLink to="/">Nicos Tsourektsidis</StyledLink> \{' '}
+        {breadcrumbLink ? (
+          <StyledLink to={breadcrumbLink}>{breadcrumb}</StyledLink>
+        ) : (
+          breadcrumb
+        )}
       </StyledLabel2>
       <IconPlaceholder />
     </StyledHeader>

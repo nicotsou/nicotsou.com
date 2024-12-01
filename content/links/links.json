@@ -1,11 +1,15 @@
 [
   {
     "title": "My TypeScript Course ✨",
-    "url": "https://nicotsou.com/tltr-ts-landing"
+    "url": "/tltr-ts-landing"
   },
   {
     "title": "Blog",
-    "url": "https://nicotsou.com"
+    "url": "/"
+  },
+  {
+    "title": "Talks",
+    "url": "/talks"
   },
   {
     "title": "YouTube",
@@ -34,5 +38,9 @@
   {
     "title": "Medium",
     "url": "https://medium.com/@nicotsou"
+  },
+  {
+    "title": "Feedback Form",
+    "url": "https://nicotsou.notion.site/14fc0bf2287080d3983cd02c4a91e845?pvs=105"
   }
 ]
