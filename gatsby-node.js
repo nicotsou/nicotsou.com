@@ -2,7 +2,7 @@ const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
 
   // Define a template for blog post
   const blogPostTemplate = path.resolve(`./src/templates/blogPost.js`)
@@ -153,6 +153,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
+
+  // Shortlinks redirect to full URLs
+  createRedirect({
+    fromPath: `/l/prompt-engineering-masterclass-talk`,
+    toPath: `/talks/prompt-engineering-masterclass`,
+    isPermanent: true,
+    force: true,
+    redirectInBrowser: true,
+  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
