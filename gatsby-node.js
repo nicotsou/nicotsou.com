@@ -155,22 +155,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   // Shortlinks redirect to full URLs
-  createRedirect(
-    {
-      fromPath: `/l`,
-      toPath: `/links`,
-      isPermanent: true,
-      force: true,
-      redirectInBrowser: true,
-    },
-    {
-      fromPath: `/l/prompt-engineering-masterclass-talk`,
-      toPath: `/talks/prompt-engineering-masterclass`,
-      isPermanent: true,
-      force: true,
-      redirectInBrowser: true,
-    }
-  )
+  createRedirect({
+    fromPath: `/l/prompt-engineering-masterclass-talk`,
+    toPath: `/talks/prompt-engineering-masterclass`,
+    isPermanent: true,
+    force: true,
+    redirectInBrowser: true,
+  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
