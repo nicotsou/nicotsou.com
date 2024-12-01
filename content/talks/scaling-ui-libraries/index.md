@@ -15,6 +15,8 @@ We share our examples from real-world applications and case studies that illustr
 
 Attendees gain a comprehensive understanding of the benefits and processes involved, along with practical tools and knowledge to implement a component library within their own organizations.
 
+To share your thoughts on my presentation, please use the [feedback form](https://nicotsou.notion.site/14fc0bf2287080d3983cd02c4a91e845?pvs=105).
+
 ## Key Topics Covered
 
 - Why we need UI Libraries?

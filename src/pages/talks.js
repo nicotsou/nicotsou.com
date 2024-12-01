@@ -2,19 +2,13 @@ import React, { useState } from 'react'
 import { graphql } from 'gatsby'
 import styled, { css } from 'styled-components'
 import Footer from '../components/Layout/Footer'
-import { Heading1, Label1, Label2 } from '../styles/Typography'
+import { Heading1, Label2 } from '../styles/Typography'
 import PostList from '../components/PostList'
 import Seo from '../components/seo'
 import DynamicCover from '../components/DynamicCover'
 import PostItem from '../components/PostItem'
 import Header from '../components/Layout/Header'
 import BlogStyles from '../styles/BlogStyles'
-
-const Main = styled.main`
-  margin: 0 auto;
-  max-width: 700px;
-  padding: 0 1rem;
-`
 
 const Article = styled.article`
   margin-top: clamp(0.5rem, calc(100vh * 20 / 100), 9.5rem);
@@ -57,10 +51,6 @@ const IndexPage = ({ data }) => {
     post && setHighlightedPost(post)
     setIsCoverVisible(!!post)
   }
-
-  const quote = data?.allMarkdownRemark?.nodes.find(
-    (node) => node?.frontmatter?.quote
-  )?.frontmatter?.quote
 
   const talksGroupedByYear = data.allMarkdownRemark.nodes.reduce(
     (acc, node) => {

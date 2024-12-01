@@ -21,6 +21,8 @@ I will share with you my mental model about types, to help you navigate the type
 - [Master TypeScript Classes](/tltr-typescript-classes) is a guide to understand classes.
 - [Master TypeScript Interfaces](/tltr-typescript-interfaces) is a guide to understand interfaces.
 
+To share your thoughts on my presentation, please use the [feedback form](https://nicotsou.notion.site/14fc0bf2287080d3983cd02c4a91e845?pvs=105).
+
 ## Resources
 
 - Check out my [TypeScript course](https://tltr-typescript.com)! ✨

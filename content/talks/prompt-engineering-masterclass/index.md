@@ -13,20 +13,21 @@ This is a guide to help you dive deeper into the concepts I presented and integr
 
 ## Key Topics Covered
 
-- [The Art of Prompt Engineering](/the-art-of-prompt-engineering) explains the fundamentals and core principles.
-- [The Rules Of Prompting](/the-art-of-prompt-engineering) will help you remember how to build perfect prompts.
-- [How to Structure your Prompts](/the-art-of-prompt-engineering) explains the key elements for structuring your prompts.
-- [Advanced Prompting Techniques](/the-art-of-prompt-engineering) is a collection that will help you
-- [The Art of Prompt Engineering](/the-art-of-prompt-engineering)
+- **[The Art of Prompt Engineering](/the-art-of-prompt-engineering)** explains the fundamentals and core principles. (Published)
+- **[The Rules Of Prompting](https://nicotsou.notion.site/The-Rules-Of-Prompting-14dc0bf2287080e7a3c8d328aa89e61c?pvs=73)** will help you remember how to build perfect prompts. (Draft)
+- **[How To Structure Your Prompts](https://nicotsou.notion.site/How-To-Structure-Your-Prompts-14dc0bf2287080dfa3b3fd909fbe39fc)** explains the key elements for structuring your prompts. (Draft)
+- **[Five Pro Tips For Better Prompts](https://nicotsou.notion.site/Five-Pro-Tips-For-Better-Prompts-14dc0bf2287080f280c4f0f4f7029351?pvs=73)** lists the tips I have presented. (Draft)
+- **[Advanced Prompting Techniques & Strategies](https://nicotsou.notion.site/Advanced-Prompting-Techniques-Strategies-14dc0bf22870800ebcd3f7e1520be61d)** is a curated list of techniques and methodologies. (Draft)
+- **[Strategies For Customizing LLM](https://nicotsou.notion.site/Strategies-For-Customizing-LLMs-14dc0bf2287080fab33fe8f58b6a4862)s** goes beyond prompt engineering. (Draft)
 
-## Resources
+I'm excited to announce that I'm preparing a **Prompt Engineering 👩‍💻 Workshop**! [Subscribe to my newsletter](https://fantastic-crafter-6730.kit.com/88d8f79c35) to get free early access when it becomes available!
 
-- OpenAI Tokenizer
+To share your thoughts on my presentation, please use the [feedback form](https://nicotsou.notion.site/14fc0bf2287080d3983cd02c4a91e845?pvs=105).
 
 ## Additional Resources
 
 If you’ve enjoyed this session and want to dive deeper into the world of prompt engineering, then you will love the content I’m about to publish next.
 
-I invite you to [subscribe to my newsletter](https://fantastic-crafter-6730.kit.com/88d8f79c35). As a subscriber, you’ll also get early access to my upcoming articles, workshops, and courses. I hate spamming people, I always post when I have something important to share, and you can unsubscribe at any point.
+I invite you to [subscribe to my newsletter](https://fantastic-crafter-6730.kit.com/88d8f79c35). As a subscriber, you’ll get early access to my upcoming articles, workshops, and courses. I hate spamming people, I always post when I have something important to share, and you can unsubscribe at any point.
 
 You can also write me back. I’d love to hear about your experiments, successes, and challenges with Generative AI!
