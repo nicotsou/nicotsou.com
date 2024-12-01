@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { Heading3Styles } from '../styles/Typography'
 
 const StyledListItem = styled.li`
   margin-top: 1rem;
@@ -9,7 +8,10 @@ const StyledListItem = styled.li`
 `
 
 const PostLink = styled(Link)`
-  ${Heading3Styles}
+  font-family: 'Merriweather', serif;
+  font-size: 1.25rem;
+  line-height: 2.1rem;
+  letter-spacing: -0.0055rem;
   font-weight: 300;
   text-decoration: none;
 `

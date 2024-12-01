@@ -163,7 +163,7 @@ const BlogPostTemplate = ({ data }) => {
 }
 
 export function Head({ location, params, data, pageContext }) {
-  const { title, date, description, cover } = data?.markdownRemark?.frontmatter
+  const { title, description, cover } = data?.markdownRemark?.frontmatter
   return (
     <Seo title={title} image={cover?.publicURL} description={description} />
   )

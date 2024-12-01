@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 40 40" width="40" height="40">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 40 40" width="40"
+  height="40">
   <defs>
     <style>
       .cls-1 {
         fill: none;
       }
 
-      .cls-1, .cls-2 {
-        stroke-width: 0px;
-      }
-
+      .cls-1,
       .cls-2 {
-        fill: #000;
+        stroke-width: 0px;
       }
     </style>
   </defs>
   <g id="X">
-    <rect id="Rectangle" class="cls-1" y="0" width="40" height="40"/>
-    <path class="cls-2" d="M13.8,29.8h-3.3l7.3-8.3-8.5-11.3h6.7l5.2,6.9,6-6.9h3.3l-7.8,8.9,8.2,10.7h-6.9l-4.7-6.3-5.5,6.3ZM14.9,12.2h-1.8l11.9,15.7h2l-12-15.7h0Z"/>
+    <rect id="Rectangle" class="cls-1" y="0" width="40" height="40" />
+    <path class="cls-2 fillable"
+      d="M13.8,29.8h-3.3l7.3-8.3-8.5-11.3h6.7l5.2,6.9,6-6.9h3.3l-7.8,8.9,8.2,10.7h-6.9l-4.7-6.3-5.5,6.3ZM14.9,12.2h-1.8l11.9,15.7h2l-12-15.7h0Z" />
   </g>
 </svg>

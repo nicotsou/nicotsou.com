@@ -9,10 +9,11 @@ import '@fontsource/inconsolata/400.css'
 
 export const Body1Styles = css`
   min-height: 0vw;
-  font-size: clamp(17px, calc(100vw * 1.9 / 100), 20px);
+  font-size: clamp(17px, calc(100vw * 1.9 / 100), 19px);
   line-height: 1.7rem;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 300;
+  hyphens: auto;
 `
 
 export const Body2Styles = css`
@@ -42,23 +43,23 @@ export const Heading1Styles = css`
 `
 
 export const Heading2Styles = css`
-  font-family: 'Merriweather', serif;
-  font-weight: 300;
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.25rem;
   letter-spacing: -0.03rem;
 `
 
 export const Heading3Styles = css`
-  font-family: 'Merriweather', serif;
-  font-weight: 700;
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 400;
   font-size: 1.25rem;
   line-height: 2.1rem;
   letter-spacing: -0.0055rem;
 `
 
 export const Heading4Styles = css`
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather Sans', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.8rem;
@@ -66,7 +67,7 @@ export const Heading4Styles = css`
 `
 
 export const Heading5Styles = css`
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather Sans', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -74,7 +75,7 @@ export const Heading5Styles = css`
 `
 
 export const Heading6Styles = css`
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather Sans', sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.25rem;
