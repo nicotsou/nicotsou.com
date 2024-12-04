@@ -1,5 +1,5 @@
 ---
-title: Advanced Prompting Techniques & Strategies
+title: Advanced Prompting Techniques
 date: '2024-12-25T22:12:00.000Z'
 description: Advanced techniques and strategies for effective prompt engineering to optimize interactions with Generative AI.
 type: post
