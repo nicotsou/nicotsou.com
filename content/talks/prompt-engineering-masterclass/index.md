@@ -14,8 +14,8 @@ This is a guide to help you dive deeper into the concepts I presented and integr
 ## Key Topics Covered
 
 - **[The Art of Prompt Engineering](/the-art-of-prompt-engineering)** explains the fundamentals and core principles. (Published)
-- **[The Rules Of Prompting](https://nicotsou.notion.site/The-Rules-Of-Prompting-14dc0bf2287080e7a3c8d328aa89e61c?pvs=73)** will help you remember how to build perfect prompts. (Draft)
-- **[How To Structure Your Prompts](https://nicotsou.notion.site/How-To-Structure-Your-Prompts-14dc0bf2287080dfa3b3fd909fbe39fc)** explains the key elements for structuring your prompts. (Draft)
+- **[The Rules Of Prompting](/the-rules-of-prompting)** will help you remember how to build perfect prompts. (Published)
+- **[How To Structure Your Prompts](/how-to-structure-your-prompts)** explains the key elements for structuring your prompts. (Published)
 - **[Five Pro Tips For Better Prompts](https://nicotsou.notion.site/Five-Pro-Tips-For-Better-Prompts-14dc0bf2287080f280c4f0f4f7029351?pvs=73)** lists the tips I have presented. (Draft)
 - **[Advanced Prompting Techniques & Strategies](https://nicotsou.notion.site/Advanced-Prompting-Techniques-Strategies-14dc0bf22870800ebcd3f7e1520be61d)** is a curated list of techniques and methodologies. (Draft)
 - **[Strategies For Customizing LLM](https://nicotsou.notion.site/Strategies-For-Customizing-LLMs-14dc0bf2287080fab33fe8f58b6a4862)s** goes beyond prompt engineering. (Draft)
