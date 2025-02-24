@@ -1,6 +1,6 @@
 ---
 title: Strategies For Customizing LLMs
-date: '2025-01-08T22:12:00.000Z'
+date: '2025-02-26T22:12:00.000Z'
 description: Unlock the secrets of advanced prompting techniques that can dramatically enhance your interactions with AI, transforming simple requests into powerful, precise outputs.
 type: post
 cover: './cover.png'
