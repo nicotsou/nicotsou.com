@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const StyledListItem = styled.li`
   margin-top: 1rem;
-  max-width: 20rem;
+  max-width: 21rem;
 `
 
 const PostLink = styled(Link)`
