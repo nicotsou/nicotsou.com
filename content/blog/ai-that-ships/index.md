@@ -1,6 +1,6 @@
 ---
 title: 'AI that ships: Finding balance between hype and reality'
-date: '2025-11-06T22:12:00.000Z'
+date: '2025-11-07T22:12:00.000Z'
 description: Generative AI is often overhyped, leading to failed implementations and unrealistic expectations. Most AI product pilots fail due to poor planning, wrong automation targets, and lack of human oversight. Companies must approach AI development with skepticism and discipline, ensuring solutions address real user needs while maintaining ethical standards.
 type: post
 cover: './cover.png'
