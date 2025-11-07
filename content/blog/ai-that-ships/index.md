@@ -166,7 +166,7 @@ But the real problems emerge when vibe coders try to scale:
 
 So while my developer soul would beg for a true solution that eliminates the need to write code, we’re not there yet. It could be a great prototyping tool, though—and maybe a conversation starter for your next Scrum planning session. 😉
 
-![Apple Intelligence transformation](images/apple-ai-transformation.png)
+![Diagram: Apple Intelligence transformation](images/apple-ai-transformation.png)
 
 ## Finding your balance
 
