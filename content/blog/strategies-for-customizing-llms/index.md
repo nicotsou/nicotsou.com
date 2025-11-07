@@ -44,7 +44,7 @@ RAG works with various types of databases. You can call a public API and use its
 
 A vector database is a special type of database that stores high-dimensional vectors representing the semantic meaning of text, images, or other data. These vectors allow for similarity searches, making it possible to find relevant information based on _meaning_ rather than just _keywords_. When integrated with RAG, vector databases enable more nuanced and contextually accurate information retrieval.
 
-![vectors.png](images/vectors.png)
+![Diagram: Vectors in 3D space](images/vectors.png)
 
 For example, in a vector space, the words "cat" and "dog" would be closer together than either word is to "apple". This is because "cat" and "dog" share many semantic properties (they're both pets, mammals, domestic animals), while "apple" represents a completely different concept (a fruit). When these words are converted to vectors, this semantic similarity is reflected in the mathematical distance between their vector representations.
 

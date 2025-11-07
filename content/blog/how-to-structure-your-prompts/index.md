@@ -18,7 +18,7 @@ Let's examine each step in detail, and then combine them all together at the end
 
 Remember how we talked about different ways to use AI language models (LLMs) in a previous [article](https://nicotsou.com/the-art-of-prompt-engineering/)?
 
-![Screenshot 2024-11-26 at 08.03.07.png](images/LLM-use-cases.png)
+![Diagram: LLM Use Cases](images/LLM-use-cases.png)
 
 Here's a simple but powerful tip: start your prompts with action words (verbs). When you begin with a clear action word, you tell the AI exactly what you want it to do. This helps the AI understand your request better and gives you more accurate results. Think of these action words as simple instructions that guide the AI to give you the kind of response you're looking for.
 
