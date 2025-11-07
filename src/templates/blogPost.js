@@ -149,9 +149,9 @@ const BlogPostTemplate = ({ data }) => {
             </SuggestedArticlesList>
           </nav>
           <AuthorAside>
-            Hey, thanks for reading! In this blog I share thoughts and tutorials
-            about coding, technology, and content creation. Subscribe for some
-            exclusive content.
+            Hey, thanks for reading! In this blog I share thoughts about AI,
+            software engineering, technology, and content creation. Subscribe
+            for some exclusive content.
           </AuthorAside>
           <SignUp />
         </Section>
