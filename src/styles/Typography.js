@@ -9,7 +9,7 @@ import '@fontsource/inconsolata/400.css'
 
 export const Body1Styles = css`
   min-height: 0vw;
-  font-size: clamp(17px, calc(100vw * 1.9 / 100), 19px);
+  font-size: clamp(17px, calc(100vw * 1.9 / 100), 18px);
   line-height: 1.7rem;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 300;

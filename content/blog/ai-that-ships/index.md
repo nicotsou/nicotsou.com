@@ -1,5 +1,5 @@
 ---
-title: 'My AI Manifesto: Finding balance between hype and reality'
+title: 'AI that ships: Finding balance between hype and reality'
 date: '2025-11-06T22:12:00.000Z'
 description: Generative AI is often overhyped, leading to failed implementations and unrealistic expectations. Most AI product pilots fail due to poor planning, wrong automation targets, and lack of human oversight. Companies must approach AI development with skepticism and discipline, ensuring solutions address real user needs while maintaining ethical standards.
 type: post
@@ -16,7 +16,7 @@ So how do you cut through the noise? How do you build AI products like a boss, w
 
 Let’s talk about the realities nobody mentions in the keynote presentations. So when business is screaming “Profit! Profit! Profit!” and engineering pushes back with “That will end really badly”, let me help you bridge the gap between hype and reality.
 
-This article is _that_ guide—my own **AI Manifesto**. My Holy Grail of AI.
+This article is _that_ guide—my Holy Grail of AI.
 
 Amen! 🙏
 
@@ -189,6 +189,8 @@ Takeaways (summarized by AI, of course):
 - **Build verification into everything** — Audit logs, human review checkpoints, confidence thresholds, feedback loops. If you can’t explain how you’ll catch mistakes, you’re not ready to ship.
 - **Solve real problems, not imaginary ones** — Before you add an AI feature, ask if users are actually asking for it. If the answer is no, you’re about to waste a lot of money.
 - **Automate the boring stuff first** — Start with simple, transparent tasks where mistakes are obvious. Save the complex workflows for later, once you’ve learned how AI actually behaves in your system.
-- **Keep the humans who think critically** — The companies that treat AI as a headcount replacement will discover the hard way that babysitting AI outputs is _way_ harder than doing the work properly from the start.
+- **Critical thinking over masive layoffs** — The companies that treat AI as a headcount replacement will discover the hard way that babysitting AI outputs is _way_ harder than doing the work properly from the start.
+
+Let me know what is your thoughts on AI. You know where you'll find me. 😉
 
 Cover art generated with Google Gemini.
