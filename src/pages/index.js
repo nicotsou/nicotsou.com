@@ -57,7 +57,7 @@ const IndexPage = ({ data }) => {
       <StyledLogo />
       <StyledAside1>{quote}</StyledAside1>
       <StyledLabel1 as="h1">
-        Nicos Tsourektsidis, Front-end developer.{' '}
+        Nicos Tsourektsidis, Software Architect.{' '}
         <span>Based in Zurich, CH</span>
       </StyledLabel1>
       <PostList onMouseLeave={() => handlePostHover(null)}>
