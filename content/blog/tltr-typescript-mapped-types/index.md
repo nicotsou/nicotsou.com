@@ -1,7 +1,7 @@
 ---
 title: Mapped Types of TypeScript
 date: '2022-07-14T22:12:00.000Z'
-description: Mapped types make possible to loop over your types, just like how you use foreach in normal JavaScript code.
+description: Mapped types make it possible to loop over your types, just like how you use foreach in normal JavaScript code.
 type: post
 cover: './cover.png'
 ---

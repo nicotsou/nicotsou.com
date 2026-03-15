@@ -1,7 +1,7 @@
 ---
 title: You Don't Know TS
 date: '2022-08-26T22:12:00.000Z'
-description: An in-depth exploration of prompt engineering, highlighting its significance in effectively utilizing AI and Large Language Models for various applications.
+description: An in-depth exploration of TypeScript, highlighting its powerful features and common misconceptions about the language.
 type: talk
 conference: Front Conference Zurich
 cover: './cover.jpeg'
@@ -9,9 +9,9 @@ cover: './cover.jpeg'
 
 TypeScript has changed the software industry, and it has become the de-facto way of delivering JS applications.
 
-Allow me to introduce you once again to TS. This time, we will focus on the most common misconceptions about the language. We will talk about its powerful features, that set it apart from any other programming language out there.
+Allow me to introduce you once again to TS. This time, we will focus on the most common misconceptions about the language. We will talk about its powerful features that set it apart from any other programming language out there.
 
-I will share with you my mental model about types, to help you navigate the type universe and make the right decisions about your code.
+I will share with you my mental model about types to help you navigate the type universe and make the right decisions about your code.
 
 ## Key Topics Covered
 

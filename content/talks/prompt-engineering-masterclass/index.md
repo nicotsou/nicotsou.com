@@ -18,7 +18,7 @@ This is a guide to help you dive deeper into the concepts I presented and integr
 - **[How To Structure Your Prompts](/how-to-structure-your-prompts)** explains the key elements for structuring your prompts. (Published)
 - **[Five Pro Tips For Better Prompts](https://nicotsou.notion.site/Five-Pro-Tips-For-Better-Prompts-14dc0bf2287080f280c4f0f4f7029351?pvs=73)** lists the tips I have presented. (Draft)
 - **[Advanced Prompting Techniques & Strategies](https://nicotsou.notion.site/Advanced-Prompting-Techniques-Strategies-14dc0bf22870800ebcd3f7e1520be61d)** is a curated list of techniques and methodologies. (Draft)
-- **[Strategies For Customizing LLM](https://nicotsou.notion.site/Strategies-For-Customizing-LLMs-14dc0bf2287080fab33fe8f58b6a4862)s** goes beyond prompt engineering. (Draft)
+- **[Strategies For Customizing LLMs](https://nicotsou.notion.site/Strategies-For-Customizing-LLMs-14dc0bf2287080fab33fe8f58b6a4862)** goes beyond prompt engineering. (Draft)
 
 I'm excited to announce that I'm preparing a **Prompt Engineering 👩‍💻 Workshop**! [Subscribe to my newsletter](https://fantastic-crafter-6730.kit.com/88d8f79c35) to get free early access when it becomes available!
 

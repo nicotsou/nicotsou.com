@@ -10,7 +10,7 @@ cover: './cover.jpg'
 
 In [programming languages](https://en.wikipedia.org/wiki/Programming_language), a **type system** is a [logical system](https://en.wikipedia.org/wiki/Logical_system) comprising a set of rules that assigns a property called a [type](<https://en.wikipedia.org/wiki/Type_(computer_science)>) to the various constructs of a [computer program](https://en.wikipedia.org/wiki/Computer_program), such as [variables](<https://en.wikipedia.org/wiki/Variable_(computer_science)>), [expressions](<https://en.wikipedia.org/wiki/Expression_(computer_science)>), [functions](<https://en.wikipedia.org/wiki/Function_(computer_science)>) or [modules](https://en.wikipedia.org/wiki/Modular_programming).
 
-But you are not here for definitions, aren't you?
+But you are not here for definitions, are you?
 
 This article belongs to my series [Too Long To Read TypeScript](/tltr-typescript). Every article covers in detail a core concept of the language.
 
@@ -48,7 +48,7 @@ Interesting finding; There were no errors, whatsoever, when we tried to change t
 
 A type of a _value_ can be `undefined`, `null`, `number`, `string`, and `boolean`. ES6 supports a new type called **`Symbol`**. We call these **primitive types**.
 
-Everything other variable is an `object`, including `array`, regular expressions and `Date`. These are **reference types.**
+Every other variable is an `object`, including `array`, regular expressions and `Date`. These are **reference types.**
 
 In the following example, we assign a string value to the variable `artist`:
 
@@ -89,7 +89,7 @@ Now let's try a weird operation:
 '1' + 2 // returns 12
 ```
 
-Another interesting finding; Again, we don't see an error. Instead, JavaScript automatically _coerces_ their values, which will allow you to compare apples with oranges if I want to. A `string` wins over a `number`, that's why the result is a `string`. That means there is a predefined priority.
+Another interesting finding; Again, we don't see an error. Instead, JavaScript automatically _coerces_ their values, which will allow you to compare apples with oranges if you want to. A `string` wins over a `number`, that's why the result is a `string`. That means there is a predefined priority.
 
 Now, just for fun, try the following:
 
@@ -182,13 +182,13 @@ let year: any = 2020
 year = '2021'
 ```
 
-This disables the type system for this specific line or file. It’s mostly preferred when there you want to hack your type system on purpose. You can then search and replace all its instances.
+This disables the type system for this specific line or file. It’s mostly preferred when you want to hack your type system on purpose. You can then search and replace all its instances.
 
 There is a better way to deal with unexpected values in TypeScript. The keyword `unknown`, which we will analyze in the next section. The ultimate way is to use Generics. We will cover them in a separate post.
 
 ### unknown
 
-The `unknown` keyword works similar to `any`:
+The `unknown` keyword works similarly to `any`:
 
 ```tsx
 let duration: unknown
@@ -256,7 +256,7 @@ Enums act like Symbols in ES6. But it's better, because we can control the real 
 
 ### Enum values
 
-TypeScript assigns values to your enum properties, but you can assign customize them if you want to.
+TypeScript assigns values to your enum properties, but you can customize them if you want to.
 
 By default, values start counting from `0`:
 

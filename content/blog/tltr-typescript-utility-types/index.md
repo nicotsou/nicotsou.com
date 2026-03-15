@@ -22,7 +22,7 @@ Peanut butter? 🍯
 
 ## Why do we need utility types?
 
-Here our favorite `Track` interface:
+Here's our favorite `Track` interface:
 
 ```tsx
 interface Track {

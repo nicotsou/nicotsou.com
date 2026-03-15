@@ -19,7 +19,7 @@ To share your thoughts on my presentation, please use the [feedback form](https:
 
 ## Key Topics Covered
 
-- Why we need UI Libraries?
+- Why do we need UI Libraries?
 - Autonomy vs Control
 - Implementation approaches
 - Customization options

@@ -207,7 +207,7 @@ Let’s fix that by introducing modules.
 
 ### 3. Module everything up 👩🏻‍💻🧑🏿‍💻
 
-Now take a deep breath and try to use everything you’ve learned in the previous sections about modules. Organize the previous code, so that the class, the filter functions, and the main code are independent files. You may want to separate types to its own file as well.
+Now take a deep breath and try to use everything you’ve learned in the previous sections about modules. Organize the previous code, so that the class, the filter functions, and the main code are independent files. You may want to separate types into their own file as well.
 
 Yes, time to go solo for a while. Stop with the reading and give it a try. You can then compare your solution with the one I wrote in the next section.
 

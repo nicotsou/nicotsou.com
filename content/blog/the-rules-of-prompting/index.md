@@ -200,7 +200,7 @@ Write a product description.
 </product>
 ```
 
-In the previous example, we are using a XML tag to differentiate the part of the product information from the rest of the prompt. We also use Markdown syntax to format the text. We help the LLM recognize the different parts of the prompt.
+In the previous example, we are using an XML tag to differentiate the part of the product information from the rest of the prompt. We also use Markdown syntax to format the text. We help the LLM recognize the different parts of the prompt.
 
 This approach is particularly useful when dealing with complex prompts that contain multiple elements or require specific formatting in the output.
 

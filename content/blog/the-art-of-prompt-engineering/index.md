@@ -8,7 +8,7 @@ cover: './cover.png'
 
 Prompt engineering is not just a buzzword; it’s the golden key to unlocking the true power of AI.
 
-If you've ever wondered how to get a language model like ChatGPT to write you a sonnet, draft a business proposal, or debug your code, congratulations — you’re already stepped into the world of prompt engineering. It’s where human creativity meets machine intelligence, and believe me, the possibilities are mind-blowing.
+If you've ever wondered how to get a language model like ChatGPT to write you a sonnet, draft a business proposal, or debug your code, congratulations — you’ve already stepped into the world of prompt engineering. It’s where human creativity meets machine intelligence, and believe me, the possibilities are mind-blowing.
 
 But what are the core principles we need to understand in order to get the most out of it?
 
@@ -29,7 +29,7 @@ I dare to say, it's a bigger success than the Metaverse. There, I said it! And w
 Here’s the thing: Large Language Models (LLMs) like ChatGPT are incredibly smart, but they’re not psychic. They rely on your input to decide how to respond. Think of them as your all-knowing buddy who’s willing to help, but only if you know how to ask the right questions. That’s where prompt engineering comes in. It’s all about crafting the perfect _ask_.
 
 ![Diagram: LLM Prompt](images/prompt-engineering-diagram.png)
-_Every LLM interraction starts with a user prompt._
+_Every LLM interaction starts with a user prompt._
 
 At the heart of every response from an LLM lies an intricate process that begins with your prompt. Here’s the short version: LLMs are trained on massive datasets of text—think everything from books and articles to code and social media. Their goal? To predict the most likely next word or _token_ based on the context you provide.
 
@@ -38,7 +38,7 @@ Ask a vague question like, “Tell me about history,” and you’ll probably ge
 Prompt engineering isn’t just about getting answers; it’s about getting the *right* answers. It’s the skill that transforms AI from a mediocre intern to your personal superhero.
 
 ![Diagram: The Use Cases of LLMs](images/LLM-use-cases.png)
-_THe use cases of Large Language Models._
+_The use cases of Large Language Models._
 
 ## What can I do with Generative AI?
 
@@ -95,7 +95,7 @@ This is particularly concerning in fields like healthcare, legal advice, or acad
 
 ## Turning up the heat
 
-Another important factor that influences hallucinations is the "temperature" setting. Temperature controls how creative or random the model's responses are. A temperature of 0 makes responses more deterministic and focused, reducing hallucinations but potentially making outputs more rigid. Higher temperatures (like 0.7-1.0) increase creativity and variability, but also increase the likelihood of hallucinations
+Another important factor that influences hallucinations is the "temperature" setting. Temperature controls how creative or random the model's responses are. A temperature of 0 makes responses more deterministic and focused, reducing hallucinations but potentially making outputs more rigid. Higher temperatures (like 0.7-1.0) increase creativity and variability, but also increase the likelihood of hallucinations.
 
 > Think of temperature like a creativity dial.
 
@@ -114,7 +114,7 @@ But there’s a catch. The model doesn’t truly understand the world. It’s ju
 
 ## Tone of Voice
 
-In the article [The Four Dimensions of Tone of Voice](https://www.nngroup.com/articles/tone-of-voice-dimensions/), Kate Moran explores how a product's tone of voice reflects an organization's attitude toward its message. She identifies four primary dimensions to analyze tone: formality (formal vs. casual), humor (serious vs. funny), respectfulness (respectful vs. irreverent), and enthusiasm (matter-of-fact vs. enthusiastic). Moran emphasizes that each piece of content can be positioned along these spectrums, influencing how users perce
+In the article [The Four Dimensions of Tone of Voice](https://www.nngroup.com/articles/tone-of-voice-dimensions/), Kate Moran explores how a product's tone of voice reflects an organization's attitude toward its message. She identifies four primary dimensions to analyze tone: formality (formal vs. casual), humor (serious vs. funny), respectfulness (respectful vs. irreverent), and enthusiasm (matter-of-fact vs. enthusiastic). Moran emphasizes that each piece of content can be positioned along these spectrums, influencing how users perceive and engage with the content.
 
 ![Diagram: Dimensions of tone of voice are not binary but exist on a spectrum.](images/tone-of-voice-sliders.png)
 _Dimensions of tone of voice are not binary but exist on a spectrum._

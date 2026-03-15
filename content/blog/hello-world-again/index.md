@@ -14,4 +14,4 @@ I have no clue what to write as an introduction but I have a lot to share with y
 
 Since I'm a software engineer this blog will host technical articles, mostly related to the technologies I'm using on a daily basis. It's also a collection of thoughts, step-by-step tutorials and references.
 
-I am curious how these articles will speak to you. If you have any questions or something to add, twitter is the best way to reach me out.
+I am curious how these articles will speak to you. If you have any questions or something to add, Twitter is the best way to reach out to me.

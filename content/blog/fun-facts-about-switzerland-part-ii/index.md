@@ -23,7 +23,7 @@ The most important phrase to remember is "En guete", which literally means "Have
 Don't worry if you forget it, somebody will remind you to do so. It's one of these moments that you feel like a kid, and your parents are teaching you how to behave.
 
 ![cheesecake.jpeg](images/cheesecake.jpeg)
-_The German version of the cheesecake is one of my favorite deserts. You can find plenty of them in multiple variations._
+_The German version of the cheesecake is one of my favorite desserts. You can find plenty of them in multiple variations._
 
 Time to raise your glass? Yeah, I know you will probably try to cheer anyone on the table, but this is not how it works here.
 
@@ -47,7 +47,7 @@ One of the most traditional Swiss delights is [Fondue](https://en.wikipedia.org/
 
 But be careful. They do smell a lot. I haven't been on sports that much in my life, but I can tell you that my socks after a long workout don't even compare to that smell. We always have to come up with a practical solution in order to cover the smell when we're inviting friends home to enjoy some cheese.
 
-My least favorite Swiss desert is called "Gipfeli". It looks a lot like a croissant. But it's not! I think the people who brought the first croissant from France forgot to put butter, sugar and make it crispy. It's a terrible disappointment when you are craving something sweet.
+My least favorite Swiss dessert is called "Gipfeli". It looks a lot like a croissant. But it's not! I think the people who brought the first croissant from France forgot to put butter, sugar and make it crispy. It's a terrible disappointment when you are craving something sweet.
 
 ![Untitled](images/sausages.png)
 

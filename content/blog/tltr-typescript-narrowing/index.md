@@ -44,7 +44,7 @@ Chocolate? 🍫
 
 ## The Control Flow Analysis of TypeScript
 
-To solve the mystery, let’s fire up our favorite TypeScript text editor and paste the challenge there. Try to hover over the `width` argument in every single line. As you do that, you will notice that TypeScript will give you a special union type with all the  types.
+To solve the mystery, let’s fire up our favorite TypeScript text editor and paste the challenge there. Try to hover over the `width` argument in every single line. As you do that, you will notice that TypeScript will give you a special union type with all the types.
 
 Here’s what we have:
 

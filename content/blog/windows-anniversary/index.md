@@ -30,7 +30,7 @@ I wouldn’t say that most of its users were perceiving it as a real OS, rather 
 ![A screenshot of Windows 1.0.](images/f7a97e1d-1915-45fd-b8c5-20e5d934ed73-620x371.png)
 _The design wasn’t inspired by Lego. It’s just most computers were only able to display 16 colors._
 
-I don’t have much to share here, since I never had the chance to [play](https://www.pcjs.org/software/pcx86/sys/windows/1.01/ega/) with the first version of Windows. My depute to the world of bad software engineering was with…
+I don’t have much to share here, since I never had the chance to [play](https://www.pcjs.org/software/pcx86/sys/windows/1.01/ega/) with the first version of Windows. My debut in the world of bad software engineering was with…
 
 ## Windows 3.1
 
@@ -39,7 +39,7 @@ Windows OS was becoming so advanced that it jumped to 2.1 versions ahead. OK, th
 ![A screenshot of Windows 3.1](images/windows-3.1.png)
 _Left: The boot screen. Right: The desktop._
 
-This may seem strange, but people were refusing to upgrade to using a GUI for many years. You see, most of the PC users at that time were electronic engineers or hobbyists. Spending time in front of a [computer monitor](https://en.wikipedia.org/wiki/Cathode-ray_tube#/media/File:Trinitron_computer-monitor.jpg) was only a benefit for nerds like me. On top of that, most of the apps people we were using back then were still running on MS-DOS.
+This may seem strange, but people were refusing to upgrade to using a GUI for many years. You see, most of the PC users at that time were electronic engineers or hobbyists. Spending time in front of a [computer monitor](https://en.wikipedia.org/wiki/Cathode-ray_tube#/media/File:Trinitron_computer-monitor.jpg) was only a benefit for nerds like me. On top of that, most of the apps people were using back then were still running on MS-DOS.
 
 Eventually, the adoption of Windows gradually transformed into a tangible reality. More and more companies were firing their employees because they were playing Solitaire at work. And besides all the efforts Microsoft was putting into [teaching them](https://www.businessinsider.com/why-computers-comewith-solitaire-and-minesweeper-2015-8?r=US&IR=T&IR=T&utm_source=reddit.com) how to use their mouse, they were still preferring to use their keyboard instead.
 
@@ -76,7 +76,7 @@ Blue screens of death are now in English. You could find them on a monitor near 
 ![Back in 90's sexism wasn’t really a topic. You can confirm that if you watch any Hollywood films from that era. At least we were not wearing meat to go to the [MTV Awards](https://en.wikipedia.org/wiki/Meat_dress_of_Lady_Gaga).](images/windows-bosd-tshirt.png)
 _Back in 90's sexism wasn’t really a topic. You can confirm that if you watch any Hollywood films from that era. At least we were not wearing meat to go to the [MTV Awards](https://en.wikipedia.org/wiki/Meat_dress_of_Lady_Gaga)._
 
-The Web is starting to becoming a thing. Of course, Internet connections were so slow that you'd have to wait half an hour to download a music track. Windows 95 taught us how to surf [the Internet](https://www.youtube.com/watch?v=iDbyYGrswtg&t=24s) by double-clicking on the blue "e" icon. Yes, this was the year Internet Explorer was released. An application that will shape the web industry. The world would never be the same again.
+The Web is starting to become a thing. Of course, Internet connections were so slow that you'd have to wait half an hour to download a music track. Windows 95 taught us how to surf [the Internet](https://www.youtube.com/watch?v=iDbyYGrswtg&t=24s) by double-clicking on the blue "e" icon. Yes, this was the year Internet Explorer was released. An application that will shape the web industry. The world would never be the same again.
 
 [Where](https://en.wikipedia.org/wiki/Where_do_you_want_to_go_today%3F) do you want to go today?
 
@@ -86,7 +86,7 @@ Nobody paid attention all these years. Why should you?
 
 ## Windows 98
 
-Released in 1998 (really now?) Windows 98 was taking advantage of new technologies. If your PC had [MMX](<https://en.wikipedia.org/wiki/MMX_(instruction_set)>), DVD Drive, USB port and an AGP card, Windows 98 could have taken the advance of them.
+Released in 1998 (really now?) Windows 98 was taking advantage of new technologies. If your PC had [MMX](<https://en.wikipedia.org/wiki/MMX_(instruction_set)>), DVD Drive, USB port and an AGP card, Windows 98 could take advantage of them.
 
 ![Boot screen of Windows 98](images/d8vvphu-d3956824-8a8c-47a7-9048-df5f11a49e02.gif)
 _As you can tell from the similarities between the previous version, this was a minor release._
@@ -96,7 +96,7 @@ Tip: Never say a bad word about Internet Explorer. Microsoft has integrated it i
 ![I remember I was so fascinated when I saw this setup for the first time.](images/windows-98-setup.png)
 _I remember I was so fascinated when I saw this setup for the first time._
 
-For the first time ever, friendly error messages apologize to you every time an application has to terminate. How nice of them. You can also send an error report to Microsoft. It just takes just one click and it arrives directly in the Bill’s Recycle Bin.
+For the first time ever, friendly error messages apologize to you every time an application has to terminate. How nice of them. You can also send an error report to Microsoft. It just takes one click and it arrives directly in the Bill’s Recycle Bin.
 
 ![Windows 98 error window](images/windows-98-error-window.jpeg)
 _At least you had an entertaining activity to play with when something was crashing._
@@ -112,7 +112,7 @@ The revelation of software engineering. A real masterpiece in the world of Opera
 ![Boot screen of Windows ME](images/d8vvq7e-1f590868-882e-4491-bc7f-5f895711dcee.gif)
 _If you used to know someone who was using WINME please call them to make sure they are still alive._
 
-Windows ME stands for Millenium Edition. Mind the capital “E”. The [Y2K bug](https://en.wikipedia.org/wiki/Year_2000_problem) was extremely scary at that time. We were all prepared for the worst. Microsoft tried to solve the Millenium bug, once and for all. They released an OS with so many bugs, that people forgot about the Millenium bug altogether.
+Windows ME stands for Millennium Edition. Mind the capital “E”. The [Y2K bug](https://en.wikipedia.org/wiki/Year_2000_problem) was extremely scary at that time. We were all prepared for the worst. Microsoft tried to solve the Millennium bug, once and for all. They released an OS with so many bugs, that people forgot about the Millennium bug altogether.
 
 ![Windows ME Control Panel](images/windows-me-control-panel.png)
 _Every time Microsoft was trying to simplify the Control Panel, people were still going back to the icon view._
@@ -213,7 +213,7 @@ Windows 8 was booting ten times faster than Windows 7 and a hundred and ten time
 
 Yes, you’ve read it correctly. This was the first Windows OS that didn’t require a new PC to run properly. Miracles do happen.
 
-Known as “the one that introduced the Metro apps”, Windows 10 was basically a tablet OS. Of course, since Microsoft is famous for providing good UX, you had 2 different versions of apps, the regular ones, and the Metro ones. So what would you choose? Features or portability?
+Known as “the one that introduced the Metro apps”, Windows 8 was basically a tablet OS. Of course, since Microsoft is famous for providing good UX, you had 2 different versions of apps, the regular ones, and the Metro ones. So what would you choose? Features or portability?
 
 People loved Windows 8 so much that they wanted their tablets and smartphones to have the same UI.
 
@@ -273,7 +273,7 @@ _A new design language across the board._
 
 Just picture this for a second. A designer (I imagine him like Bob Ross) with a brush in his hand (sorry, I mean a [surface pen](https://www.google.com/search?q=surface+pen&sxsrf=AOaemvJmsg7f7THbjy5nvuz1v7LNNUesPw:1635969076286&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjOw57d-_zzAhWosKQKHakkBWQQ_AUoAXoECAEQAw&biw=2384&bih=1252&dpr=2)), thinking about how to improve the UI (sorry, these days we call it UX), and running out of ideas. Then another guy comes in with the face of [Archimedes](<https://en.wikipedia.org/wiki/Eureka_(word)>).
 
-"Eurica! Let's center the Start Menu!"
+"Eureka! Let's center the Start Menu!"
 
 According to Microsoft, the Windows Start Menu is the center of your world. Well, I can’t blame them now that we’re all in front of a computer. How could I?
 

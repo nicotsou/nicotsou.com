@@ -246,4 +246,4 @@ This unidirectional data flow helps you build incredibly simple applications tha
 
 Your aim as a React developer is to write declarative code as much as you can. It’s like learning how to drive a supercar.
 
-But how we can declaratively change the DOM and maintain good performance? What did you say? What is the DOM? OK this will take another coffee.
+But how can we declaratively change the DOM and maintain good performance? What did you say? What is the DOM? OK this will take another coffee.

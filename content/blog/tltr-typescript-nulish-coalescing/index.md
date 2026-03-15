@@ -147,7 +147,7 @@ The **Nullish Coalescing** operator performs that exact check, but the syntax is
 volume ?? 0.25
 ```
 
-It basically says; if you get a valid value, just use it instead of falling back to the falsy one. And it protects us from many issues.
+It basically says: if you get a valid value, just use it instead of falling back to the falsy one. And it protects us from many issues.
 
 ---
 

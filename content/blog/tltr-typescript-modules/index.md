@@ -6,7 +6,7 @@ type: post
 cover: './cover.png'
 ---
 
-Every application, even the tiniest one, will eventually need to break code apart into multiple files. I mean, who likes to read thousands of lines of code in a single file right?
+Every application, even the tiniest one, will eventually need to break code apart into multiple files. I mean, who likes to read thousands of lines of code in a single file, right?
 
 Other languages use the term packages or assemblies. JavaScript uses _modules_.
 
@@ -66,7 +66,7 @@ Useful notes:
 
 1. We use [destructuring](/destructuring) to pick only the named exports that we want to use.
 2. We specify the relative path of the file that we want to import.
-3. For `ts` and `js` files no extension is required. Although, it will technically work, it’s common not to use it. For other types of files (such ass `css`, `svg`, `json`, etc.) the extension is mandatory. That’s the common behavior when you use a module bundler like [webpack](https://webpack.js.org) for example.
+3. For `ts` and `js` files no extension is required. Although, it will technically work, it’s common not to use it. For other types of files (such as `css`, `svg`, `json`, etc.) the extension is mandatory. That’s the common behavior when you use a module bundler like [webpack](https://webpack.js.org) for example.
 
 Practically, we can have as many `Target` types as we want in our project. As long as we are exporting them, they’re not going to cause any conflicts. Since we choose the file we want to import from, we are always sure that we’re not going to import something irrelevant.
 
@@ -80,7 +80,7 @@ Every file has a _default_ export slot:
 export default function playlist() {}
 ```
 
-Note, that we used the keyword `default`, to indicate that this is a _default_ export.
+Note that we used the keyword `default`, to indicate that this is a _default_ export.
 
 We use the same keyword for import:
 
@@ -90,9 +90,9 @@ export default function myUtil() {}
 
 That’s basically a reserved spot, which simplifies our export/import statements.
 
-> Default exports works similar to the return keyword in a function.
+> Default exports work similar to the return keyword in a function.
 
-If within a file you don’t want to export more than one elements, you can use the `default` keyword for simplicity.
+If within a file you don’t want to export more than one element, you can use the `default` keyword for simplicity.
 
 Another use case is when you want to separate your primary logic from the helper functions:
 
@@ -210,7 +210,7 @@ This will add a new dependency in your `package.json` file:
 }
 ```
 
-It will also create a `node_modules` folder inside the application folder with the contents of the package. Sometimes you will find the actual source code of the package. Other times you will find the package transpilled. That depends on how the developer decided to distribute it.
+It will also create a `node_modules` folder inside the application folder with the contents of the package. Sometimes you will find the actual source code of the package. Other times you will find the package transpiled. That depends on how the developer decided to distribute it.
 
 To use a library, simply import from your `node_modules` dependencies:
 
@@ -343,7 +343,7 @@ This pattern is used a lot in TypeScript applications.
 
 ## Appendix: CommonJS
 
-Before Modules became a standard in JavaScript, there where a lot of different patterns for implementing modules. The most popular one was the one that Node.js was based on. It’s called CommonJS, and it’s still widely used.
+Before Modules became a standard in JavaScript, there were a lot of different patterns for implementing modules. The most popular one was the one that Node.js was based on. It’s called CommonJS, and it’s still widely used.
 
 In this section, we will try to learn the basics of CommonJS. Besides the syntax, there are fundamental differences on how the two approaches resolve the modules. CommonJS imports are dynamically resolved at runtime, whereas in ES Modules imports are static.
 
@@ -396,6 +396,6 @@ I have prepared for you a small lab in which you will create a small TypeScript 
 
 To access the lab, [enroll to my TLTR; TypeScript course for free](https://tltr-typescript.com).
 
-That's all forlks! I'll be happy to hear your feedback about the article, as well as the course itself.
+That's all folks! I'll be happy to hear your feedback about the article, as well as the course itself.
 
 Many thanks to [Shubham Dhage](https://unsplash.com/photos/mjl0yIdSi18) for his amazing cover art.

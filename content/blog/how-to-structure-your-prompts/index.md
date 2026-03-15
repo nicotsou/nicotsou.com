@@ -69,7 +69,7 @@ Here are some examples of how assigning a role can enhance your prompts and lead
 
 </aside>
 
-When you specify "As a application security specialist" the AI will adopt the mindset and expertise of a security professional, enabling it to provide specialized insights into potential vulnerabilities, security best practices, and technical recommendations that align with industry standards for application security. This role-based context helps ensure the AI's response focuses on security-specific concerns rather than general programming advice.
+When you specify "As an application security specialist" the AI will adopt the mindset and expertise of a security professional, enabling it to provide specialized insights into potential vulnerabilities, security best practices, and technical recommendations that align with industry standards for application security. This role-based context helps ensure the AI's response focuses on security-specific concerns rather than general programming advice.
 
 <aside>
 
@@ -223,7 +223,7 @@ Create a promotional campaign plan to boost sales during the holiday season.
 
 </aside>
 
-To enhance your prompts further, consider incorporating additional contextual elements. This includes providing relevant technical documentation and background information, backing up your prompts with supporting statistics and data, include previous conversation history, and the last message from the user that the LLM needs to respond to.
+To enhance your prompts further, consider incorporating additional contextual elements. This includes providing relevant technical documentation and background information, backing up your prompts with supporting statistics and data, including previous conversation history, and the last message from the user that the LLM needs to respond to.
 
 ---
 

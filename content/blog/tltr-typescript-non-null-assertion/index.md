@@ -1,7 +1,7 @@
 ---
 title: Dealing With Non-Null Assertions in TypeScript
 date: '2022-11-19T22:12:00.000Z'
-description: Let's master of the most controversial features Of TypeScript.
+description: Let's master one of the most controversial features Of TypeScript.
 type: post
 cover: './cover.jpg'
 ---
@@ -97,7 +97,7 @@ Due to the fact that JSX will _always_ ignore null-ish values by design, it’s 
 
 Now, someone who is a regular visitor to this blog, will start connecting the dots. How does this feature differ from [Optional Chaining](https://nicotsou.com/tltr-typescript-optional-chaining/)?
 
-Well, first of this is a TypeScript-only feature. It’s logic is strictly limited in compilation time, in which TypeScript is comparing the compatibility of two types. You’re basically signing the terms and conditions, and TypeScript depends on your gut feeling.
+Well, first off, this is a TypeScript-only feature. Its logic is strictly limited in compilation time, in which TypeScript is comparing the compatibility of two types. You’re basically signing the terms and conditions, and TypeScript depends on your gut feeling.
 
 Optional chaining, on the other side, is a JavaScript feature. And it’s much more of a safer approach.
 

@@ -10,9 +10,9 @@ Since the very early versions of TypeScript, the language provided support for t
 
 In this article we will discover how TypeScript helps us create classes and how it transforms JavaScript into a more traditional OOP experience. I will explain how to add types and how to implement inheritance, enforce private and protected members, add accessors and abstract classes. We will then talk about the structural type system of TypeScript, which differs from the other flavors of OOP, you may probably be familiar with.
 
-But first, let’s revisit what we’ve learned about classes and how JavaScript defers from it. This will help you have a better understanding of what’s going on.
+But first, let’s revisit what we’ve learned about classes and how JavaScript differs from it. This will help you have a better understanding of what’s going on.
 
-Sandae? 🍧
+Sundae? 🍧
 
 ---
 
@@ -28,7 +28,7 @@ const track = {
 }
 ```
 
-Now, in contrary to other languages, nobody stops me from editing this object by adding or changing its properties:
+Now, in contrast to other languages, nobody stops me from editing this object by adding or changing its properties:
 
 ```typescript
 track.timesPlayed: 22;
@@ -348,7 +348,7 @@ class Movie extends Playable {
 
 Note that I’m using the `extends` keyword, which is another feature of JavaScript.
 
-I can then instantiate an `Movie` object:
+I can then instantiate a `Movie` object:
 
 ```typescript
 const myMovie = new Movie('The Godfather', 175, 'Francis Ford Coppola')
@@ -397,7 +397,7 @@ An improved version of our previous design can be the following. Our ultimate go
 
 ![tltr-typescript-classes-Final.drawio.png](images/tltr-typescript-classes-Final.drawio.png)
 
-TypeScript adds better support for private methods. It’s important to remember that the following keywords are only available during compilation, and they aren’t available at runtime. Nothing protects you from accessing their values. If you really need that protection, ECMAScript 2015 has support for private properties or methods. But I would say it’s syntax [is quite weird](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#field_declarations). So use it only in rare cases, when it’s really important to protect your objects.
+TypeScript adds better support for private methods. It’s important to remember that the following keywords are only available during compilation, and they aren’t available at runtime. Nothing protects you from accessing their values. If you really need that protection, ECMAScript 2015 has support for private properties or methods. But I would say its syntax [is quite weird](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#field_declarations). So use it only in rare cases, when it’s really important to protect your objects.
 
 By default, all class members are public. You can omit the `public` keyword. Here’s what we’ve meant in the previous example, when we were declaring the class `Playable`:
 
@@ -460,7 +460,7 @@ class Playable {
 
 A constructor can also be marked as `protected`. This means that the class cannot be instantiated outside its containing class, but can be extended.
 
-For example, if we set our costructor to `protected`:
+For example, if we set our constructor to `protected`:
 
 ```typescript
 class Playable {
@@ -482,7 +482,7 @@ class Playable {
 const playableTrack = new Playable();  // throws an error
 ```
 
-Which doesn't allow my to access:
+Which doesn't allow me to access:
 
 It won’t be possible to instantiate new objects from the `Playable` class:
 
@@ -728,7 +728,7 @@ playable.sharePodcast() // This method will not work, it's not defined
 
 And now we have access to all the methods and properties that exist in the `Playable` class. This allows us to perform high-level actions on a variety of objects that have completely different implementations.
 
-If we try to access a method or a property that’s not defined in the parent abstract class, this will thow an error:
+If we try to access a method or a property that’s not defined in the parent abstract class, this will throw an error:
 
 ![typescript-no-method-error.png](images/typescript-no-method-error.png)
 

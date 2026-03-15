@@ -41,7 +41,7 @@ Of course, it’s time for a cliché. You know what comes with great power, don�
 
 From [misinformation](https://www.euronews.com/next/2023/05/02/rapid-growth-of-news-sites-using-ai-tools-like-chatgpt-is-driving-the-spread-of-misinforma) and [fake news](https://www.reuters.com/technology/china-reports-first-arrest-over-fake-news-generated-by-chatgpt-2023-05-10/) to [deepfakes](https://www.theguardian.com/technology/2023/may/25/deepfakes-ai-concern-microsoft-brad-smith) and [Balenciaga](https://www.nytimes.com/2023/04/08/technology/ai-photos-pope-francis.html). And what about the [copyrights](https://www.theverge.com/23444685/generative-ai-copyright-infringement-legal-fair-use-training-data) that feed those Large Language Models? Up until now, to increase the engagement in my blog I had to produce great content (or pay Google). Now, you can’t even tell if something here is original or [AI-generated](https://www.wired.com/story/cnet-published-ai-generated-stories-then-its-staff-pushed-back/).
 
-How can you tell if your colleagues are really present in a meeting? Is this the real voice of my sister on the phone asking me to pay 10K because her bitcoins are gone? Even the future of [Google](https://www.npr.org/2023/02/09/1155650909/google-chatbot--error-bard-shares) itself is uncertain. I mean, [Bing](https://www.fool.com/investing/2023/05/16/will-chatgpt-replace-google-heres-what-we-know/) has become a trend. What kind world are we living in?
+How can you tell if your colleagues are really present in a meeting? Is this the real voice of my sister on the phone asking me to pay 10K because her bitcoins are gone? Even the future of [Google](https://www.npr.org/2023/02/09/1155650909/google-chatbot--error-bard-shares) itself is uncertain. I mean, [Bing](https://www.fool.com/investing/2023/05/16/will-chatgpt-replace-google-heres-what-we-know/) has become a trend. What kind of world are we living in?
 
 And these are just peanuts compared to the concerns about privacy, spamming, cybersecurity threats, online harassment, bullying, sexism, racism, propaganda, shall I go on?
 
@@ -103,11 +103,11 @@ Let’s pause for a minute to take a deep breath.
 
 ---
 
-It’s unfortunate, but true. AI will replace a lot of jobs. Somebody may think that developers may have a competitive advantage here over other professions. I mean, the more someone understand how machines work, the better the machines will want to work with them. At the end, that's what they want, to rule the world, right?
+It’s unfortunate, but true. AI will replace a lot of jobs. Somebody may think that developers may have a competitive advantage here over other professions. I mean, the more someone understands how machines work, the better the machines will want to work with them. At the end, that's what they want, to rule the world, right?
 
 But this scenario that AI will take over the world is a bit fictional, isn’t it?
 
-Who do you think will help businesses in their AI transformation? Who will be there making decisions about what the software should or shouldn’t be? Will you let a machine responsible for customer satisfaction, user experience, cost evaluation, compliance, and maintainability? Software is not just about the code and developers are not just coders.
+Who do you think will help businesses in their AI transformation? Who will be there making decisions about what the software should or shouldn’t be? Will you let a machine be responsible for customer satisfaction, user experience, cost evaluation, compliance, and maintainability? Software is not just about the code and developers are not just coders.
 
 Do we really want to let AI decide for our software? No, we don’t. You can’t replace developers with machines.
 
@@ -188,6 +188,6 @@ _ChatGPT suggests staying optimistic. Do some upskilling, stay creative, and obv
 
 I really find Simon Sinek’s speech very inspiring; the human brain [cannot comprehend the negative](https://www.youtube.com/watch?v=W05FYkqv7hM). It’s in our DNA. We spend so much energy worrying about everything that is happening, and we forget that _we_ can make this world a better place.
 
-From that perspective, it doesn’t really pay off thinking as a pessimist here, doesn't it?
+From that perspective, it doesn’t really pay off thinking as a pessimist here, does it?
 
 Sounds too good to be true? Well, give it [five minutes](https://signalvnoise.com/posts/3124-give-it-five-minutes).

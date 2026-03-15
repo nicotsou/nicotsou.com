@@ -50,7 +50,7 @@ DOM is available _only_ on web browsers. For example, in Node.js you will not ev
 In addition to the DOM, the browser `window` object provides access to the following:
 
 - CSSOM, which as you guessed it represents the CSS styles and stylesheets that are attached to a website.
-- BOM, which hosts various helpful apis your browser provides, such us `navigator`, `location`, `history`, `XMLHttpRequest`, and the (in)famous `alert()` function.
+- BOM, which hosts various helpful apis your browser provides, such as `navigator`, `location`, `history`, `XMLHttpRequest`, and the (in)famous `alert()` function.
 
 ### What's wrong with the api?
 
@@ -106,7 +106,7 @@ But there is _another_ major problem with the DOM.
 
 Ah yes, browsers used to have different DOM implementations and certain APIs are not available everywhere, especially the newest ones.
 
-The story goes back to the [Browser wars](https://en.wikipedia.org/wiki/Browser_wars). For many years DOM was inadequate. The provided apis were not enough to support the complexity of our web applications. You see, it was never created to support applications in the first place. Web was about delivering content.
+The story goes back to the [Browser wars](https://en.wikipedia.org/wiki/Browser_wars). For many years DOM was inadequate. The provided apis were not enough to support the complexity of our web applications. You see, it was never created to support applications in the first place. The web was about delivering content.
 
 ![](/images/mosaic-first-browser.png)
 _Mosaic was one of the first web browsers. The [Evolution of the Web](http://www.evolutionoftheweb.com/) is a great website to learn about web history._
@@ -117,7 +117,7 @@ The [W3C](https://www.w3.org/) organization was founded in 1994 to standardize b
 
 Although things are getting better nowadays, there are still a few traps. Quite often certain apis become deprecated in favor of newer ones. There are also cases where companies refuse to implement apis, because it gets in their monopoly plans.
 
-Chrome is a good example. Developers have access to a superset of web apis that are not available elsewhere, creating a new wave of Chrome developers. On the other side companies which are more desktop-centric like Apple, detain from supporting those features at first place. They influence developers to write native apps for their platform, using the language and tools provided by them.
+Chrome is a good example. Developers have access to a superset of web apis that are not available elsewhere, creating a new wave of Chrome developers. On the other side companies which are more desktop-centric like Apple, refrain from supporting those features at first place. They influence developers to write native apps for their platform, using the language and tools provided by them.
 
 But how can you be sure if you are supposed to use an api or not?
 
@@ -137,7 +137,7 @@ I'm pretty sure you ran into websites with sluggy animations that destroyed the 
 
 <!-- prettier-ignore-start -->
 ![](images/the-horse-in-motion-animation.png)
-*[The Horse In Motion](https://en.wikipedia.org/wiki/The_Horse_in_Motion) was the first move ever created and here you can see all of its frames.*
+*[The Horse In Motion](https://en.wikipedia.org/wiki/The_Horse_in_Motion) was the first movie ever created and here you can see all of its frames.*
 <!-- prettier-ignore-end -->
 
 An animation is performant enough when it reaches at least [60 frames per second](https://developer.mozilla.org/en-US/docs/Web/Performance/Animation_performance_and_frame_rate). That's because a common monitor has usually a refresh rate of 60Hz[^In Europe the common refresh rate is 50Hz. There are devices in the market nowadays (like the iPad Pro) which have 120Hz or even more.].
@@ -149,7 +149,7 @@ Here's where the interesting part begins.
 To render a _single frame_, your browser follows the steps below:
 
 1. 👓 Parsing: Everything starts with a `GET` request to the server. The server responds back, by sending the HTML, which is then being parsed to produce the DOM and CSSOM trees.
-2. 🧮 Style Recalculation: By combining those two trees, your browser produces the `Rendering Tree`. This is quite similar to the DOM, but it includes _only_ what it will be rendered on screen, at this specific frame.
+2. 🧮 Style Recalculation: By combining those two trees, your browser produces the `Rendering Tree`. This is quite similar to the DOM, but it includes _only_ what will be rendered on screen, at this specific frame.
 3. 📐 Reflow: It then builds the `Layout`, by converting those elements in box containers and calculating how much space they take on screen. Elements can affect others, for example the width of the `body` element often affects the width of its children, and so on.
 4. 🖌 Paint: Then for any of these boxes, it renders vectors and then it rasterizes them to create a pixel-friendly view.
 5. 🏞 If there are images, they need to be decoded according to their format and then resized.
@@ -172,7 +172,7 @@ Well, now you know.
 
 That's why there is a need for UI libraries like React, Angular and Vue.js. These modern JS technologies provide solutions to write declarative code that looks and behaves like plain HTML, by managing DOM mutations in the background.
 
-For example, React utilizes plain `render()` functions that describe how the UI looks like, at any given _state_. When the state changes, the function will be revoked and its associated UI will be re-rendered.
+For example, React utilizes plain `render()` functions that describe how the UI looks like, at any given _state_. When the state changes, the function will be invoked again and its associated UI will be re-rendered.
 
 To automate this process, React keeps a clone of the DOM in memory. They call it **Virtual DOM**. It's way smaller than the actual DOM.
 
@@ -184,13 +184,13 @@ Virtual DOM makes React extremely performant, while providing an incredible deve
 
 This is not a React exclusive feature. [Vue.js](https://vuejs.org/v2/guide/reactivity.html) and [Ember.js](https://emberjs.com/) have their own implementations.
 
-Angular on the other side introduced a concept called [Incremental DOM.](http://google.github.io/incremental-dom/#:~:text=Incremental%20DOM%20is%20a%20library,HTMLElement%20s%20and%20Text%20nodes.) Compared to Virtual DOM, it has a low memory footprint and it is [tree-shakeable](https://en.wikipedia.org/wiki/Tree_shaking). This makes it ideal for mobile application development. Although it's considered slower, it can outperform the Virtual DOM at certain cases.
+Angular on the other side introduced a concept called [Incremental DOM.](http://google.github.io/incremental-dom/#:~:text=Incremental%20DOM%20is%20a%20library,HTMLElement%20s%20and%20Text%20nodes.) Compared to Virtual DOM, it has a low memory footprint and it is [tree-shakeable](https://en.wikipedia.org/wiki/Tree_shaking). This makes it ideal for mobile application development. Although it's considered slower, it can outperform the Virtual DOM in certain cases.
 
 ## That's all folks
 
 We reviewed how DOM works under the hood and we explained why mutations are making a web application slow. Then we discovered how React handles DOM mutations with Virtual DOM.
 
-As a JavaScript developer who cares about your craft, you should be familiar with those topics. Learn the DOM api. Stop using your favorite framework or library for a while and focus to build an app with plain vanilla JS. This experiment will make you more confident using those tools.
+As a JavaScript developer who cares about your craft, you should be familiar with those topics. Learn the DOM api. Stop using your favorite framework or library for a while and focus on building an app with plain vanilla JS. This experiment will make you more confident using those tools.
 
 🏅 Achievement unlocked.
 

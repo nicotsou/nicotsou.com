@@ -8,7 +8,7 @@ cover: Montana.png
 
 Have you ever wondered which theme I'm using in my videos?
 
-The truth is, I didn’t want to use an existing theme. I wanted the theme to match with the look and feel of the course. To have a visual harmony. To blend nicely with the other design elements I'm using here. That’s why I designed it by myself. And now it's publicaly available.
+The truth is, I didn’t want to use an existing theme. I wanted the theme to match with the look and feel of the course. To have a visual harmony. To blend nicely with the other design elements I'm using here. That’s why I designed it by myself. And now it's publicly available.
 
 The official TLTR; TypeScript theme for Visual Studio Code is now available for download.
 
