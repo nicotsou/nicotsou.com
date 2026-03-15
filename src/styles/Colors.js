@@ -11,7 +11,7 @@ const Colors = createGlobalStyle`
     --buddha-gold-value: 179, 149, 14;
     --raw-umber-value: 102, 86, 13;
 
-    // TLTR Brand Colors
+    /* TLTR Brand Colors */
     --tltr-blue-value: 22, 7, 138;
     --tltr-black-value: 2, 5, 23;
     --tltr-awesome-value: 255, 26, 107;

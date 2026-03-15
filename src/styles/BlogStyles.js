@@ -61,7 +61,7 @@ const BlogStyles = css`
 
   blockquote {
     margin: 3rem 0 4rem 3rem;
-    // Pride month 🏳️‍🌈
+    /* Pride month */
     ${() => new Date().getMonth() === 5 && Pride}
 
     p {
@@ -158,7 +158,7 @@ const BlogStyles = css`
     max-width: calc(640px + 2rem) !important;
     margin: 2rem auto 2rem -1rem !important;
 
-    // Images that have an alt tag that starts with "Diagram" are inverted in dark mode
+    /* Images that have an alt tag that starts with "Diagram" are inverted in dark mode */
     &:has(img[alt^='Diagram']) {
       @media (prefers-color-scheme: dark) {
         filter: invert();
@@ -196,7 +196,7 @@ const BlogStyles = css`
     }
   }
 
-  // Images with captions
+  /* Images with captions */
   :not(.gatsby-resp-image-wrapper) img,
   .gatsby-resp-image-wrapper,
   p > .gatsby-resp-image-wrapper {

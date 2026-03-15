@@ -13,9 +13,6 @@ module.exports = {
     `<rootDir>.*/public`,
   ],
   transformIgnorePatterns: [`node_modules/(?!(gatsby)/)`],
-  globals: {
-    __PATH_PREFIX__: ``,
-  },
   testEnvironmentOptions: { url: `http://localhost` },
   setupFiles: [`<rootDir>/loadershim.js`],
   setupFilesAfterEnv: ['<rootDir>/setup-test-env.js'],

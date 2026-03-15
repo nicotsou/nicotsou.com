@@ -23,7 +23,7 @@ const StyledLogo = styled(Logo)`
 const StyledAside1 = styled(Aside1)`
   margin-top: 3.85rem;
   max-width: 580px;
-  // Pride month 🏳️‍🌈
+  /* Pride month */
   ${() => new Date().getMonth() === 5 && Pride}
 `
 
