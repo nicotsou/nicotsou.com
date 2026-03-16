@@ -1,7 +1,7 @@
 ---
 title: Master Namespaces In TypeScript
 date: '2023-04-27T22:12:00.000Z'
-description: Learn how to use namespaces and how they help on creating type definition files.
+description: Learn how to use namespaces and how they help in creating type definition files.
 type: post
 cover: './cover.jpg'
 ---
@@ -97,7 +97,7 @@ namespace MyApp {
 
 Now, everything lives under the `MyApp` namespace. All the types are now invisible from the outer scope.
 
-Mind the `export` keyword. Only what’s exported is accessible to the outer worlds.
+Mind the `export` keyword. Only what’s exported is accessible to the outer world.
 
 To access those files, we can simply use their namespace:
 
@@ -431,7 +431,7 @@ They’re just ugly.
 
 ## Nested namespaces 🪆
 
-Now that you realized that you spend some minutes of your life reading an article that it’s useless to you, I have one more last thing to share about namespaces.
+Now that you realized that you spent some minutes of your life reading an article that’s useless to you, I have one more last thing to share about namespaces.
 
 They can be nested. Hooray! 🥳
 
@@ -447,7 +447,7 @@ namespace MyApp {
 }
 ```
 
-Mind the `export` keyword before the `MyService` namespace. Remember what we said before? Only what’s exported is visible to the outer worlds.
+Mind the `export` keyword before the `MyService` namespace. Remember what we said before? Only what’s exported is visible to the outer world.
 
 And here’s how we can access that `API_KEY` variable:
 

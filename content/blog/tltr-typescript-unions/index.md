@@ -30,7 +30,7 @@ Maroni? 🌰
 
 Allow me to make an analogy here.
 
-> If Generics is the equivalent function for your types, conditional types the equivalent if-else statements, then definitely unions are the equivalent arrays.
+> If Generics is the equivalent function for your types, conditional types the equivalent of if-else statements, then definitely unions are the equivalent arrays.
 
 Yes, basically that’s it! It’s an array of _allowed_ types. The types a value can have at a given moment. You can either set explicitly that a type can be a list of types, or TypeScript will implicitly create this list for you.
 
@@ -135,7 +135,7 @@ In the type aliases above, the `type` property represents the file extension. A 
 
 I could have created an enum to store the available values. By using a plain string value, I may lose control over which types will be used, but I get some very interesting features.
 
-First of, I combine all file types under one umbrella:
+First off, I combine all file types under one umbrella:
 
 ```tsx
 type PlayerFiles = Song | VideoClip | CoverArt | Receipt

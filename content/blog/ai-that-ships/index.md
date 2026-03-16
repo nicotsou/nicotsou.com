@@ -57,7 +57,7 @@ In the TV series _Severance_, workers sort numbers on a screen and delete the on
 ![A typical working day at the office, in the series "Severance". ](images/severance.png)
 _A typical working day at the office, in the series "Severance"._
 
-This is closer to reality than you might think. AI still requires human oversight to ensure important matters aren’t overlooked. The so-called “**human in the loop**” is not just catchy phrase to use in your slides, it’s the difference between a working product and a liability.
+This is closer to reality than you might think. AI still requires human oversight to ensure important matters aren’t overlooked. The so-called “**human in the loop**” is not just a catchy phrase to use in your slides, it’s the difference between a working product and a liability.
 
 Companies that treat AI as “set-and-forget” build up hidden costs that only become obvious when things break:
 
@@ -122,7 +122,7 @@ One of the unwritten rules of the _real_ Agile development manifesto is “bonus
 
 **Ethical design is _not_ a choice**. Companies that cut corners on ethical AI implementation risk significant damage to their brand reputation and may face substantial financial and legal consequences.
 
-To put it simply; customers will always [prefer](https://www.cnbc.com/2025/11/05/tesla-musk-germany-sales-down.html) companies that are more ethical.
+To put it simply, customers will always [prefer](https://www.cnbc.com/2025/11/05/tesla-musk-germany-sales-down.html) companies that are more ethical.
 
 ![Imagine how different the UX would have been if Theodore (Joaquin Phoenix) wouldn’t know that he’s talking with an AI. Hm, a bad example I guess?](images/her.png)
 _Imagine how different the UX would have been if Theodore (Joaquin Phoenix) wouldn’t know that he’s talking with an AI. Hm, a bad example I guess?_
@@ -189,8 +189,8 @@ Takeaways (summarized by AI, of course):
 - **Build verification into everything** — Audit logs, human review checkpoints, confidence thresholds, feedback loops. If you can’t explain how you’ll catch mistakes, you’re not ready to ship.
 - **Solve real problems, not imaginary ones** — Before you add an AI feature, ask if users are actually asking for it. If the answer is no, you’re about to waste a lot of money.
 - **Automate the boring stuff first** — Start with simple, transparent tasks where mistakes are obvious. Save the complex workflows for later, once you’ve learned how AI actually behaves in your system.
-- **Critical thinking over masive layoffs** — The companies that treat AI as a headcount replacement will discover the hard way that babysitting AI outputs is _way_ harder than doing the work properly from the start.
+- **Critical thinking over massive layoffs** — The companies that treat AI as a headcount replacement will discover the hard way that babysitting AI outputs is _way_ harder than doing the work properly from the start.
 
-Let me know what is your thoughts on AI. You know where you'll find me. 😉
+Let me know what your thoughts are on AI. You know where you'll find me. 😉
 
 Cover art generated with Google Gemini.

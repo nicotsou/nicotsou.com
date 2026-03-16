@@ -69,17 +69,17 @@ function echo(arg: any): any {
 
 Wohohoo! Problem solved. Commit and push! 😎
 
-But wait a minute. Is this really a type type checking? I would argue it is not. As you may know, `any` must be avoided, because it’s basically a wildcard that *disables* type checking completely. Something like `ts-ignore`. As long as I hate to admit it, yes, `any` is not the answer here. We need to be flexible by staying secure. But then what? 
+But wait a minute. Is this really type checking? I would argue it is not. As you may know, `any` must be avoided, because it’s basically a wildcard that *disables* type checking completely. Something like `ts-ignore`. As long as I hate to admit it, yes, `any` is not the answer here. We need to be flexible by staying secure. But then what? 
 
 ![flexible-girl-in-an-acrobatic-pose-in-the-gym-2021-11-16-12-20-02-utc.JPG](images/flexible-girl-in-an-acrobatic-pose-in-the-gym-2021-11-16-12-20-02-utc.jpg)
 
-Solving this challenge will help us a lot with our TypeScript journey. For example, how you would you define the map array method itself, a server response promise, or even our most favorite `console.log()`? They can all work with any type. They are all very popular and hard to replace.
+Solving this challenge will help us a lot with our TypeScript journey. For example, how would you define the map array method itself, a server response promise, or even our most favorite `console.log()`? They can all work with any type. They are all very popular and hard to replace.
 
 What if I told you that TypeScript has support for such *generic* cases. Well, my friends. Let me introduce you to Generics...
 
 ## Generic Functions
 
-What if we had some short of a *parameter*, which stores the type of the argument. You could then use that parameter to define what our function accepts and returns.
+What if we had some sort of a *parameter*, which stores the type of the argument. You could then use that parameter to define what our function accepts and returns.
 
 This is exactly how **generics** work:
 
@@ -140,7 +140,7 @@ const year = "2021";
 echo(year); // T is inferred as a string
 ```
 
-I have simply removed the type and now it echoes the string. This means that you can simply consume generic functions, without explicitly specifying their types. Type inference kicks. Try hovering over this echo function, to see what type is inferred.
+I have simply removed the type and now it echoes the string. This means that you can simply consume generic functions, without explicitly specifying their types. Type inference kicks in. Try hovering over this echo function, to see what type is inferred.
 
 > I don't know about you, but this looks like JavaScript to me.
 > 

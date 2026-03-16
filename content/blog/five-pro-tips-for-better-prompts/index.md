@@ -6,7 +6,7 @@ type: post
 cover: './cover.png'
 ---
 
-I was looking forward to post these prompt engineering tips bellow. Whether you're a developer, content creator, or just someone curious about AI, this article will give you five simple ideas that will vastly improve the way you interact with AI models, and save you some bucks.
+I was looking forward to posting these prompt engineering tips below. Whether you're a developer, content creator, or just someone curious about AI, this article will give you five simple ideas that will vastly improve the way you interact with AI models, and save you some bucks.
 
 These insights come from extensive experimentation and real-world applications. They aren't just theory — they're proven techniques that will make your AI interactions more efficient, accurate, and productive.
 
@@ -302,6 +302,6 @@ This technique not only increases the performance of your LLM interactions but c
 
 ## That’s all folks! 🙌
 
-Thanks for reading! Stay tuned for more content about prompt engineering! I'll be sharing advanced techniques, real-world examples, and practical strategies to help you master the art of communicating with AI. MMy newsletter form is just a few DOM elements below. Don't forget to subscribe to get notified when new articles are published.
+Thanks for reading! Stay tuned for more content about prompt engineering! I'll be sharing advanced techniques, real-world examples, and practical strategies to help you master the art of communicating with AI. My newsletter form is just a few DOM elements below. Don't forget to subscribe to get notified when new articles are published.
 
 Do you have any other tips for crafting better prompts? I'd love to hear your thoughts and experiences.

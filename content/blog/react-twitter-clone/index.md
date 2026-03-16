@@ -6,9 +6,9 @@ type: post
 description: Every month I curate the music that help me concentrate, create and feel, in a music playlist series called "Cherry Pick".
 ---
 
-My goal with this article is to help you learn React. We will create a small twitter clone. I will guide you how to build your own app step-by-step and I will try to teach you all the little details you need to get started.
+My goal with this article is to help you learn React. We will create a small twitter clone. I will guide you on how to build your own app step-by-step and I will try to teach you all the little details you need to get started.
 
-If you never tried React before in your life, this will be a good starting point for you. If you know already the basics of React, you may find this article boring at least.
+If you never tried React before in your life, this will be a good starting point for you. If you know already the basics of React, you may find this article boring at best.
 
 You can fork my GitHub repo: [@nicotsou/react-twitter](https://github.com/nicotsou/react-twitter).
 
@@ -159,7 +159,7 @@ But first let's fix some minor issues.
 
 ---
 
-Theres nothing cool with Times New Roman or whatever the default serif font is in your OS.
+There's nothing cool with Times New Roman or whatever the default serif font is in your OS.
 
 Let's make it nicer by adding the following file under `/src/index.css`:
 
@@ -229,7 +229,7 @@ Here we are leveraging the `map()` function to loop through all the tweets. That
 
 > React is just JS. There’s no pseudo code for us to remember. React basically embraces you to learn JS.
 
-We imported the list of the tweets from a json file. Similar to css, Webpack can handle other filetypes too. One of these filetypes is the `.jsx`. This is a common pattern to name React components. It's not mandatory thought. You can use `.js`.
+We imported the list of the tweets from a json file. Similar to css, Webpack can handle other filetypes too. One of these filetypes is the `.jsx`. This is a common pattern to name React components. It's not mandatory though. You can use `.js`.
 
 Note that a React component must always return a single root element. In our case this is a `<div>`. Try to remove it, it will fail. Try to return more elements at the same level, it will again fail. One React element at the root level. Simple rule right?
 
@@ -303,7 +303,7 @@ export default App
 
 Here I used classes to differentiate the divs. We will add the corresponding styles later.
 
-Take a look on how we retrieve the data from tweets. We use a cool new syntax called [Restructuring Assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment). That makes the code shorter and easier to follow. Of course it gets some time to practice it.
+Take a look at how we retrieve the data from tweets. We use a cool new syntax called [Destructuring Assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment). That makes the code shorter and easier to follow. Of course it gets some time to practice it.
 
 Note that even in the map loop, we are _only_ allowed to return a single root element. If we don't want any DOM element to be rendered as a wrapper we can use an empty `<>`. This is a syntactic sugar for `React.Fragment`.
 
@@ -468,7 +468,7 @@ Of course in order to make it work we would need to import this file in our `Twe
 import './Tweet.css';
 ```
 
-Not bad isnt't it? I would _not_ call it art. At least not yet. But we are getting there... 🎨
+Not bad isn't it? I would _not_ call it art. At least not yet. But we are getting there... 🎨
 
 ![images/react-twitter-clone first draft.png](images/react-twitter-clone first draft.png)
 
@@ -552,7 +552,7 @@ export default Timeline
 
 This component now receives as a prop the `tweets` collection. For the sake of semantics, I have converted the div to an unordered list. Again, notice how we now use a key for every `<li>`.
 
-Another note on thing to note here is how we access the `tweets` variable from the `Timeline()` function. Notice the `{}`. The following syntax is equivalent:
+Another thing to note here is how we access the `tweets` variable from the `Timeline()` function. Notice the `{}`. The following syntax is equivalent:
 
 ```docker
 function Timeline(props) {
@@ -831,7 +831,7 @@ function SomeComponent() {
 }
 ```
 
-This is basically a _hook_. It's a kinda complicated topic that you can read more about it in the [official documentation](https://reactjs.org/docs/hooks-intro.html). We will come back to this topic in more detail. I have another post for you. For now, learn its api so and understand how React manages state.
+This is basically a _hook_. It's a kinda complicated topic that you can read more about it in the [official documentation](https://reactjs.org/docs/hooks-intro.html). We will come back to this topic in more detail. I have another post for you. For now, learn its api and understand how React manages state.
 
 Ok, it's time for a small experiment. Take a look at the following example:
 
@@ -901,7 +901,7 @@ Let's break down what exactly is happening here:
 
 Every time the `onChange` event of the `textarea` is being triggered, our component is being re-rendered. That's how React works.
 
-> At first we describe our UI with pure JS functions. Then for every event that occurs inside our component, we update the state. This causes the component tree from that point and bellow, to be re-rendered.
+> At first we describe our UI with pure JS functions. Then for every event that occurs inside our component, we update the state. This causes the component tree from that point and below, to be re-rendered.
 
 In our example above, the `<ComposeForm />` component was updating its own state. But state can live in a parent component, if you pass the state variable as a prop to a children component. The state can live in the same level or above, but _never_ below.
 
@@ -981,7 +981,7 @@ function App() {
 export default App
 ```
 
-Here we declared a state variable `tweets` and we stored the contents of the `tweets.json` as the initial value for our array. Previously, our tweets collection was a constant value. Now it is possible to alter modify its contents.
+Here we declared a state variable `tweets` and we stored the contents of the `tweets.json` as the initial value for our array. Previously, our tweets collection was a constant value. Now it is possible to modify its contents.
 
 We have created the `handlePostTweet()` function which can append a given tweet content to the `tweets` array. Who is triggering this function? The tweet button of course. But this button lives in the `<ComposeForm />` component.
 
@@ -1017,7 +1017,7 @@ function ComposeForm({ onSubmit }) {
   }
 
   const handleSubmit = (e) => {
-    // Prevent the default behavior of the form submition
+    // Prevent the default behavior of the form submission
     // which usually triggers a page reload
     // highlight-start
     e.preventDefault()
@@ -1154,7 +1154,7 @@ Your codebase will look like this after applying all the changes: [https://githu
 
 ## Exercises
 
-We are approaching at the end of this post, but the fun has _just_ started. 🤩
+We are approaching the end of this post, but the fun has _just_ started. 🤩
 
 I have prepared a couple of simple features you can implement to our twitter clone. Most of them are easy, others may require some extra effort from your side, especially if you are a beginner in JS and Node.js. But definitely it's a good start.
 

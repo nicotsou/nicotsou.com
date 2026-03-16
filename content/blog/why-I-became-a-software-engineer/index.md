@@ -9,7 +9,7 @@ quote: It’s those pixels you can’t take your eyes off. All those little deta
 
 No, seriously now, why did you become a software engineer?
 
-Was it the beauty of the algorithms? The intelligence of the design patterns? The mysteriously blinking lights in server rooms? The revolution of technology and how it improves our lives? The happiness to see other people react to your creations? The agile manifest? The money they promised you? The feeling you helped the world become a better place? The need to have a job? The dirty hacks you invent to deal with something you don't know? The fact you will never be without a job? The coffee do you drink in your breaks? The dream to become the cockiest boss alive? Was it your mom?
+Was it the beauty of the algorithms? The intelligence of the design patterns? The mysteriously blinking lights in server rooms? The revolution of technology and how it improves our lives? The happiness to see other people react to your creations? The agile manifest? The money they promised you? The feeling you helped the world become a better place? The need to have a job? The dirty hacks you invent to deal with something you don't know? The fact you will never be without a job? The coffee you drink in your breaks? The dream to become the cockiest boss alive? Was it your mom?
 
 Can you easily tell what your main driver was? Do you think it _still_ drives you today or was there something you lost in the process?
 
@@ -17,7 +17,7 @@ I have a story to share. It’s gonna take some time. I will let you prepare a b
 
 ---
 
-My midelife crisis started earlier than usual. One day I woke up and all of a sudden various philosophical questions besieged my brain.
+My midlife crisis started earlier than usual. One day I woke up and all of a sudden various philosophical questions besieged my brain.
 
 Who am I? What am I good at? What I am _not_ good at? How can I contribute to this world and how far am I to make my dreams come true? Am I doing the right job? Am I gonna be successful? What is success anyway? Are we gonna be friends again?
 

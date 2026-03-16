@@ -6,7 +6,7 @@ type: post
 cover: './cover.png'
 ---
 
-In this article, I’m going to list some advanced tooling TypeScript provides to customize our type annotations. It was a great surprise for me when I discovered these features. It changed my mind about TypeScript itself. On a positive way, of course.
+In this article, I’m going to list some advanced tooling TypeScript provides to customize our type annotations. It was a great surprise for me when I discovered these features. It changed my mind about TypeScript itself. In a positive way, of course.
 
 For those who find these concepts difficult, you can check out my previous posts. I have a series of articles about TypeScript. I write about my experience learning the language and I’m trying to explain my mental model using practical examples. If you are a visual person like me, you can also check out my 📺[YouTube series about TypeScript](https://youtube.com/playlist?list=PL73mkIDIrfyPKjkJ1V151lcgGEDHs3tgG).
 
@@ -55,7 +55,7 @@ Pretty cool, right? It’s ideal, when you have to deal with objects that change
 
 ![donuts.png](images/donuts.png)
 
-## They keyof keyword
+## The keyof keyword
 
 TypeScript provides another similar keyword called `keyof`. You can use it with any type to get its properties. It returns a union with literal values.
 
@@ -85,7 +85,7 @@ Yup! It’s a `string`. At least in this iteration.
 
 ## The infer keyword
 
-[Conditional types](https://nicotsou.com/tltr-typescript-conditional-types/) can help you can be used together with generics to elevate your types and create utility types that you can reuse in multiple places. This reduces boilerplate and enables a lot of functionality. In case you are wondering what a conditional type is, I have dedicated [another article](https://nicotsou.com/tltr-typescript-conditional-types/) on this topic.
+[Conditional types](https://nicotsou.com/tltr-typescript-conditional-types/) can be used together with generics to elevate your types and create utility types that you can reuse in multiple places. This reduces boilerplate and enables a lot of functionality. In case you are wondering what a conditional type is, I have dedicated [another article](https://nicotsou.com/tltr-typescript-conditional-types/) on this topic.
 
 As a refresher, here’s an example of a conditional type:
 

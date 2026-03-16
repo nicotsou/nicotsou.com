@@ -6,7 +6,7 @@ type: post
 cover: './cover.jpg'
 ---
 
-What makes Swiss transportation so good? Why is driving in Switzerland so boring? How does the Swiss army land aircrafts?
+What makes Swiss transportation so good? Why is driving in Switzerland so boring? How does the Swiss army land aircraft?
 
 Let's discover some of the funniest facts about Switzerland, mixed with my personal experiences and tips. Normally, I write technical articles about software engineering on this blog. This time, I'm going to try something completely different.
 
@@ -16,7 +16,7 @@ Cookie? 🍪
 
 ---
 
-For the last 4 years, I live and work in Zurich. I have had so many nice experiences in this country. The nature, the people, the places, the life quality and the list goes on. I was originally born in Thessaloniki. This is the first time I live abroad. In fact, I haven't even visited Switzerland before moving. It was a completely new experience for me.
+For the last 4 years, I have lived and worked in Zurich. I have had so many nice experiences in this country. The nature, the people, the places, the life quality and the list goes on. I was originally born in Thessaloniki. This is the first time I live abroad. In fact, I haven't even visited Switzerland before moving. It was a completely new experience for me.
 
 Many people are asking me about the life here. Is it worth it? I am usually trying to avoid all these questions, since it's a very personal decision at the end, whether a place is good or not for you. This is not what I'm trying to achieve with this article.
 
@@ -36,7 +36,7 @@ Switzerland has over 48 mountains and 7000 lakes. It has plenty of activities fo
 
 Growing up in Greece, I was convinced there was no other place as beautiful. Switzerland changed my mind. In the winter, the snow covers the tops of the mountains, which blend magnetically in the lake waters. In the summer, the whole country is transformed into an endless green land.
 
-While you're enjoying your trekking on a mountain, it is very likely to meet a cow. You can hear them far away from their ringing bells they carry. You will also sense the smell.
+While you're enjoying your trekking on a mountain, it is very likely to meet a cow. You can hear them far away from the ringing bells they carry. You will also sense the smell.
 
 ![wolfgang-hasselmann-aj4wPhXF3hA-unsplash.jpg](images/wolfgang-hasselmann-aj4wPhXF3hA-unsplash.jpg)
 _Credit: [Wolfgang Hasselmann](https://unsplash.com/photos/aj4wPhXF3hA)_
@@ -70,13 +70,13 @@ And the best part of it is we already know when there is a delay. The digital si
 
 ![Untitled](images/zurich-city.png)
 
-Of course, nothing comes for free. And I'm not talking about the cost of the tickets here. Although, now that I'm thinking, I really should, because they are extremely expensive. But that's another topic for another time. I'm taking about the side-effects of having everything running on time.
+Of course, nothing comes for free. And I'm not talking about the cost of the tickets here. Although, now that I'm thinking, I really should, because they are extremely expensive. But that's another topic for another time. I'm talking about the side-effects of having everything running on time.
 
 > In Zurich, tram and bus drivers can control the traffic lights. They simply stop all the cars.
 
 What I hate the most is when you realize that your tram is on the other side of the road. You wait for the appropriate moment to cross the street and then you run a marathon to catch it. And right at the moment that you reach its doors, the doors shut in front of you. Now you have to wait for another 15 minutes.
 
-There were cases where the bus stayed there, with the doors closed, for 1-2 minutes, even if there was a red light in front of it. The driver will completely ignore the people there are yelling and knocking on the doors.
+There were cases where the bus stayed there, with the doors closed, for 1-2 minutes, even if there was a red light in front of it. The driver will completely ignore the people who are yelling and knocking on the doors.
 
 ![alexis-fauvet-g9iXQKjPlGM-unsplash.jpg](images/alexis-fauvet-g9iXQKjPlGM-unsplash.jpg)
 _Credit: [Alexis Fauvet](https://unsplash.com/photos/g9iXQKjPlGM)_
@@ -109,7 +109,7 @@ On another note, I have observed that people have the tendency to lease their ca
 
 Interestingly, other people prefer to use services like Mobility. You locate one of their cars using their app, you enter with your Swiss transportation card, and you basically rent the car for a couple of hours. Once you finish, you can return it to its original location. You may consider this as an option if you don't use your car on a daily basis.
 
-I have also observed green buildings, that prevent car owners for renting apartments.
+I have also observed green buildings, that prevent car owners from renting apartments.
 
 We are approaching the end of this first part of our Swiss special. Before I let you go, there is one more story I would like to share with you. It is somehow related to the transportation topic.
 
@@ -153,7 +153,7 @@ This is one of the moments you question your friendship with [panos.tech](http:/
 
 <iframe width="100%" height="360" src="https://www.youtube.com/embed/dLBJA8SlH2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Well, I don't want this to discourage you. It really worths a try.
+Well, I don't want this to discourage you. It's really worth a try.
 
 That's all, folks! I hope you found these facts entertaining as much as we did. I have already started writing the second part.
 

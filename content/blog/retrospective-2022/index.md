@@ -60,7 +60,7 @@ A lot of cool new technologies were being discussed among the JavaScript devs. [
 
 AI tools definitely increased their popularity in 2022. [ChatGPT](http://chat.openai.com) was definitely the biggest hit, With [GitHub Copilot](https://github.com/features/copilot) causing frustration about its high price and the quality of results. [Synk Code](https://snyk.io/product/snyk-code/?utm_medium=Paid-Search&utm_source=google&utm_campaign=GS_SN:_Brand&utm_content=BR_Snyk_Code&utm_term=snyk%20code&gclid=Cj0KCQiAw8OeBhCeARIsAGxWtUx5x_ZPAmZ1cBY1RHgV2U-VRWAhWqU-pmIBNoJyqoz6uHx-7q7mZesaAqjlEALw_wcB) is damn good too.
 
-In regards to IDEs, [Visual Studio Code](https://code.visualstudio.com) is still on top. We had the debut of [JetBrains Fleet](https://www.jetbrains.com/fleet/) which brings some cool new features. Most importantly, it integrates with [Space](https://www.jetbrains.com/space/), a all-new development platform that provides everything you need to build apps. For another year, everybody’s talking about [Vercel](https://vercel.com), with [Netlify](https://www.netlify.com) and [Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/) being great alternatives.
+In regards to IDEs, [Visual Studio Code](https://code.visualstudio.com) is still on top. We had the debut of [JetBrains Fleet](https://www.jetbrains.com/fleet/) which brings some cool new features. Most importantly, it integrates with [Space](https://www.jetbrains.com/space/), an all-new development platform that provides everything you need to build apps. For another year, everybody’s talking about [Vercel](https://vercel.com), with [Netlify](https://www.netlify.com) and [Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/) being great alternatives.
 
 ## The year I started my TypeScript course 🖥️
 
@@ -84,7 +84,7 @@ I want to thank the awesome team of volunteers who made this journey great for a
 
 ## Another one, with good reads 📚
 
-Here, I want to list some of the books I’ve read in 2021.
+Here, I want to list some of the books I’ve read in 2022.
 
 Starting with one of the year’s best sellers, the book “[Building A Second Brain](https://amzn.to/3XDRh8h)” by Tiago Forte. It gives you practical ways to improve the art of taking notes, and getting the most out of them. People consider this the next big thing after the popular “[Getting Things Done](https://amzn.to/3WO3Ooq)” by David Allen. I had the chance to be in one of the workshops Tiago gave when he was promoting his book. I have a lot to talk about it and I will save it for another article.
 
@@ -92,7 +92,7 @@ Tiago’s approach has influenced me to start a research on note taking. I found
 
 On productivity, I would also recommend the book “[Atomic Habits](https://amzn.to/3JaNFGB)” by James Clear. It explains the importance of habit building and how they can help you accomplish your goals. This book will teach you how to train yourself to embrace positive habits over bad ones. How to make them attractive and how to encourage yourself to maintain them by making your progress visible.
 
-One of my most anticipated book launches of the year was the "[Engineering Management For The Rest Of Us](https://amzn.to/3XYOJ4C)” by Sarah Drasner. Although I haven’t finished the book yet, since I only got a copy at the end of the year, one thing I can tell you for sure. If you’re aiming to become a Tech Lead, or you’re already one and you want to improve on that, this book is a great resource. It may change your perception of certain things you’re considering as standards. It’s written for technical people, and that’s what it makes it an easy read.
+One of my most anticipated book launches of the year was the "[Engineering Management For The Rest Of Us](https://amzn.to/3XYOJ4C)” by Sarah Drasner. Although I haven’t finished the book yet, since I only got a copy at the end of the year, one thing I can tell you for sure. If you’re aiming to become a Tech Lead, or you’re already one and you want to improve on that, this book is a great resource. It may change your perception of certain things you’re considering as standards. It’s written for technical people, and that’s what makes it an easy read.
 
 This year I also discovered the book “[Dare To Lead](https://amzn.to/3Jb0VLi)” by Brené Brown, who has dedicated her life to studying leadership. I can’t address how influential and inspirational this book is. It helped me realize the most important skill for a leader; vulnerability. It will open your eyes and lead you in the right direction.
 
@@ -112,7 +112,7 @@ Check out my playlist [Sound of 2022](https://open.spotify.com/playlist/2oCLAEZc
 
 Some of the albums I recommend “Into The Blue” by Broken Bells, the surprising return of Roÿksopp with “Stay Awhile”, the new album of Jungle “Talk About It”, and the singles from DRAMA, Roosevelt, Telenova, Bob Moses, Oscar and the Wolf, Winona Oak, BLOW, and Warhaus kept me busy listening for hours.
 
-Always open for music recommendation. 🤗
+Always open for music recommendations. 🤗
 
 ---
 

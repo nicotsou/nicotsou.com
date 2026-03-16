@@ -35,7 +35,7 @@ Finally, [human-in-the-loop](https://en.wikipedia.org/wiki/Human-in-the-loop) sy
 
 ## **Chain-of-Thought (CoT)**
 
-Solving structured problems step-by-step. with prompts like "take your time" and "think step by step how to solve the problem" are related to the **Chain-of-Thought prompting technique**. It’s a powerful approach to guide the conversation coherently and logically. It involves building gradually on the previous parts of a response to create a flow of thoughts.
+Solving structured problems step-by-step with prompts like "take your time" and "think step by step how to solve the problem" are related to the **Chain-of-Thought prompting technique**. It’s a powerful approach to guide the conversation coherently and logically. It involves building gradually on the previous parts of a response to create a flow of thoughts.
 
 Here’s an example:
 
@@ -239,7 +239,7 @@ Different AI models have varying abilities to learn from examples. Some advanced
 
 ## That’s all folks! 🙌
 
-Thanks for reading! Stay tuned for more content about prompt engineering! I'll be sharing advanced techniques, real-world examples, and practical strategies to help you master the art of communicating with AI. MMy newsletter form is just a few DOM elements below. Don't forget to subscribe to get notified when new articles are published.
+Thanks for reading! Stay tuned for more content about prompt engineering! I'll be sharing advanced techniques, real-world examples, and practical strategies to help you master the art of communicating with AI. My newsletter form is just a few DOM elements below. Don't forget to subscribe to get notified when new articles are published.
 
 Do you have any other tips for crafting better prompts? I'd love to hear your thoughts and experiences.
 

@@ -19,7 +19,7 @@ Before we start, I just want to drop this here:
 ![The Swiss keyboard layout](images/swiss-keyboard-layout.png)
 _The Swiss keyboard layout_
 
-This is one of my worst nightmares. Not only it is QWERTZ instead of QWERTY and every time you confuse the letter `Z` with `Y`, it is a mixture of German and French keyboard layouts. You can switch to English of course.
+This is one of my worst nightmares. Not only is it QWERTZ instead of QWERTY and every time you confuse the letter `Z` with `Y`, it is a mixture of German and French keyboard layouts. You can switch to English of course.
 
 I thought as a developer, I was very familiar with the keyboard and this layout change will not affect my typing. I was wrong. Good luck finding where the special characters are located. The trick I have found is to press any key just to see the output, until I find the one I'm looking for. Such an entertaining activity to try at work.
 
@@ -44,7 +44,7 @@ If they ever ask you what is your religion in Switzerland, be a bit more skeptic
 ![Credit: [Henrique Ferreira](https://unsplash.com/@rickpsd)](images/henrique-ferreira-V7GrFTVwdko-unsplash.jpg)
 _Credit: [Henrique Ferreira](https://unsplash.com/@rickpsd)_
 
-Now, if you are a little unlucky and your apartment is located near a church, be ready for some bell entertainment. For reasons unknown, the church bell rings multiple times per day. Sometimes it can even stuck, and you hear it for several minutes.
+Now, if you are a little unlucky and your apartment is located near a church, be ready for some bell entertainment. For reasons unknown, the church bell rings multiple times per day. Sometimes it can even get stuck, and you hear it for several minutes.
 
 The perfect way to enjoy your hangover.
 
@@ -52,13 +52,13 @@ The perfect way to enjoy your hangover.
 
 Now let's address the elephant in the room; Money.
 
-OK, this is not a secret. In Switzerland, we have a lot of money. You probably know that a Big Mac costs 12.50 euros, which is something like the global measure unit for wealth. This doesn't mean that people are rich, not even close, but it gives you an impression for how much money is being transferred on a daily basis.
+OK, this is not a secret. In Switzerland, we have a lot of money. You probably know that a Big Mac costs 12.50 euros, which is something like the global measure unit for wealth. This doesn't mean that people are rich, not even close, but it gives you an impression of how much money is being transferred on a daily basis.
 
-What it's more impressive is the fact that people trust you.
+What's more impressive is the fact that people trust you.
 
-When I moved to my previous apartment, I went to the famous Swedish furniture store (now that I'm a content creator, I don't really promote brands for free) to buy everything I needed. Yes, you guessed it right, I ended up spending a large amount of money on the most useless stuff. When went to the counter to pay, there was a mistake related with the product tags, and they promised to send me the bill via post.
+When I moved to my previous apartment, I went to the famous Swedish furniture store (now that I'm a content creator, I don't really promote brands for free) to buy everything I needed. Yes, you guessed it right, I ended up spending a large amount of money on the most useless stuff. When I went to the counter to pay, there was a mistake related to the product tags, and they promised to send me the bill via post.
 
-I paused for a minute to think what they meant. Maybe I misheard. Maybe I was confused after all this time choosing colors for the toilet cover. But when I asked them to repeat what they said, I was even more surprised with their confirmation.
+I paused for a minute to think what they meant. Maybe I misheard. Maybe I was confused after all this time choosing colors for the toilet cover. But when I asked them to repeat what they said, I was even more surprised by their confirmation.
 
 ![This is an orange payment slip. It's the most common way to pay bills here in Switzerland.](images/orange-payment-slip.png)
 _This is an orange payment slip. It's the most common way to pay bills here in Switzerland._
@@ -75,7 +75,7 @@ We talked about so many things, maybe some of you are already convinced to move 
 
 Finding an apartment can be very hard, especially in big cities. There was recently a [story in the news](https://www.thelocal.ch/20181122/hundreds-queue-for-zurich-apartment-viewing-on-freezing-night/) that hundreds of people were waiting to view an apartment in the center of Zurich. But seeing the apartment is only the beginning.
 
-To rent an apartment, you need to prepare yourself for a fair amount of paperwork. After viewing the apartment, you will receive the official application form, which contains a lot of nice checkboxes like if you have any pets, if you play a music instrument or if you are a programmer. No, I'm kidding they don't ask you that, they get this information from the papers you are providing to them. Which papers?
+To rent an apartment, you need to prepare yourself for a fair amount of paperwork. After viewing the apartment, you will receive the official application form, which contains a lot of nice checkboxes like if you have any pets, if you play a musical instrument or if you are a programmer. No, I'm kidding they don't ask you that, they get this information from the papers you are providing to them. Which papers?
 
 So, to get an apartment you have to provide them with your CV, a confirmation from the local authority that you don't owe any money (check the previous section), a motivation letter with how much you want to rent this apartment, and some references. Yes, they call your boss to confirm that you are working, your neighbors to confirm you are not an annoying person, and of course, your current landlord, to check if you follow the rules as you're supposed to.
 
@@ -88,9 +88,9 @@ But you haven't finished yet. Now you have to give the keys from your previous a
 
 I had to pay a professional cleaning company to clean my previous apartment, and it turned out that they had to visit again to clean the parts that were not properly cleaned. There was an awkward moment where four people were on top of my shower sifone, the pipe that collects all the water. I didn't dare to ask what they found inside, but there was a big discussion with all the parties involved.
 
-Now, you may want to buy your own apartment at some point. Why spending your money on rent, you may think.
+Now, you may want to buy your own apartment at some point. Why spend your money on rent, you may think.
 
-Well, my friends, I have bad news for you. The apartments in Switzerland are extremely expensive. You can easily spend a million of Swiss Franks. Many of the people I know have a loan until their retirement. Sometimes even until death.
+Well, my friends, I have bad news for you. The apartments in Switzerland are extremely expensive. You can easily spend a million of Swiss Francs. Many of the people I know have a loan until their retirement. Sometimes even until death.
 
 ---
 
@@ -118,7 +118,7 @@ Of course, it doesn't mean that the machines will be 100% free at the time you b
 
 Speaking about rules, I have another topic which needs its own section. It's about recycling.
 
-When I first registered myself in Zurich, I received the official guide for recycling. In the beginning I though, wow how they have it well organized. Later on, I started struggling to divide my trash in multiple groups.
+When I first registered myself in Zurich, I received the official guide for recycling. In the beginning I thought, wow how they have it well organized. Later on, I started struggling to divide my trash in multiple groups.
 
 The most difficult is paper and carton. Let's say you receive a package at home. In order to recycle the carton, you need to remove all the plastic, the paper, any stickers or tape. Sometimes it's very difficult to understand if something goes to carton or paper. For example, the bag from the supermarket goes to carton collection.
 
@@ -133,7 +133,7 @@ Glass is also challenging to recycle. You need to remove the cover, of course, b
 
 ---
 
-We reached at the end of our journey, my friends. This will be most probably the last part of this special series. I think I covered most of the points I wanted to share with you. Now that I'm thinking, I have one post for every year I'm living here.
+We reached the end of our journey, my friends. This will be most probably the last part of this special series. I think I covered most of the points I wanted to share with you. Now that I'm thinking, I have one post for every year I'm living here.
 
 A special thanks to my colleague [Laszlo Markert](https://fcvbz.ch/fc/?lang=en) and his wife. They contributed a lot to collect these facts.
 

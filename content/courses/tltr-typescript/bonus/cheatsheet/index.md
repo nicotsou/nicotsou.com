@@ -21,7 +21,7 @@ TypeScript is a superset of JavaScript. All existing features of JS are already 
 
 TypeScript's compiler transpiles to JavaScript. This means that you can run all the applications on every browser, on Node.js or other native apps that have a built-in JavaScript compiler. You have plenty of options to set the target supported devices.
 
-Type checking runs on compile-time. If you violate the type rules, your application will not run due to errors. All the extra code that you add it will be removed from the transpiled JS code and it will not be available at runtime.
+Type checking runs on compile-time. If you violate the type rules, your application will not run due to errors. All the extra code that you add will be removed from the transpiled JS code and it will not be available at runtime.
 
 </details>
 <details>
@@ -99,7 +99,7 @@ duration = '5.54m'
 durationInMinutes = duration // Doesn't compile since unknown can be anything!
 ```
 
-The `never` keyword can play the role of the type guard. We can’t assign any type of value to a variable with the type `never`, except from values that are themselves type of `never`.
+The `never` keyword can play the role of the type guard. We can’t assign any type of value to a variable with the type `never`, except for values that are themselves type of `never`.
 
 ```tsx
 function throwError(message: string): **never** {
@@ -263,7 +263,7 @@ type Receipt = FileBase & {
 }
 ```
 
-First of, you combine all file types under one umbrella:
+First off, you combine all file types under one umbrella:
 
 ```tsx
 type PlayerFiles = Song | VideoClip | CoverArt | Receipt
@@ -352,7 +352,7 @@ type Track =
 
 Key characteristics:
 
-- A TypeScript-only feature, therefore only available only at compilation.
+- A TypeScript-only feature, therefore only available at compilation.
 - They can support primitive types.
 - They can only be declared once (unless exported).
 </details>
@@ -371,7 +371,7 @@ interface ITrack {
 
 Key characteristics:
 
-- A TypeScript-only feature, therefore only available only at compilation.
+- A TypeScript-only feature, therefore only available at compilation.
 - Act as object type annotations for object structures.
 - Can connect unrelated classes together.
 - Can’t support primitive types, only object structures.
@@ -414,7 +414,7 @@ Key characteristics:
 
 ## Dynamic types
 
-Wouldn’t be great if you can program your types similar to how you program your applications? Here are some core TypeScript features that will help you create types dynamically.
+Wouldn’t it be great if you could program your types similar to how you program your applications? Here are some core TypeScript features that will help you create types dynamically.
 
 <details>
   <summary>Generics</summary>

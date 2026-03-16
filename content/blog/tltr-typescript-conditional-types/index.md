@@ -25,7 +25,7 @@ Cupcake? 🧁
 
 ## The extends keyword
 
-If you deal with generic types in your code, you may come across the `extends` keyword. This is basically similar to the `implements` keyword we were using to implement interfaces, but instead of setting a contract, that you have to implement within your class, `extends` keyword is basically a **type constrain**. It specifically instructs TypeScript to *only* allow a limited set of types.
+If you deal with generic types in your code, you may come across the `extends` keyword. This is basically similar to the `implements` keyword we were using to implement interfaces, but instead of setting a contract, that you have to implement within your class, `extends` keyword is basically a **type constraint**. It specifically instructs TypeScript to *only* allow a limited set of types.
 
 Here’s a simplified example that illustrates how we use it:
 

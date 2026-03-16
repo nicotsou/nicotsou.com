@@ -1,7 +1,7 @@
 ---
 title: The Structural Type System of TypeScript
 date: '2022-05-14T22:12:00.000Z'
-description: What differenciates TypeScript from all the other programming languages? How its types are related?
+description: What differentiates TypeScript from all the other programming languages? How its types are related?
 type: post
 cover: './cover.png'
 ---
@@ -36,7 +36,7 @@ const dog = new Dog()
 const animal: Dog = cat // it works
 ```
 
-Observe what’s happening when I assign a `cat` to a `dog`. No errors whatsoever. Bot `Cat` and `Dog` have a `name` property of type `string`. The structural contract is fulfilled.
+Observe what’s happening when I assign a `cat` to a `dog`. No errors whatsoever. Both `Cat` and `Dog` have a `name` property of type `string`. The structural contract is fulfilled.
 
 To spice things up, let’s introduce an `Animal` interface:
 
@@ -116,7 +116,7 @@ If we have to visualize the previous example, we will end up with the diagram be
 
 ![Typescript top level types.png](images/Typescript_top_level_types.png)
 
-The `Dog` type can be assigned in bot the `Cat` and the `Animal` types. That logically doesn’t make sense, because the `Animal` is the logical parent of these two types. That’s the tricky part you need to understand with TypeScript. The same applies with the `object` type, which can accept any object structure. At the very top we have `any`, which can accept all the types.
+The `Dog` type can be assigned to both the `Cat` and the `Animal` types. That logically doesn’t make sense, because the `Animal` is the logical parent of these two types. That’s the tricky part you need to understand with TypeScript. The same applies with the `object` type, which can accept any object structure. At the very top we have `any`, which can accept all the types.
 
 The structural typing system doesn’t affect only object structures, but other kinds of types as well. The situation gets more complicated when you create unions, which can combine `any` types. I will explain how those are connected in the next articles.
 
@@ -166,7 +166,7 @@ If you want to learn more details about the available types of TypeScript, I hav
 
 ## Nullable primitive values
 
-In JavaScript, we have the the following **nullable** **primitive _values_**:
+In JavaScript, we have the following **nullable** **primitive _values_**:
 
 1. `undefined`: When no value is assigned.
 2. `null`: When we specifically assign a null value to an object.

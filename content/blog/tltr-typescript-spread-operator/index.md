@@ -138,7 +138,7 @@ function updateSettings(
 }
 ```
 
-By invoking our function with the same object as before, we will get back the full object for `settings`, with the update value for the `volume`:
+By invoking our function with the same object as before, we will get back the full object for `settings`, with the updated value for the `volume`:
 
 ```tsx
 const current = {

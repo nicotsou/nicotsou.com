@@ -32,7 +32,7 @@ const track = {
 
 In a traditional JavaScript project, that’s a very convenient way to define objects. This specific one contains everything we need to know about a music track. Such object structures are created on the fly, as we interact with the different modules and packages of our application.
 
-Objects can store anything. An api response. An event payload. Some configuration parameters. Information about styling, animations and many more. The simplest way to deal with such object structures is to create classes with all your models. But what about objects you can’t control, such us browser event payloads?
+Objects can store anything. An api response. An event payload. Some configuration parameters. Information about styling, animations and many more. The simplest way to deal with such object structures is to create classes with all your models. But what about objects you can’t control, such as browser event payloads?
 
 In the beginning, it didn't cost anything to come up with object structures like these, so we went for it. As we go along we are adding more and more object structures. As the codebase grows, some of these object structures _may_ already be defined somewhere else in our project. And you know what they say, duplication should be avoided.
 
@@ -44,7 +44,7 @@ We need a way to be able to quickly form data shapes, without implementing anyth
 
 ## What is an interface?
 
-Historically, this was the main reason to use an interface. Classical object oriented programming languages, such us Java, and C#, also have interfaces that work similarly. This concept is similar to the _protocols_ of Objective-C and Swift. But JavaScript is a dynamic language. The concept of interfaces has evolved to be another way of guarding variables with type annotations.
+Historically, this was the main reason to use an interface. Classical object oriented programming languages, such as Java, and C#, also have interfaces that work similarly. This concept is similar to the _protocols_ of Objective-C and Swift. But JavaScript is a dynamic language. The concept of interfaces has evolved to be another way of guarding variables with type annotations.
 
 > An interface describes the shape of an object structure.
 
@@ -195,7 +195,7 @@ interface IsFavorable {
 }
 ```
 
-The `IsTrack` interface describes the shape of a track object. It’s similar to a model in MVC. The interface `IsPlayable` marks an object as playable, which means we expect these objects to have a `duration` and a `play()` method that we can call. Similarly, the interface IsFavorable describes classes that provide this functionality to get the favorite boolean and `toggle` its value using the `toggeFavorite()` method.
+The `IsTrack` interface describes the shape of a track object. It’s similar to a model in MVC. The interface `IsPlayable` marks an object as playable, which means we expect these objects to have a `duration` and a `play()` method that we can call. Similarly, the interface IsFavorable describes classes that provide this functionality to get the favorite boolean and `toggle` its value using the `toggleFavorite()` method.
 
 Now let’s put these interfaces together to create our `Track` class:
 
@@ -233,7 +233,7 @@ class Track implements IsTrack, IsFavorable, IsPlayable {
 }
 ```
 
-In this example, we are combining both three interfaces. Try this example by yourself and notice the TypeScript errors as you add more functionality to your class. Also, notice how your editor provides better auto-completion, as you define the expected class members.
+In this example, we are combining all three interfaces. Try this example by yourself and notice the TypeScript errors as you add more functionality to your class. Also, notice how your editor provides better auto-completion, as you define the expected class members.
 
 ### Using interfaces to define the shape of object structures
 

@@ -185,7 +185,7 @@ Here we are setting that the `updates` should have a default `value = 0`, the `v
 
 ### Aliases
 
-Another cool feature is that we could rename the properties. This is needed in many cases. For example, you may have another variable in that scope which already uses that name `updates`. This conflict will reduce compiler errors in TypeScript, or it will silently fail in JavaScript.
+Another cool feature is that we could rename the properties. This is needed in many cases. For example, you may have another variable in that scope which already uses that name `updates`. This conflict will produce compiler errors in TypeScript, or it will silently fail in JavaScript.
 
 Here’s how we can set a custom name, aka _alias_:
 
@@ -217,7 +217,7 @@ This is cumbersome on multiple levels:
 - The constant `updates` is _not_ going to be declared, which lets you use it in that scope for something else.
 - The type declaration is defined in a second object structure, right after the first one. For this object structure we are using the `initial` name of the property `updates`, and not the alias `updatesCounter`.
 
-And that’s it! Basically now you are able to use the destructuring operator with any object type, you know how to define types for it, how to set default values, and how to use aliases for it’s property names.
+And that’s it! Basically now you are able to use the destructuring operator with any object type, you know how to define types for it, how to set default values, and how to use aliases for its property names.
 
 Now try it by yourself!
 

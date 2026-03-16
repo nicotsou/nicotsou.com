@@ -18,7 +18,7 @@ By introducing types to your code, your editor can understand much better how th
 
 TypeScript has full support for [JSDoc](https://jsdoc.app). Moreover, you can use comments within your code to create live documentation.
 
-Type checking runs on compile-time. If you violate the type rules, your application will not run due to errors. All the extra code that you add it will be removed from the transpiled JS code and it will not be available at runtime.
+Type checking runs on compile-time. If you violate the type rules, your application will not run due to errors. All the extra code that you add will be removed from the transpiled JS code and it will not be available at runtime.
 
 ---
 
@@ -30,7 +30,7 @@ My first experience with TypeScript wasn't really satisfactory. You see, I've be
 
 I was wrong.
 
-First of, when I integrated TypeScript into my projects, I uncovered a lot of type mistakes, that could potentially cause bugs. Sometimes, it's hard to think about everything and to remember what you were doing a year ago, for example.
+First off, when I integrated TypeScript into my projects, I uncovered a lot of type mistakes, that could potentially cause bugs. Sometimes, it's hard to think about everything and to remember what you were doing a year ago, for example.
 
 I wasn't only proud of myself. I was also proud of my team. You see, I was convinced everybody in my team understands JavaScript. We had code reviews, we were constantly learning. What could go wrong, right?
 
@@ -84,7 +84,7 @@ From the 90s to the Metaverse era, a lot of things have changed. Applications ar
 
 Compared to languages like C# or Java, which are being used widely in the enterprise world, JavaScript seems that it doesn't have anything to offer to these developers, who were used to organizing their code using classes, interfaces, namespaces and modules.
 
-On top of that, the development experience is day and night. Your text editor simply cannot compete with a sophisticated IDE like Xcode, or IntelliJ. Besides the code highlighting - which sometimes is very dum - and some common errors that can be handled with a linter, it doesn't provide any code completion suggestions, it doesn't recognize the types of your variables, and most importantly, it doesn't give you any sophisticated debugging tool.
+On top of that, the development experience is day and night. Your text editor simply cannot compete with a sophisticated IDE like Xcode, or IntelliJ. Besides the code highlighting - which sometimes is very dumb - and some common errors that can be handled with a linter, it doesn't provide any code completion suggestions, it doesn't recognize the types of your variables, and most importantly, it doesn't give you any sophisticated debugging tool.
 
 ![Photo Credit: [Lorenzo Herrera](https://unsplash.com/photos/p0j-mE6mGo4)](images/90s-tech.png)
 _Photo Credit: [Lorenzo Herrera](https://unsplash.com/photos/p0j-mE6mGo4)_
@@ -95,7 +95,7 @@ From the ancient ActionScript, CoffeeScript, ClosureScript and Elm, to the most 
 
 As a side note, you can use Python, Ruby, Kotlin, Scala, Swift, or even Java if you find [the right compiler](https://github-wiki-see.page/m/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS#ruby). But there’s no benefit in starting a new JS project with such languages. Who would like to maintain such a monstrosity. But even if you ever have this need, I would recommend you to check [WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly).
 
-This is how TypeScript become a game changer. Now check it by yourself.
+This is how TypeScript became a game changer. Now check it by yourself.
 
 ## The Type Experiment
 
@@ -130,11 +130,11 @@ You will find the answer at the end of this post.
 
 ## What is TypeScript?
 
-TypeScript is at the moment one of the most popular strongly typed flavors of JS. It is [highly adopted](https://2020.stateofjs.com/en-US/technologies/) by the many of the JS projects over the world, especially on backend applications.
+TypeScript is at the moment one of the most popular strongly typed flavors of JS. It is [highly adopted](https://2020.stateofjs.com/en-US/technologies/) by many of the JS projects over the world, especially on backend applications.
 
 What makes TypeScript easy to adopt is the fact that your code is as close to JavaScript as it can be. As a superset of JavaScript, any code that runs on JavaScript, runs perfectly well on TypeScript too.
 
-The maintainers of the TypeScript language decided to stay away from custom code syntax. Its additional features are already supported or they will be supported in future versions of JS. That's a huge benefit for developers, because you will theoretically don't need to refactor your code completely when an X feature of JavaScript becomes available, when TypeScript becomes obsolete, or when you find a better tool to handle your type definitions much more efficiently.
+The maintainers of the TypeScript language decided to stay away from custom code syntax. Its additional features are already supported or they will be supported in future versions of JS. That's a huge benefit for developers, because you theoretically won't need to refactor your code completely when an X feature of JavaScript becomes available, when TypeScript becomes obsolete, or when you find a better tool to handle your type definitions much more efficiently.
 
 ---
 
@@ -347,7 +347,7 @@ If you are targeting a client-based app, the `index.js` file is the one you are 
 
 TypeScript knows already which features are supported by which browser and it is smart enough to transpile our code to a version of JavaScript that will always work. We also have the option to configure which version we are targeting, in the `tsconfig.json` configuration, which we will cover in a minute.
 
-Now you may ask, what if I change this `js` file? Will this cause any issues. Well, in general, you don't have to. You are not supposed to touch these files. Your goal is to write your source code in your `ts` files and then you have to run the `tsc` command every time to generate a new version of the `js` file. From now on, you can forget about these automatically generated `js` files.
+Now you may ask, what if I change this `js` file? Will this cause any issues? Well, in general, you don't have to. You are not supposed to touch these files. Your goal is to write your source code in your `ts` files and then you have to run the `tsc` command every time to generate a new version of the `js` file. From now on, you can forget about these automatically generated `js` files.
 
 To avoid running this command manually, every time you change your code, you can use the watch option:
 
@@ -372,7 +372,7 @@ Back to our example, you have to delete the newly generated `index.js` file. The
 
 This command will generate a new file `tsconfig.json`. This file includes all the configuration that your TypeScript compiler needs, to do its job.
 
-Here's are the most important options:
+Here are the most important options:
 
 ```json
 {

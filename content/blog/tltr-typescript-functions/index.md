@@ -6,7 +6,7 @@ type: post
 cover: './cover.jpg'
 ---
 
-Javascript has some powerful features for **functional programming**. At least a light version of it.
+JavaScript has some powerful features for **functional programming**. At least a light version of it.
 
 In this article, we will discover what options JS provides for declaring and consuming functions and we find out how to guard them with TypeScript types.
 
@@ -153,7 +153,7 @@ function createTrack(
 }
 ```
 
-Here, define the `title` argument as optional, but the next argument `artist` is mandatory. This will create a messy function invocation, because usually the optional arguments are last in the list. Of course, once again, TypeScript will prevent this:
+Here, we define the `title` argument as optional, but the next argument `artist` is mandatory. This will create a messy function invocation, because usually the optional arguments are last in the list. Of course, once again, TypeScript will prevent this:
 
 ![typescript-required-parameter-after-optional.png](images/typescript-required-parameter-after-optional.png)
 
@@ -188,7 +188,7 @@ function add(a: number = 0, b: number = 0): number {
 
 ### void
 
-If a function doesn't return anything, we can use they type `void`:
+If a function doesn't return anything, we can use the type `void`:
 
 ```tsx
 // highlight-start
@@ -270,7 +270,7 @@ Here, `randomFn()` doesn't accept 2 numbers as arguments and it doesn't return a
 
 ### Arrow functions vs regular functions
 
-Arrow functions are widely used in modern applications. There are some fundamental changes with the regular functions. You must remember that it's not only about the syntax. I will try to list them here briefly, but I do recommend you to spend some time studying these differences, if you are not familiar with them. Here we go:
+Arrow functions are widely used in modern applications. There are some fundamental changes with the regular functions. You must remember that it's not only about the syntax. I will try to list them here briefly, but I do recommend you spend some time studying these differences, if you are not familiar with them. Here we go:
 
 1. They are always anonymous, which as we saw before, it may cost you time on debugging.
 2. Arrow functions don't alter the value of lexical `this`. The value of `this` inside an arrow function is the closest parent regular function.
@@ -310,7 +310,7 @@ Many languages, like C#, or Java, allow multiple implementations of the same fun
 
 TypeScript adds support for **function overloading**. This allows you to have multiple functions with the same name within the same scope, but with a different set of arguments.
 
-The syntax differs from what you have used to see in other languages. At first, you need to define the _overload signatures_, which are function declarations without a body, and then to provide a function with the implementation:
+The syntax differs from what you are used to seeing in other languages. At first, you need to define the _overload signatures_, which are function declarations without a body, and then to provide a function with the implementation:
 
 ```tsx
 // overload signatures
@@ -329,7 +329,7 @@ function search(nameOrId: string | number) {
 
 In this example the function `search()` can accept either a `string`, to search by name, or a `number` to search by id. The first two functions define the multiple ways you can call this function; that's why we omit their bodies. The third function is the actual implementation. We have a single argument `nameOrId` which can be a `string` or a `number`.
 
-It is worth to mention here that this syntax will not work in JS, because you can only have one definition for the `search()` function.
+It is worth mentioning here that this syntax will not work in JS, because you can only have one definition for the `search()` function.
 
 From now on, the moment you start typing the name of the function you will get a useful popup with the different ways you can implement it:
 

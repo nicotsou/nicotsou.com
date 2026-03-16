@@ -118,7 +118,7 @@ Let’s review the main features of type aliases.
 
 ### Type aliases support primitive types
 
-First of, they can support primitive types and object structures:
+First off, they can support primitive types and object structures:
 
 ```tsx
 type maybeAString = string | number
@@ -140,7 +140,7 @@ type FileTypes = 'mp3' | 'mp4'
 
 No other type annotation keyword in TypeScript has support for primitive types. Easy choice!
 
-### Type aliases can only declared once
+### Type aliases can only be declared once
 
 If we try to declare another track, we will get back an error:
 
@@ -246,7 +246,7 @@ Beware of the cookies!
 
 ### Interfaces can be extended
 
-In contrary to type aliases, interfaces can be defined multiple times in your project. Their definitions can be merged. This feature is called _declaration merging_.
+In contrast to type aliases, interfaces can be defined multiple times in your project. Their definitions can be merged. This feature is called _declaration merging_.
 
 Consider the following declarations of the same interface `ITrack`:
 
