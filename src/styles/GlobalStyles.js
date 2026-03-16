@@ -13,13 +13,13 @@ const Variables = createGlobalStyle`
 `
 
 const ColorStyles = createGlobalStyle`
-  // Light mode
+  /* Light mode */
   body {
     background: rgb(var(--bg-color));
     color: rgb(var(--text-color));
   }
 
-  // Dark mode
+  /* Dark mode */
   @media (prefers-color-scheme: dark) {
     :root {
       --text-color: var(--white-value);
@@ -30,8 +30,10 @@ const ColorStyles = createGlobalStyle`
 `
 
 const FontFixStyles = createGlobalStyle`
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+  }
 `
 
 const AnchorStyles = createGlobalStyle`

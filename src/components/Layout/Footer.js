@@ -59,6 +59,12 @@ const Footer = ({ className }) => {
   const social = data?.site?.siteMetadata?.social
   const { twitter, youtube, github } = social
 
+  const currentYear = new Date().getFullYear()
+  const startYear = 2021
+  const yearRange = startYear === currentYear 
+    ? currentYear 
+    : `${startYear}-${currentYear.toString().slice(2)}`
+
   return (
     <StyledFooter className={className}>
       <SocialList>
@@ -99,7 +105,7 @@ const Footer = ({ className }) => {
           </a>
         </li>
       </SocialList>
-      <Copyright>&copy; 2024 NT</Copyright>
+      <Copyright>&copy; {yearRange} NT</Copyright>
     </StyledFooter>
   )
 }
