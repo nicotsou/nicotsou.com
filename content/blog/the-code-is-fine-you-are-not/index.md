@@ -1,6 +1,6 @@
 ---
 title: The code is fine—You are not
-date: '2026-03-15T10:00:00.000Z'
+date: '2026-03-16T10:00:00.000Z'
 description: The pressure to achieve perfection in software engineering can lead to anxiety and burnout. Key points include the struggle with communication about feelings, the cycle of perfectionism and procrastination, and the impact of external expectations. Embracing imperfection and acknowledging human limitations is essential for sustainable work.
 type: post
 cover: './cover.jpg'
