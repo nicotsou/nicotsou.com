@@ -11,12 +11,12 @@ import Hero from '../components/tltr-typescript/Hero'
 
 const GlobalStyleModifier = createGlobalStyle`
   :root {
-    // TLTR Brand Colors
+    /* TLTR Brand Colors */
     --tltr-blue-value: 22, 7, 138;
     --tltr-black-value: 2, 5, 23;
     --tltr-awesome-value: 255, 26, 107;
     
-    // Page color adjustments
+    /* Page color adjustments */
     --text-color: var(--white-value);
     --bg-color: var(--tltr-blue-value);
     --caption-color: var(--white-value);

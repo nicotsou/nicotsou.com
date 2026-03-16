@@ -22,7 +22,7 @@ const mapShapesToModules = [shape1, shape6, shape3]
 const GlobalStyleModifier = createGlobalStyle`
   :root {
     body {
-       // Page color adjustments
+       /* Page color adjustments */
       --text-color: var(--white-value);
       --bg-color: var(--tltr-black-value);
       --caption-color: var(--white-value);
