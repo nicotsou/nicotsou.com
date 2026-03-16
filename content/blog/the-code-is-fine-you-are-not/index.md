@@ -3,7 +3,7 @@ title: The code is fine—You are not
 date: '2026-03-16T10:00:00.000Z'
 description: The pressure to achieve perfection in software engineering can lead to anxiety and burnout. Key points include the struggle with communication about feelings, the cycle of perfectionism and procrastination, and the impact of external expectations. Embracing imperfection and acknowledging human limitations is essential for sustainable work.
 type: post
-cover: './cover.jpg'
+cover: './cover.png'
 ---
 
 You're good at what you do. You've untangled race conditions, pixel-pushed a UI until it matched the design down to the last shadow, wired up CI pipelines that deploy on green, and debugged production issues at 3 AM on a Saturday. You've navigated framework migrations, accessibility audits, and that one API that returns a different shape every other Tuesday.
@@ -111,8 +111,6 @@ Staying relevant as a software engineer has become increasingly complex.
 I speak at conferences about AI. I build agentic platforms. People expect me to be "on it." And yet, I missed the model release everyone was talking about—didn't see it until questions started landing in my inbox.
 
 For a moment, I felt that familiar panic: if I missed this, what else am I missing? I opened five tabs, skimmed three threads, and queued up two demos. The pressure in my head went up another notch. I'm supposed to be the one who tells *them* what's coming — not the other way around.
-
-![Lost in cyber space](images/lost-in-cyber-space.png)
 
 People always ask me what they should learn to stay relevant. Nowadays it's all about AI. The question never changes; only the thing they're afraid of does. They worry that the way their organizations work today won't give them a competitive advantage in the job market tomorrow.
 
