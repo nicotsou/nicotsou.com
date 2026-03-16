@@ -50,6 +50,8 @@ When you carry that mindset into a career like software engineering—where ther
 
 That voice that says "this code isn't good enough yet" isn't really about the code. It's the echo of every time we were told to *do* better, *be* better, try *harder*. **It's the internalized belief that if we're not perfect, we're not worthy.**
 
+![Child in front of computer](images/child-in-computer.png)
+
 In a still [male‑dominated field](https://www.zippia.com/software-engineer-jobs/demographics/), many of us absorb quiet rules of restraint: stay composed, avoid showing doubt, handle it alone. Those norms make it harder to ask for help or name it when we're stuck.
 
 "I'm fine" becomes our default API—even when we feel like we *suck*.
@@ -91,6 +93,8 @@ My colleague wasn't drowning in tasks. He was drowning in the distance between h
 
 Over time, the anxiety can spread. It's not just one deadline—it shows up in standups, when replying in Jira, and when you're thinking about work in the evening. That's worth noticing.
 
+![Endless scrolling](images/endless-scrolling.png)
+
 And what's our coping mechanism? Lunch break, you open the app to decompress; the algorithm pulls up a chair and serves fear with a side of envy, followed by an ad for exactly what you didn't know you needed.
 
 Repeat this, project after project, and you already know where it leads. You won't rage-quit or delete your LinkedIn profile. It's slower than that. You still show up, still deliver, but you're running on empty. 
@@ -108,6 +112,8 @@ I speak at conferences about AI. I build agentic platforms. People expect me to 
 
 For a moment, I felt that familiar panic: if I missed this, what else am I missing? I opened five tabs, skimmed three threads, and queued up two demos. The pressure in my head went up another notch. I'm supposed to be the one who tells *them* what's coming — not the other way around.
 
+![Lost in cyber space](images/lost-in-cyber-space.png)
+
 People always ask me what they should learn to stay relevant. Nowadays it's all about AI. The question never changes; only the thing they're afraid of does. They worry that the way their organizations work today won't give them a competitive advantage in the job market tomorrow.
 
 But beneath the FOMO lies something heavier: the fear that AI won't just change *how* we work—it'll erase *why* we work. For many of us, software engineering isn't just a job. It's our identity, our status, the thing that affords the life we've built. The apartment, the stability, the sense that we figured it out. When the ground shifts under that, the anxiety isn't about missing a model release. It's about losing the version of yourself you've spent years constructing.
@@ -115,6 +121,8 @@ But beneath the FOMO lies something heavier: the fear that AI won't just change 
 No one knows what this industry looks like in five years. And that uncertainty is a breeding ground for misalignment burnout—because how do you align your work with your values when you're not sure the work will exist tomorrow? You end up working *harder* on things that feel increasingly *meaningless*, just to stay in the game. 
 
 That's not overwork. That's existential drift.
+
+![AI noise](images/ai-noise.png)
 
 The AI explosion has turned FOMO into a full-time job, and feeling incompetent next to an AI supermachine only makes things worse. Every day there's a new model, a new framework, a new capability. Every day the frontier moves.
 
@@ -144,6 +152,8 @@ Maybe naming it helps. Maybe knowing your teammates feel the same way helps too�
 Or maybe it doesn't. Maybe this is just one more thing to think about, one more weight to carry.
 
 But at least now we're talking about it.
+
+![Finding peace](images/finding-peace.png)
 
 ## A Personal Note
 
