@@ -166,6 +166,15 @@ const BlogStyles = css`
       }
     }
 
+    /* Images that have an alt tag that starts with "Illustration" are inverted in dark mode but keep their color */
+    &:has(img[alt^='Illustration']) {
+      @media (prefers-color-scheme: dark) {
+        filter: invert() hue-rotate(190deg) brightness(81%) contrast(118%)
+          saturate(151%);
+        mix-blend-mode: lighten;
+      }
+    }
+
     @media screen and (min-width: 780px) {
       max-width: 100vw !important;
       margin: 5rem 0 5rem calc(-50vw + 375px) !important;
